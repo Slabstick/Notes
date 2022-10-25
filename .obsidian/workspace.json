@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "6970753d0d55f0b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d5247d35cde0910",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e37380be2a58d53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bd4c47b3dae1e613",
+    "type": "split",
+    "children": [
+      {
+        "id": "399ddaeb58adc1e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd13a900051d71cc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "ceee4eb4aae6e773",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f2f416c9b440d9fa",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "47217716786cf49a",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6d078d0d616141a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "492b01a57fb68ab7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "21d4a3d0f9f19daa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "60b38dedfdad8891",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e626ea0b7b502fe7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "WSL Azubi Camp/WSL for Beginners.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "5e37380be2a58d53",
+  "lastOpenFiles": [
+    "WSL Azubi Camp/WSL for Beginners.md",
+    "WSL Azubi Camp/Screenshot_19.png.md",
+    "WSL Azubi Camp/Screenshot_23.png",
+    "WSL Azubi Camp/Screenshot_22.png",
+    "WSL Azubi Camp/Screenshot_19 1.png",
+    "WSL Azubi Camp/Screenshot_25.png",
+    "ToDo.md",
+    "www.nerdfonts.com.md",
+    "ArchWSL from GitHub.md",
+    "WSL Azubi Camp/Screenshot_26.png"
+  ]
+}
