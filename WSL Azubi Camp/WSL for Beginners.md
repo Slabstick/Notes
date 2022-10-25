@@ -15,7 +15,7 @@ Um eine andere Distribution auszuwählen erst `wsl --list --online` um mögliche
 
 Damit lassen sich später auch mehrere Distros gleichzeitig installieren. 
 
-
+![](Screenshot_5.png)
 
 > Wenn WSL bereits installiert ist, funktioniert `wsl --install` nicht. In dem Fall muss man direkt eine Distribution mit `wsl --install -d` auswählen.
 > 
