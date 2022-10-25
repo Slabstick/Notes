@@ -15,6 +15,10 @@ Um eine andere Distribution auszuwählen erst `wsl --list --online` um mögliche
 
 Damit lassen sich später auch mehrere Distros gleichzeitig installieren.
 
+![[Screenshot_5.png]]
+
+> Wenn WSL bereits installiert ist, funktioniert `wsl --install` nicht. In dem Fall muss man direkt eine Distribution mit `wsl --install -d` auswählen.
+> 
 ![[Screenshot_19 1.png]]
 
 Eine weitere Möglichkeit Distros zu installieren (Wenn sie z.B. nicht in der Liste aufgelistet werden), ist es sie als .exe Datei herunterzuladen. Beispiel "Arch Linux": [yuk7/ArchWSL auf Github](https://github.com/yuk7/ArchWSL/releases/latest)

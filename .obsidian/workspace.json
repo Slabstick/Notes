@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "WSL Azubi Camp/WSL for Beginners.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -134,13 +134,14 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 261.5
   },
   "ribbon": {
     "mostRecentAction": ""
   },
   "active": "5e37380be2a58d53",
   "lastOpenFiles": [
+    "Screenshot_5.png.md",
     "WSL Azubi Camp/WSL for Beginners.md",
     "WSL Azubi Camp/Screenshot_19.png.md",
     "WSL Azubi Camp/Screenshot_23.png",
@@ -149,7 +150,6 @@
     "WSL Azubi Camp/Screenshot_25.png",
     "ToDo.md",
     "www.nerdfonts.com.md",
-    "ArchWSL from GitHub.md",
-    "WSL Azubi Camp/Screenshot_26.png"
+    "ArchWSL from GitHub.md"
   ]
 }

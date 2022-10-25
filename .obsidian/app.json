@@ -1,5 +1,7 @@
 {
   "showFrontmatter": true,
   "tabSize": 2,
-  "promptDelete": false
+  "promptDelete": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./"
 }
