@@ -30,8 +30,8 @@ Eine weitere Möglichkeit Distros zu installieren (Wenn sie z.B. nicht in der Li
 
 ### Ubuntu
 
-![[Screenshot_25.png]]
 ![](Screenshot_25.png)
+
 Sobald man Ubuntu zum ersten Mal gestartet und einen Nutzernamen und ein Passwort gesetzt hat, startet man automatisch im HOME Directory (~). Wenn man möchte kann man auch sofort loslegen, ich persönlich finde es aber etwas zu langweilig und mache mich immer erst daran mit ZSH eine andere Shell zu installieren, die mir die Möglichkeit gibt Plugins zu installieren, welche mir die Konsole etwas aufhübscht. Siehe dazu: [[#ZSH-Shell & powerlevel10k]]
 
 #### Update & Upgrade des Packagemanagers
@@ -51,8 +51,8 @@ Danach können wir Ubuntu per `sudo do-release-upgrade -d` updaten. Dies dauert 
 Überprüfen können wir das am **schönsten** mit "neofetch" 
 (zu finden per `sudo apt install neofetch`):
 
-![[Screenshot_39.png]]
 ![](Screenshot_39.png)
+
 #### Personal Package Archive (PPA)
 
 Häufig findet man entweder nicht die gewünschten Programme im Standard Package Manager oder die Versionen sind stark veraltet (siehe [[#Neovim]]).
@@ -72,31 +72,31 @@ Jetzt können wir per `sudo add-apt-repository ppa:<NAME/REPO> -y` und `sudo apt
 
 `//wsl$` im Windows Explorer oder `explorer.exe .` in der WSL Shell (. nicht vergessen!) 
 
-![[Screenshot_22.png]]
 ![](Screenshot_22.png)
+
 ### Zugriff auf Windowsdateien in Linux
 
 Die Systemfestplatte C: wird in WSL direkt gemountet und ist per `cd /mnt/c` aufrufbar
 
-![[Screenshot_30.png]]
 ![](Screenshot_30.png)
+
 ### Remote Development in VSCode
 
 Mit der Remote Development Extension für Microsoft VSCode kann man aus VSCode direkt auf eine Entwicklungsumgebung in Linux (WSL) zugreifen. Dafür startet man zunächst VSCode in Windows und installiert die [Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
 
-![[Screenshot_31.png]]
 ![](Screenshot_31.png)
+
 Nun kann man in der WSL Shell in ein Verzeichnis navigieren, in dem ein Projekt liegt und dieses dann mit `code .` öffnen (auch hier den Punkt nicht vergessen). 
 
-![[Screenshot_32.png]]
 ![](Screenshot_32.png)
+
 Hat man einen Ordner im Windows Dateisystem geöffnet, wird man von VSCode darauf hingewiesen die Dateien ins Linux Dateisystem zu kopieren, um auch die vollen Geschwindigkeitsvorteile einer Linux Entwicklungsumgebung genießen zu können.
 Wenn alles funktioniert hat, sollte man unten Links in VSCode nun das Remote WSL Icon sehen:
 
-![[Screenshot_33.png]]
 ![](Screenshot_33.png)
+
 >Wenn man p10k (siehe unten) installiert hat und das VSCode Terminal nutzen möchte, sollte man in den Einstellungen des Terminals die korrekte Schriftart setzen. Im Falle von Meslo sieht das folgendermaßen aus:
->![[Screenshot_34.png]]![](Screenshot_34.png)
+>![](Screenshot_34.png)
 
 ## Development in Neovim
 
@@ -118,18 +118,18 @@ Danach starten wir die Shell neu mit `exec zsh` und schon können wir nvm nutzen
 Mit `command -v nvm` können wir überprüfen, ob alles funktioniert hat. Sollte dies der Fall sein, sollte dem Befehl die Ausgabe `nvm` folgen. 
 Die aktuelle Version von nvm erfragen wir per `nvm --version`
 
-![[Screenshot_36.png]]
 ![](Screenshot_36.png)
+
 #### Node & npm installieren
 
 Mit nvm können wir nun per `nvm install node` Node installieren.
 
-![[Screenshot_37.png]]
 ![](Screenshot_37.png)
+
 Mit Node sollte nun auch npm installiert sein. Überprüfen können wir das per `npm -v`
 
-![[Screenshot_38.png]]
 ![](Screenshot_38.png)
+
 ### Neovim
 
 #### Neovim installieren
@@ -159,8 +159,8 @@ sudo apt install neovim -y
 
 Wenn alles erfolgreich war, sollte `nvim --version` ungefähr so aussehen:
 
-![[Screenshot_40.png]]
 ![](Screenshot_40.png)
+
 Mit `nvim` oder `nvim <Dateiname>` können wir jetzt Neovim starten.
 
 > Neovim beenden: Esc, um sicherzustellen, dass man im normalen Modus ist und dann `:q` oder `:q!` 
@@ -186,16 +186,16 @@ Wenn wir jetzt neovim per `nvim` starten, lädt das Programm die ersten Plugins.
 
 Nach mindestens 2 Neustarts sollte Neovim beim Aufrufen von `nvim` jetzt so aussehen:
 
-![[Screenshot_41.png]]
 ![](Screenshot_41.png)
+
 Statt `f` zu drücken, kann man jetzt `Leertaste, e` eingeben und es öffnet sich links eine Art Fileexplorer mit dem man seine Dateien durchsuchen kann.
 
-![[Screenshot_42.png]]
 ![](Screenshot_42.png)
+
 Als erstes sollten wir im Ordner `~/.config/nvim/lua/user` die Datei "plugins.lua" öffnen.
 
-![[Screenshot_43.png]]
 ![](Screenshot_43.png)
+
 Hier sollten wir nach unten navigieren, bis wir den Punkt "--Automatically set up your configuration ..." erreichen. In den Zeilen davor setzen wir folgendes ein:
 
 ```
@@ -205,8 +205,8 @@ use 'mfussenegger/nvim-jdtls'
 
 Damit sollte es nun folgendermaßen aussehen:
 
-![[Screenshot_44.png]]
 ![](Screenshot_44.png)
+
 Nach Speichern per `:w` sollte sich nvim jetzt automatisch updaten und das neue Plugin installieren.
 
 
@@ -217,8 +217,8 @@ Nach Speichern per `:w` sollte sich nvim jetzt automatisch updaten und das neue 
 
 `sudo apt install zsh` um die zsh Shell zu installieren und danach `zsh` um zsh zu starten. Beim ersten Start wird die Konfiguration aufgerufen:
 
-![[Screenshot_26.png]]
 ![](Screenshot_26.png)
+
 Sobald diese abgeschlossen ist, sollte man "oh-my-zsh" installieren, damit es in Zukunft leichter ist Plugins zu aktivieren:
 
 ```
@@ -227,8 +227,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 Dadurch bekommt man auch die Option ZSH als Standard Shell zu aktivieren.
 
-![[Screenshot_27.png]]
 ![](Screenshot_27.png)
+
 Spätenstens für den nächsten Schritt benötigt man eine Schriftart, die Icons unterstützt. Empfohlen wird "Meslo NF", auf [nerdfonds.com](https://www.nerdfonts.com) werden aber viele weitere angeboten. Hier kann [MesloNF](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf) direkt heruntergeladen werden.
 
 Als letzten Schritt muss jetzt nur noch powerlevel10k installiert werden. Dafür aus dem Homedirectory (~ oder cd ~) folgendes aufrufen:
@@ -251,11 +251,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 Um die Shell neuzustarten, gibt man nun `exec zsh` ein und es sollte die Erstkonfiguration von powerlevel10k starten. Man kann diese aber auch manuell per `p10k configure` aufrufen.
 
-![[Screenshot_28.png]]
 ![](Screenshot_28.png)
+
 Wenn alles korrekt eingestellt ist, sollte es etwa so ausschauen:
 
-![[Screenshot_29.png]]
 ![](Screenshot_29.png)
 
 ## Weiterführende Links
