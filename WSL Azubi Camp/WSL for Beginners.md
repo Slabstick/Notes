@@ -32,7 +32,7 @@ Eine weitere Möglichkeit Distros zu installieren (Wenn sie z.B. nicht in der Li
 
 ![](Screenshot_25.png)
 
-Sobald man Ubuntu zum ersten Mal gestartet und einen Nutzernamen und ein Passwort gesetzt hat, startet man automatisch im HOME Directory (~). Wenn man möchte kann man auch sofort loslegen, ich persönlich finde es aber etwas zu langweilig und mache mich immer erst daran mit ZSH eine andere Shell zu installieren, die mir die Möglichkeit gibt Plugins zu installieren, welche mir die Konsole etwas aufhübscht. Siehe dazu: [[#ZSH-Shell & powerlevel10k]]
+Sobald man Ubuntu zum ersten Mal gestartet und einen Nutzernamen und ein Passwort gesetzt hat, startet man automatisch im HOME Directory (~). Wenn man möchte kann man auch sofort loslegen, ich persönlich finde es aber etwas zu langweilig und mache mich immer erst daran mit ZSH eine andere Shell zu installieren, die mir die Möglichkeit gibt Plugins zu installieren, welche mir die Konsole etwas aufhübscht. Siehe dazu: [ZSH-Shell & powerlevel10k](#ZSH-Shell%20&%20powerlevel10k)
 
 #### Update & Upgrade des Packagemanagers
 
@@ -55,7 +55,7 @@ Danach können wir Ubuntu per `sudo do-release-upgrade -d` updaten. Dies dauert 
 
 #### Personal Package Archive (PPA)
 
-Häufig findet man entweder nicht die gewünschten Programme im Standard Package Manager oder die Versionen sind stark veraltet (siehe [[#Neovim]]).
+Häufig findet man entweder nicht die gewünschten Programme im Standard Package Manager oder die Versionen sind stark veraltet (siehe [Neovim](#Neovim)).
 Um die Auswahl zu erweitern, können wir neben `apt` auch `apt-get` nutzen, um Community Packages per PPA zu installieren.
 
 Um PPA nutzen zu können, müssen wir einfach folgende Dependency installieren (falls sie es nicht schon ist):
@@ -136,11 +136,11 @@ Mit Node sollte nun auch npm installiert sein. Überprüfen können wir das per 
 
 Jetzt ist ein guter Zeitpunkt Neovim zu installieren. Neovim ist ein moderner Fork von Vim, der es ermöglicht eine zeitgemäße Entwicklungsumgebung in Linux zu nutzen ohne auf die klassische Schlichtheit von Vim verzichten zu müssen. 
 
-Wichtig ist erst einmal sicherzustellen, dass Ubuntu und der Packagemanager auf dem neusten Stand sind (siehe [[#Update & Upgrade]])
+Wichtig ist erst einmal sicherzustellen, dass Ubuntu und der Packagemanager auf dem neusten Stand sind (siehe [Update & Upgrade des Packagemanagers](#Update%20&%20Upgrade%20des%20Packagemanagers))
 
 Jetzt könnten wir Neovim per `sudo apt install neovim` installieren, würden in den meisten Fällen aber eine veraltete Version bekommen. Um Funktionen wie z.B. Languageserver und Debugger nutzen zu können, müssen wir sicherstellen, die neueste Version von Neovim zu installieren.
 
-Dies machen wir per [[#Personal Package Archive (PPA)]]:
+Dies machen wir per [Personal Package Archive (PPA)](#Personal%20Package%20Archive%20(PPA)):
 
 Wir haben die Wahl zwischen der Stable oder Unstable Version von Neovim. Da zum aktuellen Zeitpunkt die unstable Version auf 0.9 liegt, die stable aber erst auf 0.7, entscheide ich mich für die Unstable und damit die Neueste.
 
