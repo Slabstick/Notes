@@ -3,5 +3,7 @@
   "tabSize": 2,
   "promptDelete": false,
   "newFileLocation": "current",
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "./",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true
 }
