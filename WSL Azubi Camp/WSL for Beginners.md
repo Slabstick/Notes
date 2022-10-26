@@ -117,15 +117,27 @@ Ein paar weitere nützliche Apache2 Befehle:
 | Status | `sudo service apache2 status` |
 
 
+### Programme mit graphischer Oberfläche (x11)
 
+Auf Windows 11 lassen sich mit WSL graphische Programme starten und wie Desktop Apps starten. Um das auch auf Windows 10 zu können, muss man leider zusätzlich einen X11 Server installieren. 
 
+Den Server auf Win10 zu installieren übertrifft leider den scope dieses Dokuments und auch meiner technischen Expertise, sollte aber jemand in einer fernen Zukunft hierher zurückfinden, in der Quinscape Windows 11 unterstützt, kann man das folgendermaßen testen:
 
+```
+sudo apt install x11-apps -y
+```
+
+Damit installieren wir rudimentäre Programme mit graphischer Oberfläche. Zwei davon sind xcalc und xclock, die man jeweils mit `xcalc`, respektive `xclock` starten kann. 
+Wenn das funktioniert, dann sollte man auch Programme wie GIMP oder Audacity etc. installieren können.
 
 
 ### Development in Neovim
 
-Dieser Punkt ist unterteilt in zwei Unterpunkte. Der erste befasst sich mit der Installation von Node, was einerseits die Voraussetzung für JavaScript- und Webentwicklung darstellt, aber gleichzeitig auch Voraussetzung für den zweiten Punkt ist: Java Entwicklung in Neovim. 
-Um eine zuverlässige und moderne Umgebungsentwicklung für Java in Neovim aufzubauen, brauchen wir Werkzeuge, die wir nur mithilfe des Node Packacke Managers "npm" bekommen können.
+Dieser Punkt ist sehr umfassend, sehr optional und unterteilt in zwei Unterpunkte. Der erste befasst sich mit der Installation von Node, was einerseits die Voraussetzung für JavaScript- und Webentwicklung darstellt, aber gleichzeitig auch Voraussetzung für den zweiten Punkt ist: Java Entwicklung in Neovim. 
+Um eine zuverlässige und moderne Umgebungsentwicklung für Java in Neovim aufzubauen, brauchen wir Werkzeuge, die wir nur mithilfe des Node Packacke Managers "npm" bekommen können. 
+
+>Nocheinmal: Dieser Punkt ist optional und zeigt was nur in einer Konsole dank einer sehr eifrigen Community möglich ist. Der einzige Vorteil gegenüber klassischen IDE's ist maximal, dass man sich seine eigene IDE zusammenbauen und auf jegliche Ablenkungen verzichten kann, die man nicht benötigt.
+>Viele Programmierer bevorzugen das Entwickeln in Neovim, aber es ist bei weitem nicht jedermanns Sache.
 
 ### Node
 
@@ -287,6 +299,7 @@ Wenn alles korrekt eingestellt ist, sollte es etwa so ausschauen:
 - [Übersicht Plugins für oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
 - [Neovim Cheat Sheet](https://github.com/mattmc3/neovim-cheatsheet)
 - [Youtube: Dave's Garage - Windows and Linux: Together at Last](https://www.youtube.com/watch?v=clZCrVZH4Gg)
+- [Youtube: The Digital Life - Install Kali Linux - WSL2 KEX GUI hacking setup](https://www.youtube.com/watch?v=_cXmx2qwWts)
 - 
 
 
