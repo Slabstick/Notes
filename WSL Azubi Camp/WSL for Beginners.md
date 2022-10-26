@@ -1,4 +1,3 @@
-# WSL for Beginners
 #WSL #Linux #Ubuntu #ArchLinux #Windows #Terminal #Workflow
 
 ## Installation WSL2 
@@ -82,7 +81,7 @@ Die Systemfestplatte C: wird in WSL direkt gemountet und ist per `cd /mnt/c` auf
 
 ### Remote Development in VSCode
 
-Mit der Remote Development Extension für Microsoft VSCode kann man aus VSCode direkt auf eine Entwicklungsumgebung in Linux (WSL) zugreifen. Dafür startet man zunächst VSCode in Windows und installiert die [Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
+Mit der Remote Development Extension für Microsoft VSCode kann man aus VSCode direkt auf eine Entwicklungsumgebung in Linux (WSL) zugreifen. Dafür startet man zunächst VSCode **in Windows** und installiert die [Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
 
 ![](Screenshot_31.png)
 
@@ -98,7 +97,32 @@ Wenn alles funktioniert hat, sollte man unten Links in VSCode nun das Remote WSL
 >Wenn man p10k (siehe unten) installiert hat und das VSCode Terminal nutzen möchte, sollte man in den Einstellungen des Terminals die korrekte Schriftart setzen. Im Falle von Meslo sieht das folgendermaßen aus:
 >![](Screenshot_34.png)
 
-## Development in Neovim
+### Apache Server 
+
+Einer der Vorteile an Linux ist es, dass es wesentlich simpler ist einen Apache Webserver aufzusetzen und zum Laufen zu bringen. Das selbe gilt auch für Linux unter WSL.
+
+Alles was wir dafür tun müssen, ist mit `sudo apt install apache2` die Apache2 Software zu installieren und sie mit `sudo service apache2 start` zu starten. Schon läuft im Hintergrund der Server und ist für alle Schandtaten bereit.
+
+>Wenn wir auf den Server im Browser zugreifen möchten, müssen wir unsere IP Adresse herausfinden. Das geht am simpelsten per `ip address`. Die Adresse, die wir suchen, finden wir unter "eth0: inet"
+>![](Screenshot_45.png)
+
+![](Screenshot_46.png)
+
+Ein paar weitere nützliche Apache2 Befehle:
+
+| Funktion | Befehl |
+|-----------|------------------------------|
+| Beenden | `sudo service apache2 stop` |
+| Neustarten | `sudo service apache2 restart` |
+| Status | `sudo service apache2 status` |
+
+
+
+
+
+
+
+### Development in Neovim
 
 Dieser Punkt ist unterteilt in zwei Unterpunkte. Der erste befasst sich mit der Installation von Node, was einerseits die Voraussetzung für JavaScript- und Webentwicklung darstellt, aber gleichzeitig auch Voraussetzung für den zweiten Punkt ist: Java Entwicklung in Neovim. 
 Um eine zuverlässige und moderne Umgebungsentwicklung für Java in Neovim aufzubauen, brauchen wir Werkzeuge, die wir nur mithilfe des Node Packacke Managers "npm" bekommen können.
@@ -257,10 +281,12 @@ Wenn alles korrekt eingestellt ist, sollte es etwa so ausschauen:
 
 ![](Screenshot_29.png)
 
+
 ## Weiterführende Links
 
 - [Übersicht Plugins für oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
 - [Neovim Cheat Sheet](https://github.com/mattmc3/neovim-cheatsheet)
+- [Youtube: Dave's Garage - Windows and Linux: Together at Last](https://www.youtube.com/watch?v=clZCrVZH4Gg)
 - 
 
 
