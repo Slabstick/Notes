@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WSL Azubi Camp/readme.md.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WSL Azubi Camp/readme.md.md",
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WSL Azubi Camp/readme.md.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WSL Azubi Camp/readme.md.md"
+                "file": "README.md"
               }
             }
           },
@@ -157,7 +157,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "09bbd8ee1dc5b5b2",
+  "active": "cd13a900051d71cc",
   "lastOpenFiles": [
     "WSL Azubi Camp/WSL for Beginners.md",
     "ToDo.md",
