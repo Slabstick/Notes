@@ -144,9 +144,6 @@
     "direction": "horizontal",
     "width": 300
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
   "active": "5e37380be2a58d53",
   "lastOpenFiles": [
     "ToDo.md",

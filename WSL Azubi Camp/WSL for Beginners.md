@@ -4,8 +4,9 @@
 
 ### Voraussetzungen
 
-- Windows Terminal Preview
+- Windows Terminal (Kostenlos im Windows Store als Windows Terminal Preview verfügbar)
 - Windows 10 - version 2004 (build 19041) oder höher (Auf Quinscape PC's gegeben)
+- Grundlegende Kentnisse mit Git und GitHub
 
 ### Powershell
 
@@ -69,7 +70,7 @@ Jetzt können wir per `sudo add-apt-repository ppa:<NAME/REPO> -y` und `sudo apt
 
 ### Zugriff auf Linuxdateien in Windows
 
-`//wsl$` im Windows Explorer oder `explorer.exe .` in der WSL Shell (. nicht vergessen!) 
+`\\wsl$` im Windows Explorer oder `explorer.exe .` in der WSL Shell (. nicht vergessen!) 
 
 ![](Screenshot_22.png)
 
@@ -139,6 +140,30 @@ Um eine zuverlässige und moderne Umgebungsentwicklung für Java in Neovim aufzu
 >Nocheinmal: Dieser Punkt ist optional und zeigt was nur in einer Konsole dank einer sehr eifrigen Community möglich ist. Der einzige Vorteil gegenüber klassischen IDE's ist maximal, dass man sich seine eigene IDE zusammenbauen und auf jegliche Ablenkungen verzichten kann, die man nicht benötigt.
 >Viele Programmierer bevorzugen das Entwickeln in Neovim, aber es ist bei weitem nicht jedermanns Sache.
 
+
+### Voraussetzungen für Neovim
+
+Damit die folgenden Punkte funktionieren können, müssen wir auf Ubuntu `unzip` und einen C-Compiler installieren.
+
+#### unzip
+
+`unzip` erhalten wir mit `sudo apt install unzip`
+
+#### C-Compiler
+
+Der einfachste Weg einen C Compiler zu installieren, ist es das build essentials Package zu installieren. Dies geht mit folgendem Befehl:
+
+```
+sudo apt-get update && sudo apt-get install build-essential
+```
+
+#### Java
+
+Bevor wir Neovim für die Java Entwicklung nutzen können, benötigen wir natürlich eine aktuelle Version von Java. Diese können wir per `sudo apt search JSK` suchen. Ich habe mich hier für die openjdk-18-jdk entschieden.
+
+Mit `sudo apt install openjdk-18-jdk` kann man die JDK Version 18 installieren und sofort nutzen.
+
+
 ### Node
 
 #### nvm
@@ -165,6 +190,7 @@ Mit nvm können wir nun per `nvm install node` Node installieren.
 Mit Node sollte nun auch npm installiert sein. Überprüfen können wir das per `npm -v`
 
 ![](Screenshot_38.png)
+
 
 ### Neovim
 
@@ -203,13 +229,15 @@ Mit `nvim` oder `nvim <Dateiname>` können wir jetzt Neovim starten.
 > Speichern und beenden: `:wq`
 > Neovim Tutorial: `:Tutor`
 
-#### Konfigurationsdatei
+#### Konfiguration & Erweiterungen
 
 Hier kommen wir in den Teil dieser Anleitung, der am meisten Potenzial hat, schiefzugehen, vor Allem, je älter sie wird. Sollte also irgendetwas nicht funktionieren, sollte man sicherstellen die Quellen nach Updates zu überprüfen. Die Kombination aus Neovim und WSL ist leider ein Kartenhaus, das einzustürzen droht, sobald ein Einzelteil geupdatet wird. Also nicht sofort aufgeben, der Fehler ist meistens leicht zu lösen.
 
-Grundlage der Neovim Konfiguration ist die Arbeit des Entwicklers **Christian Chiarulli** und seiner Github Repo [nvim basic ide](https://github.com/LunarVim/nvim-basic-ide) und Youtube Videos [Neovim - Setting up a Java IDE](https://www.youtube.com/watch?v=0q_MKUynUck). Er hat neben diesen beiden noch viele weitere Ressourcen, die sich mit diesem Thema beschäftigen, sollte also etwas nicht funktionieren, findet man hier den besten Startpunkt für den Troubleshoot.
+Grundlage der Neovim Konfiguration ist die Arbeit des Entwicklers **Christian Chiarulli** und seiner Github Repos [nvim basic ide](https://github.com/LunarVim/nvim-basic-ide) und Youtube Videos [Neovim - Setting up a Java IDE](https://www.youtube.com/watch?v=0q_MKUynUck). Er hat neben diesen beiden noch viele weitere Ressourcen, die sich mit diesem Thema beschäftigen, sollte also etwas nicht funktionieren, findet man hier den besten Startpunkt für den Troubleshoot.
 
 > Zum aktuellen Zeitpunkt ist sein Video 4 Monate alt und bereits nicht mehr aktuell, da "LspInstallInfo" nicht mehr existiert und das installieren des Lsp durch einen weiteren Dienst namens "Mason" bereitgestellt wird. Dies wird hier aber berücksichtigt.
+
+##### Chris' Konfigurationsdatei:
 
 Bevor wir seine Konfigurationsdatei installieren, sollten wir zunächst überprüfen, dass der Ordner "~/.config/nvim" nicht existiert. Sollte dieser existieren, kann man ihn einfach umbenennen oder löschen(`sudo rm -r ~/.config/nvim`).
 
@@ -243,8 +271,106 @@ Damit sollte es nun folgendermaßen aussehen:
 
 ![](Screenshot_44.png)
 
-Nach Speichern per `:w` sollte sich nvim jetzt automatisch updaten und das neue Plugin installieren.
+##### Debugger:
 
+Nach Speichern per `:w` sollte sich nvim jetzt automatisch updaten und das neue Plugin installieren. Damit dieses auch funktionieren kann, müssen wir als nächstes die Java Debug und VSCode Java Test Extensions von Microsoft installieren. Dafür clonen wir folgende Repos (Sicherstellen, dass wir uns im Ordner `~/.config/nvim` befinden):
+
+- https://github.com/microsoft/java-debug
+- https://github.com/microsoft/vscode-java-test
+
+![](Screenshot_47.png)
+
+> Einer der Vorteile von zsh und oh-my-zsh ist, dass es viele vorkonfigurierten Alias' für Git hat. Hier sieht man z.B. `gcl` was der Alias für `git clone --recurse-submodules` ist.
+
+Per `cd java-debug` wechseln wir nun in das neue Verzeichnis und installieren mit `./mvnw clean install` den Java Debugger. Sollte Linux eine Fehlermeldung ausgeben, ist es wahrscheinlich, dass Java noch nicht installiert ist (siehe [Java](#Java)), da das Installieren über einen Maven Wrapper durchgeführt wird.
+
+Wenn alles geklappt hat, dauert es ein paar Momente und dann sollte der Java Debugger zur Verfügung stehen.
+
+![](Screenshot_48.png)
+
+Als nächstes wechseln wir in den vscode-java-test Ordner und installieren diese Extension mit [Node](#Node) folgendermaßen:
+
+```
+npm install
+npm run build-plugin
+```
+
+Auch das wird einige Momente in Anspruch nehmen und sollte die nötigen Dateien aus dem Internet herunterladen. Sollte es hier haken, liegt es evtl. daran, dass Node nicht installiert ist (siehe [Node](#Node)).
+
+![](Screenshot_49.png)
+
+##### ftplugin/java.lua:
+
+Für den nächsten Schritt müssen wir den Ordner `~/.config/nvim/ftplugin/` anlegen.
+
+![](Screenshot_50.png)
+
+Als nächstes starten wir Neovim und erstellen eine Datei mit dem Befehl `nvim java.lua` (Im ftplugin Ordner)
+
+![](Screenshot_51.png)
+
+Zu allererst sollten wir die Datei mit `:w` speichern, damit diese auch existiert. Danach müssen wir den gesamten Inhalt aus folgender Datei kopieren und in unsere `java.lua` Datei einfügen (Wenn bis hierher alles funktioniert hat, sollte das Einfügen in Neovim mit der p Taste klappen):
+
+>https://github.com/ChristianChiarulli/nvim/blob/master/ftplugin/java.lua
+
+Als nächstes scrollen wir bis nach fast ganz unten, markieren die Zeilen von `local status_ok, which_key = pcall(require, "which-key")` bis `which_key.register(vmappings, vopts)` und kommentieren diese aus.
+
+>Markieren in nvim: v
+>Auskommentieren mehrerer Zeilen: Leer-/
+
+![](Screenshot_52.png)
+
+> Anhand der grünen Linien am linken Bildrand erkennen wir, dass Neovim uns bereits Änderungen der Datei anzeigt, die noch nicht per git committed wurden.
+
+Als nächstes installieren wir den Java Language Server mit Mason. Dafür bleiben wir in Neovim und rufen Mason mit `:Mason` auf. Hier sehen wir eine Auswahl von vielen verschiedenen Languageservern für alle Sprachen, die unterstützt werden. Einige, wie html und css sind bereits vorinstalliert, viele andere müssen wir manuell nachinstallieren. So auch den für Java. 
+
+Wir scrollen nach unten, bis sich der Cursor über der Zeile `jdtls` befindet und drücken die Taste `i` zum installieren. Nach ein paar Sekunden, sollte die Neovim Statusleiste "mason.nvim "jdtls' was successfully installed" sagen und jdtls sollte sich unter den installierten Servern wiederfinden.
+
+![](Screenshot_53.png)
+
+Mit der Taste `q` können wir das Mason Fenster wieder schließen.
+
+Nun müssen wir noch ein paar Zeilen in der Konfigurationsdatei anpassen, da diese leider veraltet ist und nicht mehr zu den korrekten jdtls Installationsordnern zeigt.
+
+Ungefähr in der Mitte der Datei finden wir 4 Bereiche, die mit Totenkopf-Icons markiert sind. Die zwei Punkte, die wir hier anpassen müssen sind mit dem zweiten und dritten Totenkopf markiert: "-jar" und "-configuration".
+
+Unter "-jar" ersetzen wir die Zeile mit Folgendem:
+
+```
+vim.fn.glob(home .. "/.local/share/nvim/mason/packages/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"),
+```
+
+Und unter "-configuration" ersetzen wir die Zeile mit Folgendem:
+
+```
+home .. "/.local/share/nvim/mason/packages/jdtls/config_" .. CONFIG,
+```
+
+Ein paar Zeilen weiter oben finden wir eine weitere Zeile in der wir "`/lsp_servers/`"  zu "`/mason/packages/`" ändern, oder wie zuvor die ganze Zeile gegen Folgende austauschen müssen:
+
+```
+"-javaagent:" .. home .. "/.local/share/nvim/mason/packages/jdtls/lombok.jar",
+```
+
+![](Screenshot_56.png)
+
+Mit `:wq` speichern und schließen wir Neovim nun.
+
+##### mason.lua:
+
+Als nächstes öffnen wir die Datei `~/.config/nvim/lua/user/lsp/mason.lua` und fügen folgendes in Zeile 2 ein:
+
+```
+"jdtls",
+```
+
+Die ersten Zeilen der Datei sollten nun so aussehen:
+
+![](Screenshot_55.png)
+
+Wenn wir nun die Datei speichern und schließen und daraufhin eine .java Datei öffnen, sollte nach ein paar Sekunden der Java LSP starten.
+
+![](Screenshot_57.png)
 
 
 ## ZSH-Shell & powerlevel10k
@@ -300,6 +426,7 @@ Wenn alles korrekt eingestellt ist, sollte es etwa so ausschauen:
 - [Neovim Cheat Sheet](https://github.com/mattmc3/neovim-cheatsheet)
 - [Youtube: Dave's Garage - Windows and Linux: Together at Last](https://www.youtube.com/watch?v=clZCrVZH4Gg)
 - [Youtube: The Digital Life - Install Kali Linux - WSL2 KEX GUI hacking setup](https://www.youtube.com/watch?v=_cXmx2qwWts)
+- [Youtube: Devaslife - Set up Neovim on a new M2 MacBook Air for coding React, TypeScript, Tailwind CSS, etc.](https://www.youtube.com/watch?v=ajmK0ZNcM4Q)
 - 
 
 
@@ -313,4 +440,5 @@ Wenn alles korrekt eingestellt ist, sollte es etwa so ausschauen:
 - [Neovim installieren](https://www.linuxcapable.com/how-to-install-neovim-editor-on-ubuntu-22-04-lts/)
 - [Packages in Ubuntu deinstallieren](https://phoenixnap.com/kb/uninstall-packages-programs-ubuntu)
 - [LSP Java Unterstützung für NVIM](https://github.com/mfussenegger/nvim-jdtls)
+- [java.lua Konfiguration](https://github.com/ChristianChiarulli/nvim/blob/master/ftplugin/java.lua)
 - 
