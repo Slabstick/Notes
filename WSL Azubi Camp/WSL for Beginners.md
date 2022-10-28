@@ -3,11 +3,11 @@
 ---
 ## Inhalt
 
-[Installation WSL2](<#Installation%20WSL2>)
+[Installation WSL2](<#Installation WSL2>)
 - [Voraussetzungen](#Voraussetzungen)
 - [Powershell](#Powershell)
 - [Ubuntu](#Ubuntu)
-	- [Update & Upgrade des Packagemanagers](<#Update & Upgrade des Packagemanagers>)
+	- [Update & Upgrade des Packagemanagers](<#Update-&-Upgrade-des-Packagemanagers>)
 	- [Ubuntu auf die neueste Version upgraden](#Ubuntu%20auf%20die%20neueste%20Version%20upgraden)
 	- [Personal Package Archive (PPA)](#Personal%20Package%20Archive%20(PPA))
 [Verwendung](#Verwendung)
