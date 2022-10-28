@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "WSL Azubi Camp/WSL for Beginners.md"
               }
             }
           },
@@ -157,8 +157,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "cd13a900051d71cc",
+  "active": "e626ea0b7b502fe7",
   "lastOpenFiles": [
+    "README.md",
     "WSL Azubi Camp/WSL for Beginners.md",
     "ToDo.md",
     "WSL Azubi Camp/Screenshot_19.png.md",
@@ -167,7 +168,6 @@
     "WSL Azubi Camp/Screenshot_19 1.png",
     "WSL Azubi Camp/Screenshot_25.png",
     "www.nerdfonts.com.md",
-    "ArchWSL from GitHub.md",
-    "WSL Azubi Camp/Screenshot_26.png"
+    "ArchWSL from GitHub.md"
   ]
 }

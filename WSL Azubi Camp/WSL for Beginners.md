@@ -1,5 +1,45 @@
 #WSL #Linux #Ubuntu #ArchLinux #Windows #Terminal #Workflow
 
+---
+## Inhalt
+
+[Installation WSL2](#Installation%20WSL2)
+- [Voraussetzungen](#Voraussetzungen)
+- [Powershell](#Powershell)
+- [Ubuntu](#Ubuntu)
+	- [Update & Upgrade des Packagemanagers](#Update%20&%20Upgrade%20des%20Packagemanagers)
+	- [Ubuntu auf die neueste Version upgraden](#Ubuntu%20auf%20die%20neueste%20Version%20upgraden)
+	- [Personal Package Archive (PPA)](#Personal%20Package%20Archive%20(PPA))
+[Verwendung](#Verwendung)
+- [Zugriff auf Linuxdateien in Windows](#Zugriff%20auf%20Linuxdateien%20in%20Windows)
+- [Zugriff auf Windowsdateien in Linux](#Zugriff%20auf%20Windowsdateien%20in%20Linux)
+- [Remote Development in VSCode](#Remote%20Development%20in%20VSCode)
+- [Remote Development in IntelliJ Idea](#Remote%20Development%20in%20IntelliJ%20Idea)
+- [Apache Server](#Apache%20Server)
+- [Programme mit graphischer Oberfläche (x11)](#Programme%20mit%20graphischer%20Oberfläche%20(x11))
+- [Development in Neovim](#Development%20in%20Neovim)
+	- [Voraussetzungen für Neovim](#Voraussetzungen%20für%20Neovim)
+		- [unzip](#unzip)
+		- [C-Compiler](#C-Compiler)
+		- [Java](#Java)
+	- [Node](#Node)
+		- [nvm](#nvm)
+		- [Node & npm installieren](#Node%20&%20npm%20installieren)
+	- [Neovim](#Neovim)
+		- [Neovim installieren](#Neovim%20installieren)
+		- [Konfiguration & Erweiterungen](#Konfiguration%20&%20Erweiterungen)
+			- [Chris' Konfigurationsdatei:](#Chris'%20Konfigurationsdatei:)
+			- [Debugger:](#Debugger:)
+			- [ftplugin/java.lua:](#ftplugin/java.lua:)
+			- [mason.lua:](#mason.lua:)
+[ZSH-Shell & powerlevel10k](#ZSH-Shell%20&%20powerlevel10k)
+- [ZSH Shell:](#ZSH%20Shell:)
+- [Oh-My-ZSH](#Oh-My-ZSH)
+- [NerdFonts Meslo](#NerdFonts%20Meslo)
+- [Powerlevel10k](#Powerlevel10k)
+
+---
+
 ## Installation WSL2 
 
 ### Voraussetzungen
@@ -66,6 +106,8 @@ sudo apt install software-properties-common -y
 
 Jetzt können wir per `sudo add-apt-repository ppa:<NAME/REPO> -y` und `sudo apt-get update` inoffizielle Packages in unseren Packagemanager importieren und dann per `sudo apt install <PACKAGE>` installieren.
 
+---
+
 ## Verwendung
 
 ### Zugriff auf Linuxdateien in Windows
@@ -97,6 +139,18 @@ Wenn alles funktioniert hat, sollte man unten Links in VSCode nun das Remote WSL
 
 >Wenn man p10k (siehe unten) installiert hat und das VSCode Terminal nutzen möchte, sollte man in den Einstellungen des Terminals die korrekte Schriftart setzen. Im Falle von Meslo sieht das folgendermaßen aus:
 >![](Screenshot_34.png)
+
+### Remote Development in IntelliJ Idea
+
+Was in VSCode funktioniert, das geht selbstverständlich auch in IntelliJ und das sogar noch einfacher. So lange WSL2 im Hintergrund aktiv ist, kann man beim erstellen eines neuen Projektes den Speicherort `\\wsl$\..` und die JDK, die man vorher auf dem WSL System installiert hat auswählen. Es wird kein Plugin benötigt.
+
+>Sollte noch keine JDK auf dem WSL System vorhanden sein, wird das hier erklärt: [Java](#Java)
+
+![](Screenshot_59.png)
+
+![](Screenshot_60.png)
+
+Wie man auf den Screenshots erkennen kann, werden auch Maven und Gradle Projekte unterstützt.
 
 ### Apache Server 
 
@@ -192,7 +246,9 @@ Mit Node sollte nun auch npm installiert sein. Überprüfen können wir das per 
 ![](Screenshot_38.png)
 
 
-### Neovim
+### Neovim (Work in Progress!)
+
+>Dieser Bereich wird noch überarbeitet und Dinge hinzugefügt, da wir hier eine eigene auf Vim aufgebaute IDE bauen.
 
 #### Neovim installieren
 
@@ -372,14 +428,17 @@ Wenn wir nun die Datei speichern und schließen und daraufhin eine .java Datei �
 
 ![](Screenshot_57.png)
 
+---
 
 ## ZSH-Shell & powerlevel10k
 
-### ZSH Shell: 
+### ZSH Shell
 
 `sudo apt install zsh` um die zsh Shell zu installieren und danach `zsh` um zsh zu starten. Beim ersten Start wird die Konfiguration aufgerufen:
 
 ![](Screenshot_26.png)
+
+### Oh-My-ZSH
 
 Sobald diese abgeschlossen ist, sollte man "oh-my-zsh" installieren, damit es in Zukunft leichter ist Plugins zu aktivieren:
 
@@ -391,7 +450,11 @@ Dadurch bekommt man auch die Option ZSH als Standard Shell zu aktivieren.
 
 ![](Screenshot_27.png)
 
+### NerdFonts Meslo
+
 Spätenstens für den nächsten Schritt benötigt man eine Schriftart, die Icons unterstützt. Empfohlen wird "Meslo NF", auf [nerdfonds.com](https://www.nerdfonts.com) werden aber viele weitere angeboten. Hier kann [MesloNF](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf) direkt heruntergeladen werden.
+
+### Powerlevel10k
 
 Als letzten Schritt muss jetzt nur noch powerlevel10k installiert werden. Dafür aus dem Homedirectory (~ oder cd ~) folgendes aufrufen:
 
@@ -415,10 +478,11 @@ Um die Shell neuzustarten, gibt man nun `exec zsh` ein und es sollte die Erstkon
 
 ![](Screenshot_28.png)
 
-Wenn alles korrekt eingestellt ist, sollte es etwa so ausschauen:
+Wenn alles korrekt eingestellt ist, sollte die Shell jetzt etwa so ausschauen:
 
 ![](Screenshot_29.png)
 
+---
 
 ## Weiterführende Links
 
@@ -427,9 +491,10 @@ Wenn alles korrekt eingestellt ist, sollte es etwa so ausschauen:
 - [Youtube: Dave's Garage - Windows and Linux: Together at Last](https://www.youtube.com/watch?v=clZCrVZH4Gg)
 - [Youtube: The Digital Life - Install Kali Linux - WSL2 KEX GUI hacking setup](https://www.youtube.com/watch?v=_cXmx2qwWts)
 - [Youtube: Devaslife - Set up Neovim on a new M2 MacBook Air for coding React, TypeScript, Tailwind CSS, etc.](https://www.youtube.com/watch?v=ajmK0ZNcM4Q)
+- [Youtube: Nick Janetakis - A Linux Dev Environment on Windows with WSL 2, Docker Desktop and More](https://www.youtube.com/watch?v=idW-an99TAM)
 - 
 
-
+---
 
 ## Quellen/Referenzen
 
@@ -442,3 +507,5 @@ Wenn alles korrekt eingestellt ist, sollte es etwa so ausschauen:
 - [LSP Java Unterstützung für NVIM](https://github.com/mfussenegger/nvim-jdtls)
 - [java.lua Konfiguration](https://github.com/ChristianChiarulli/nvim/blob/master/ftplugin/java.lua)
 - 
+
+---
