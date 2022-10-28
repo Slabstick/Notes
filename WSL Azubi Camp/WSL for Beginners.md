@@ -28,10 +28,10 @@
 	- [Neovim](#Neovim)
 		- [Neovim installieren](#Neovim%20installieren)
 		- [Konfiguration & Erweiterungen](#Konfiguration%20&%20Erweiterungen)
-			- [Chris' Konfigurationsdatei:](#Chris'%20Konfigurationsdatei:)
-			- [Debugger:](#Debugger:)
-			- [ftplugin/java.lua:](#ftplugin/java.lua:)
-			- [mason.lua:](#mason.lua:)
+			- [Chris' Konfigurationsdatei](#Chris'%20Konfigurationsdatei)
+			- [Debugger](#Debugger)
+			- [ftplugin/java.lua](#ftplugin/java.lua)
+			- [mason.lua](#mason.lua)
 [ZSH-Shell & powerlevel10k](#ZSH-Shell%20&%20powerlevel10k)
 - [ZSH Shell:](#ZSH%20Shell:)
 - [Oh-My-ZSH](#Oh-My-ZSH)
@@ -293,7 +293,7 @@ Grundlage der Neovim Konfiguration ist die Arbeit des Entwicklers **Christian Ch
 
 > Zum aktuellen Zeitpunkt ist sein Video 4 Monate alt und bereits nicht mehr aktuell, da "LspInstallInfo" nicht mehr existiert und das installieren des Lsp durch einen weiteren Dienst namens "Mason" bereitgestellt wird. Dies wird hier aber berücksichtigt.
 
-##### Chris' Konfigurationsdatei:
+##### Chris' Konfigurationsdatei
 
 Bevor wir seine Konfigurationsdatei installieren, sollten wir zunächst überprüfen, dass der Ordner "~/.config/nvim" nicht existiert. Sollte dieser existieren, kann man ihn einfach umbenennen oder löschen(`sudo rm -r ~/.config/nvim`).
 
@@ -327,7 +327,7 @@ Damit sollte es nun folgendermaßen aussehen:
 
 ![](Screenshot_44.png)
 
-##### Debugger:
+##### Debugger
 
 Nach Speichern per `:w` sollte sich nvim jetzt automatisch updaten und das neue Plugin installieren. Damit dieses auch funktionieren kann, müssen wir als nächstes die Java Debug und VSCode Java Test Extensions von Microsoft installieren. Dafür clonen wir folgende Repos (Sicherstellen, dass wir uns im Ordner `~/.config/nvim` befinden):
 
@@ -355,7 +355,7 @@ Auch das wird einige Momente in Anspruch nehmen und sollte die nötigen Dateien 
 
 ![](Screenshot_49.png)
 
-##### ftplugin/java.lua:
+##### ftplugin/java.lua
 
 Für den nächsten Schritt müssen wir den Ordner `~/.config/nvim/ftplugin/` anlegen.
 
@@ -412,7 +412,7 @@ Ein paar Zeilen weiter oben finden wir eine weitere Zeile in der wir "`/lsp_serv
 
 Mit `:wq` speichern und schließen wir Neovim nun.
 
-##### mason.lua:
+##### mason.lua
 
 Als nächstes öffnen wir die Datei `~/.config/nvim/lua/user/lsp/mason.lua` und fügen folgendes in Zeile 2 ein:
 
