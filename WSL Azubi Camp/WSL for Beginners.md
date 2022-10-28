@@ -3,7 +3,7 @@
 ---
 ## Inhalt
 
-[Installation WSL2](#Installation%20WSL2)
+[Installation WSL2](<#Installation WSL2>)
 - [Voraussetzungen](#Voraussetzungen)
 - [Powershell](#Powershell)
 - [Ubuntu](#Ubuntu)
