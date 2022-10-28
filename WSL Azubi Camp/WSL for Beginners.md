@@ -10,6 +10,7 @@
 	- [Update & Upgrade des Packagemanagers](<#Update--Upgrade-des-Packagemanagers>)
 	- [Ubuntu auf die neueste Version upgraden](<#Ubuntu-auf-die-neueste-Version-upgraden>)
 	- [Personal Package Archive (PPA)](<#Personal-Package-Archive-(PPA)>)
+
 [Verwendung](#Verwendung)
 - [Zugriff auf Linuxdateien in Windows](<#Zugriff-auf-Linuxdateien-in-Windows>)
 - [Zugriff auf Windowsdateien in Linux](<#Zugriff-auf-Windowsdateien-in-Linux>)
@@ -32,6 +33,7 @@
 			- [Debugger](#Debugger)
 			- [ftplugin/java.lua](#ftplugin/java.lua)
 			- [mason.lua](#mason.lua)
+
 [ZSH-Shell & powerlevel10k](#ZSH-Shell--powerlevel10k)
 - [ZSH Shell:](#ZSH-Shell:)
 - [Oh-My-ZSH](#Oh-My-ZSH)
