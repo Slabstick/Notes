@@ -26,7 +26,7 @@
 	- [Node](#Node)
 		- [nvm](#nvm)
 		- [Node & npm installieren](#Node--npm-installieren)
-	- [Neovim](#Neovim)
+	- [Neovim](#Neovim-work-in-progress)
 		- [Neovim installieren](#Neovim-installieren)
 		- [Konfiguration & Erweiterungen](#Konfiguration--Erweiterungen)
 			- [Chris' Konfigurationsdatei](#Chris-Konfigurationsdatei)
