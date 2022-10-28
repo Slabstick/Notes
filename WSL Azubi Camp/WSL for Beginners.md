@@ -35,7 +35,7 @@
 			- [mason.lua](#masonlua)
 
 [ZSH-Shell & powerlevel10k](#ZSH-Shell--powerlevel10k)
-- [ZSH Shell:](#ZSH-Shell:)
+- [ZSH Shell](#ZSH-Shell)
 - [Oh-My-ZSH](#Oh-My-ZSH)
 - [NerdFonts Meslo](#NerdFonts-Meslo)
 - [Powerlevel10k](#Powerlevel10k)
