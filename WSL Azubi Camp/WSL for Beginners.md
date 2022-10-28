@@ -3,39 +3,39 @@
 ---
 ## Inhalt
 
-[Installation WSL2](<#Installation WSL2>)
+[Installation WSL2](<#Installation-WSL2>)
 - [Voraussetzungen](#Voraussetzungen)
 - [Powershell](#Powershell)
 - [Ubuntu](#Ubuntu)
 	- [Update & Upgrade des Packagemanagers](<#Update--Upgrade-des-Packagemanagers>)
-	- [Ubuntu auf die neueste Version upgraden](#Ubuntu%20auf%20die%20neueste%20Version%20upgraden)
-	- [Personal Package Archive (PPA)](#Personal%20Package%20Archive%20(PPA))
+	- [Ubuntu auf die neueste Version upgraden](<#Ubuntu-auf-die-neueste-Version-upgraden>)
+	- [Personal Package Archive (PPA)](<#Personal-Package-Archive-(PPA)>)
 [Verwendung](#Verwendung)
-- [Zugriff auf Linuxdateien in Windows](#Zugriff%20auf%20Linuxdateien%20in%20Windows)
-- [Zugriff auf Windowsdateien in Linux](#Zugriff%20auf%20Windowsdateien%20in%20Linux)
-- [Remote Development in VSCode](#Remote%20Development%20in%20VSCode)
-- [Remote Development in IntelliJ Idea](#Remote%20Development%20in%20IntelliJ%20Idea)
-- [Apache Server](#Apache%20Server)
-- [Programme mit graphischer Oberfläche (x11)](#Programme%20mit%20graphischer%20Oberfläche%20(x11))
-- [Development in Neovim](#Development%20in%20Neovim)
-	- [Voraussetzungen für Neovim](#Voraussetzungen%20für%20Neovim)
+- [Zugriff auf Linuxdateien in Windows](<#Zugriff-auf-Linuxdateien-in-Windows>)
+- [Zugriff auf Windowsdateien in Linux](<#Zugriff-auf-Windowsdateien-in-Linux>)
+- [Remote Development in VSCode](<#Remote-Development-in-VSCode>)
+- [Remote Development in IntelliJ Idea](<#Remote-Development-in-IntelliJ-Idea>)
+- [Apache Server](#Apache-Server)
+- [Programme mit graphischer Oberfläche (x11)](#Programme-mit-graphischer-Oberfläche-(x11))
+- [Development in Neovim](#Development-in-Neovim)
+	- [Voraussetzungen für Neovim](#Voraussetzungen-für-Neovim)
 		- [unzip](#unzip)
 		- [C-Compiler](#C-Compiler)
 		- [Java](#Java)
 	- [Node](#Node)
 		- [nvm](#nvm)
-		- [Node & npm installieren](#Node%20&%20npm%20installieren)
+		- [Node & npm installieren](#Node--npm-installieren)
 	- [Neovim](#Neovim)
-		- [Neovim installieren](#Neovim%20installieren)
-		- [Konfiguration & Erweiterungen](#Konfiguration%20&%20Erweiterungen)
-			- [Chris' Konfigurationsdatei](#Chris'%20Konfigurationsdatei)
+		- [Neovim installieren](#Neovim-installieren)
+		- [Konfiguration & Erweiterungen](#Konfiguration-&-Erweiterungen)
+			- [Chris' Konfigurationsdatei](#Chris'-Konfigurationsdatei)
 			- [Debugger](#Debugger)
 			- [ftplugin/java.lua](#ftplugin/java.lua)
 			- [mason.lua](#mason.lua)
-[ZSH-Shell & powerlevel10k](#ZSH-Shell%20&%20powerlevel10k)
-- [ZSH Shell:](#ZSH%20Shell:)
+[ZSH-Shell & powerlevel10k](#ZSH-Shell--powerlevel10k)
+- [ZSH Shell:](#ZSH-Shell:)
 - [Oh-My-ZSH](#Oh-My-ZSH)
-- [NerdFonts Meslo](#NerdFonts%20Meslo)
+- [NerdFonts Meslo](#NerdFonts-Meslo)
 - [Powerlevel10k](#Powerlevel10k)
 
 ---
@@ -60,7 +60,7 @@ Damit lassen sich später auch mehrere Distros gleichzeitig installieren.
 > Wenn WSL bereits installiert ist, funktioniert `wsl --install` nicht. In dem Fall muss man direkt eine Distribution mit `wsl --install -d` auswählen.
 > 
 
-![](Screenshot_19%201.png)
+![](Screenshot_19-1.png)
 
 
 Eine weitere Möglichkeit Distros zu installieren (Wenn sie z.B. nicht in der Liste aufgelistet werden), ist es sie als .exe Datei herunterzuladen. Beispiel "Arch Linux": [yuk7/ArchWSL auf Github](https://github.com/yuk7/ArchWSL/releases/latest)
@@ -72,7 +72,7 @@ Eine weitere Möglichkeit Distros zu installieren (Wenn sie z.B. nicht in der Li
 
 ![](Screenshot_25.png)
 
-Sobald man Ubuntu zum ersten Mal gestartet und einen Nutzernamen und ein Passwort gesetzt hat, startet man automatisch im HOME Directory (~). Wenn man möchte kann man auch sofort loslegen, ich persönlich finde es aber etwas zu langweilig und mache mich immer erst daran mit ZSH eine andere Shell zu installieren, die mir die Möglichkeit gibt Plugins zu installieren, welche mir die Konsole etwas aufhübscht. Siehe dazu: [ZSH-Shell & powerlevel10k](#ZSH-Shell%20&%20powerlevel10k)
+Sobald man Ubuntu zum ersten Mal gestartet und einen Nutzernamen und ein Passwort gesetzt hat, startet man automatisch im HOME Directory (~). Wenn man möchte kann man auch sofort loslegen, ich persönlich finde es aber etwas zu langweilig und mache mich immer erst daran mit ZSH eine andere Shell zu installieren, die mir die Möglichkeit gibt Plugins zu installieren, welche mir die Konsole etwas aufhübscht. Siehe dazu: [ZSH-Shell & powerlevel10k](#ZSH-Shell-&-powerlevel10k)
 
 #### Update & Upgrade des Packagemanagers
 
@@ -254,11 +254,11 @@ Mit Node sollte nun auch npm installiert sein. Überprüfen können wir das per 
 
 Jetzt ist ein guter Zeitpunkt Neovim zu installieren. Neovim ist ein moderner Fork von Vim, der es ermöglicht eine zeitgemäße Entwicklungsumgebung in Linux zu nutzen ohne auf die klassische Schlichtheit von Vim verzichten zu müssen. 
 
-Wichtig ist erst einmal sicherzustellen, dass Ubuntu und der Packagemanager auf dem neusten Stand sind (siehe [Update & Upgrade des Packagemanagers](#Update%20&%20Upgrade%20des%20Packagemanagers))
+Wichtig ist erst einmal sicherzustellen, dass Ubuntu und der Packagemanager auf dem neusten Stand sind (siehe [Update & Upgrade des Packagemanagers](#Update-&-Upgrade-des-Packagemanagers))
 
 Jetzt könnten wir Neovim per `sudo apt install neovim` installieren, würden in den meisten Fällen aber eine veraltete Version bekommen. Um Funktionen wie z.B. Languageserver und Debugger nutzen zu können, müssen wir sicherstellen, die neueste Version von Neovim zu installieren.
 
-Dies machen wir per [Personal Package Archive (PPA)](#Personal%20Package%20Archive%20(PPA)):
+Dies machen wir per [Personal Package Archive (PPA)](#Personal-Package-Archive-(PPA)):
 
 Wir haben die Wahl zwischen der Stable oder Unstable Version von Neovim. Da zum aktuellen Zeitpunkt die unstable Version auf 0.9 liegt, die stable aber erst auf 0.7, entscheide ich mich für die Unstable und damit die Neueste.
 
@@ -452,7 +452,7 @@ Dadurch bekommt man auch die Option ZSH als Standard Shell zu aktivieren.
 
 ### NerdFonts Meslo
 
-Spätenstens für den nächsten Schritt benötigt man eine Schriftart, die Icons unterstützt. Empfohlen wird "Meslo NF", auf [nerdfonds.com](https://www.nerdfonts.com) werden aber viele weitere angeboten. Hier kann [MesloNF](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf) direkt heruntergeladen werden.
+Spätenstens für den nächsten Schritt benötigt man eine Schriftart, die Icons unterstützt. Empfohlen wird "Meslo NF", auf [nerdfonds.com](https://www.nerdfonts.com) werden aber viele weitere angeboten. Hier kann [MesloNF](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS-NF-Regular.ttf) direkt heruntergeladen werden.
 
 ### Powerlevel10k
 
