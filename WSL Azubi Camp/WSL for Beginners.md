@@ -32,7 +32,6 @@
 			- [Chris' Konfigurationsdatei](#Chris-Konfigurationsdatei)
 			- [Debugger](#Debugger)
 			- [ftplugin/java.lua](#ftpluginjavalua)
-			- [mason.lua](#masonlua)
 
 [ZSH-Shell & powerlevel10k](#ZSH-Shell--powerlevel10k)
 - [ZSH Shell](#ZSH-Shell)
@@ -48,7 +47,7 @@
 
 - Windows Terminal (Kostenlos im Windows Store als Windows Terminal Preview verfügbar)
 - Windows 10 - version 2004 (build 19041) oder höher (Auf Quinscape PC's gegeben)
-- Grundlegende Kentnisse mit Git und GitHub
+- WSLg: Windows 11
 
 ### Powershell
 
@@ -62,8 +61,7 @@ Damit lassen sich später auch mehrere Distros gleichzeitig installieren.
 > Wenn WSL bereits installiert ist, funktioniert `wsl --install` nicht. In dem Fall muss man direkt eine Distribution mit `wsl --install -d` auswählen.
 > 
 
-![](Screenshot_19-1.png)
-
+![](Screenshot_19%201.png)
 
 Eine weitere Möglichkeit Distros zu installieren (Wenn sie z.B. nicht in der Liste aufgelistet werden), ist es sie als .exe Datei herunterzuladen. Beispiel "Arch Linux": [yuk7/ArchWSL auf Github](https://github.com/yuk7/ArchWSL/releases/latest)
 
@@ -174,7 +172,7 @@ Ein paar weitere nützliche Apache2 Befehle:
 | Status | `sudo service apache2 status` |
 
 
-### Programme mit graphischer Oberfläche (x11)
+### Programme mit graphischer Oberfläche (x11 & Wayland)
 
 Auf Windows 11 lassen sich mit WSL graphische Programme starten und wie Desktop Apps starten. Um das auch auf Windows 10 zu können, muss man leider zusätzlich einen X11 Server installieren. 
 
@@ -190,7 +188,7 @@ Wenn das funktioniert, dann sollte man auch Programme wie GIMP oder Audacity etc
 
 ### Development in Neovim
 
-Dieser Punkt ist sehr umfassend, sehr optional und unterteilt in zwei Unterpunkte. Der erste befasst sich mit der Installation von Node, was einerseits die Voraussetzung für JavaScript- und Webentwicklung darstellt, aber gleichzeitig auch Voraussetzung für den zweiten Punkt ist: Java Entwicklung in Neovim. 
+Dieser Punkt ist sehr umfassend, sehr optional und sehr "Work in Progress". Er ist unterteilt in mehrere Unterpunkte: Der erste befasst sich mit der Installation von Node, was einerseits die Voraussetzung für JavaScript- und Webentwicklung darstellt, aber gleichzeitig auch Voraussetzung für den zweiten Punkt ist: Java Entwicklung in Neovim. 
 Um eine zuverlässige und moderne Umgebungsentwicklung für Java in Neovim aufzubauen, brauchen wir Werkzeuge, die wir nur mithilfe des Node Packacke Managers "npm" bekommen können. 
 
 >Nocheinmal: Dieser Punkt ist optional und zeigt was nur in einer Konsole dank einer sehr eifrigen Community möglich ist. Der einzige Vorteil gegenüber klassischen IDE's ist maximal, dass man sich seine eigene IDE zusammenbauen und auf jegliche Ablenkungen verzichten kann, die man nicht benötigt.
@@ -220,9 +218,9 @@ Bevor wir Neovim für die Java Entwicklung nutzen können, benötigen wir natür
 Mit `sudo apt install openjdk-18-jdk` kann man die JDK Version 18 installieren und sofort nutzen.
 
 
-### Node
+#### Node
 
-#### nvm
+##### nvm
 
 Zunächst installieren wir den Node Version Manager nvm:
 
@@ -237,7 +235,7 @@ Die aktuelle Version von nvm erfragen wir per `nvm --version`
 
 ![](Screenshot_36.png)
 
-#### Node & npm installieren
+##### Node & npm installieren
 
 Mit nvm können wir nun per `nvm install node` Node installieren.
 
@@ -250,17 +248,17 @@ Mit Node sollte nun auch npm installiert sein. Überprüfen können wir das per 
 
 ### Neovim (Work in Progress!)
 
->Dieser Bereich wird noch überarbeitet und Dinge hinzugefügt, da wir hier eine eigene auf Vim aufgebaute IDE bauen.
+>Dieser Bereich wird noch überarbeitet und Dinge hinzugefügt und entfernt, da wir hier eine eigene auf Vim aufgebaute IDE bauen. 
 
 #### Neovim installieren
 
 Jetzt ist ein guter Zeitpunkt Neovim zu installieren. Neovim ist ein moderner Fork von Vim, der es ermöglicht eine zeitgemäße Entwicklungsumgebung in Linux zu nutzen ohne auf die klassische Schlichtheit von Vim verzichten zu müssen. 
 
-Wichtig ist erst einmal sicherzustellen, dass Ubuntu und der Packagemanager auf dem neusten Stand sind (siehe [Update & Upgrade des Packagemanagers](#Update-&-Upgrade-des-Packagemanagers))
+Wichtig ist erst einmal sicherzustellen, dass Ubuntu und der Packagemanager auf dem neusten Stand sind (siehe [Update & Upgrade des Packagemanagers](#Update--Upgrade-des-Packagemanagers))
 
 Jetzt könnten wir Neovim per `sudo apt install neovim` installieren, würden in den meisten Fällen aber eine veraltete Version bekommen. Um Funktionen wie z.B. Languageserver und Debugger nutzen zu können, müssen wir sicherstellen, die neueste Version von Neovim zu installieren.
 
-Dies machen wir per [Personal Package Archive (PPA)](#Personal-Package-Archive-(PPA)):
+Dies machen wir per [Personal Package Archive (PPA)](#Personal-Package-Archive-PPA):
 
 Wir haben die Wahl zwischen der Stable oder Unstable Version von Neovim. Da zum aktuellen Zeitpunkt die unstable Version auf 0.9 liegt, die stable aber erst auf 0.7, entscheide ich mich für die Unstable und damit die Neueste.
 
@@ -412,23 +410,13 @@ Ein paar Zeilen weiter oben finden wir eine weitere Zeile in der wir "`/lsp_serv
 
 ![](Screenshot_56.png)
 
-Mit `:wq` speichern und schließen wir Neovim nun.
-
-##### mason.lua
-
-Als nächstes öffnen wir die Datei `~/.config/nvim/lua/user/lsp/mason.lua` und fügen folgendes in Zeile 2 ein:
-
-```
-"jdtls",
-```
-
-Die ersten Zeilen der Datei sollten nun so aussehen:
-
-![](Screenshot_55.png)
-
-Wenn wir nun die Datei speichern und schließen und daraufhin eine .java Datei öffnen, sollte nach ein paar Sekunden der Java LSP starten.
+Wenn wir nun die Datei mit `:wq` speichern und schließen und daraufhin eine .java Datei öffnen, sollte nach ein paar Sekunden der Java LSP starten.
 
 ![](Screenshot_57.png)
+
+>An dieser Stelle stecke ich aktuell fest und bekomme den Debugger nicht zum Laufen. Updates folgen!
+>Wer es selbst testen möchte: Die Tastenfolge "Space-d-b" setzt einen Breakpoint (funktioniert) und "Space-d-c" startet den Debugger (funktioniert aktuell nicht, da die Konfiguration nicht stimmt)
+
 
 ---
 

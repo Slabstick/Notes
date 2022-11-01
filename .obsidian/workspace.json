@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1d5247d35cde0910",
+        "id": "e9c300905bc0f05d",
         "type": "tabs",
         "children": [
           {
-            "id": "5e37380be2a58d53",
+            "id": "548ef951a2f39ed8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -144,17 +144,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "5e37380be2a58d53",
+  "active": "cd13a900051d71cc",
   "lastOpenFiles": [
-    "WSL Azubi Camp/Installation WSL2.md",
+    "WSL Azubi Camp/Screenshot_19-1.png.md",
     "WSL Azubi Camp/WSL for Beginners.md",
+    "WSL Azubi Camp/Installation WSL2.md",
     "README.md",
     "ToDo.md",
     "WSL Azubi Camp/Screenshot_19.png.md",
     "WSL Azubi Camp/Screenshot_23.png",
     "WSL Azubi Camp/Screenshot_22.png",
     "WSL Azubi Camp/Screenshot_19 1.png",
-    "WSL Azubi Camp/Screenshot_25.png",
-    "www.nerdfonts.com.md"
+    "WSL Azubi Camp/Screenshot_25.png"
   ]
 }
