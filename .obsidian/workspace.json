@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Taschenrechner.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "69d7d6831f26eca7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WSL Azubi Camp/Neovim (Work in Progress).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Taschenrechner.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Taschenrechner.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Taschenrechner.md"
+                "file": "WSL Azubi Camp/WSL for Beginners.md"
               }
             }
           },
@@ -146,15 +158,15 @@
   },
   "active": "548ef951a2f39ed8",
   "lastOpenFiles": [
+    "WSL Azubi Camp/Neovim (Work in Progress).md",
     "WSL Azubi Camp/WSL for Beginners.md",
+    "Taschenrechner.md",
     "WSL Azubi Camp/Fragen.md",
     "WSL Azubi Camp/Screenshot_19-1.png.md",
     "WSL Azubi Camp/Installation WSL2.md",
     "README.md",
     "ToDo.md",
     "WSL Azubi Camp/Screenshot_19.png.md",
-    "WSL Azubi Camp/Screenshot_23.png",
-    "WSL Azubi Camp/Screenshot_22.png",
-    "WSL Azubi Camp/Screenshot_19 1.png"
+    "WSL Azubi Camp/Screenshot_23.png"
   ]
 }
