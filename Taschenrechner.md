@@ -30,8 +30,13 @@ Erweiterungen:
     Das Programm kann Klammersetzung auflösen und anwenden (5+5)*4
 ```
 
-Alles Englisch (Kommentare könne deutsch sein)
+Alles Englisch (Kommentare dürfen deutsch sein)
 
 ## Eigene Ideen:
 
 - Das ganze gleichzeitig in JS coden und mit einem React Frontend verbinden.
+
+## Weiterführende Links:
+
+- [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
+- 

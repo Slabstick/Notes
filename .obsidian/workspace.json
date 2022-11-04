@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "file": "Taschenrechner.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DNA Sequencing.md",
+                "file": "Taschenrechner.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DNA Sequencing.md",
+                "file": "Taschenrechner.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DNA Sequencing.md"
+                "file": "Taschenrechner.md"
               }
             }
           },
@@ -169,17 +168,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "cd13a900051d71cc",
+  "active": "548ef951a2f39ed8",
   "lastOpenFiles": [
     "WSL Azubi Camp/WSL for Beginners.md",
     "WSL Azubi Camp/Neovim (Work in Progress).md",
+    "DNA Sequencing.md",
     "Taschenrechner.md",
     "WSL Azubi Camp/Fragen.md",
     "WSL Azubi Camp/Screenshot_19-1.png.md",
     "WSL Azubi Camp/Installation WSL2.md",
     "README.md",
     "ToDo.md",
-    "WSL Azubi Camp/Screenshot_19.png.md",
-    "WSL Azubi Camp/Screenshot_23.png"
+    "WSL Azubi Camp/Screenshot_19.png.md"
   ]
 }
