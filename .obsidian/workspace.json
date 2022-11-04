@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "e76787c33b94643b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DNA Sequencing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "69d7d6831f26eca7",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "file": "DNA Sequencing.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "file": "DNA Sequencing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md"
+                "file": "DNA Sequencing.md"
               }
             }
           },
@@ -156,10 +169,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "548ef951a2f39ed8",
+  "active": "cd13a900051d71cc",
   "lastOpenFiles": [
-    "WSL Azubi Camp/Neovim (Work in Progress).md",
     "WSL Azubi Camp/WSL for Beginners.md",
+    "WSL Azubi Camp/Neovim (Work in Progress).md",
     "Taschenrechner.md",
     "WSL Azubi Camp/Fragen.md",
     "WSL Azubi Camp/Screenshot_19-1.png.md",
