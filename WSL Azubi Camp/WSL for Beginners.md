@@ -442,7 +442,11 @@ Dadurch bekommt man auch die Option ZSH als Standard Shell zu aktivieren.
 
 ### NerdFonts Meslo
 
-Spätenstens für den nächsten Schritt benötigt man eine Schriftart, die Icons unterstützt. Empfohlen wird "Meslo NF", auf [nerdfonds.com](https://www.nerdfonts.com) werden aber viele weitere angeboten. Hier kann [MesloNF](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS-NF-Regular.ttf) direkt heruntergeladen werden.
+Spätenstens für den nächsten Schritt benötigt man eine Schriftart, die Icons unterstützt. Empfohlen wird "Meslo NF", auf [nerdfonds.com](https://www.nerdfonts.com) werden aber viele weitere angeboten. Hier kann [MesloNF](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf) direkt heruntergeladen werden.
+
+Nach der Installation muss diese im Terminal eingestellt werden. In Windows Terminal geht das unter `Settings > Profiles > Defaults > Appearence > Text > Font face` 
+
+![](Screenshot_8.png)
 
 ### Powerlevel10k
 
