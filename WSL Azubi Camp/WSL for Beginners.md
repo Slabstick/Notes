@@ -257,6 +257,12 @@ Da Neovim relativ neu und die Community sehr aktiv ist, werden beinahe monatlich
 
 ---
 
+## Docker
+
+- Docker for Windows
+- WSL Mode auswählen
+
+
 ## ZSH-Shell & powerlevel10k
 
 ### ZSH Shell

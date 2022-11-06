@@ -11,8 +11,12 @@
             "id": "548ef951a2f39ed8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "WSL Azubi Camp/WSL for Beginners.md"
+              }
             }
           },
           {
@@ -136,8 +144,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "cd13a900051d71cc",
+  "active": "548ef951a2f39ed8",
   "lastOpenFiles": [
+    "Notes.md",
     "README.md",
     "Git Befehle.md",
     "WSL Azubi Camp/WSL for Beginners.md",
@@ -146,7 +155,6 @@
     "ToDo.md",
     "WSL Azubi Camp/Screenshot_19.png.md",
     "WSL Azubi Camp/Screenshot_23.png",
-    "WSL Azubi Camp/Screenshot_22.png",
-    "WSL Azubi Camp/Screenshot_19 1.png"
+    "WSL Azubi Camp/Screenshot_22.png"
   ]
 }
