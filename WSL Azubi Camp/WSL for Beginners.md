@@ -255,6 +255,11 @@ Außerdem empfehle ich statt eine eigene IDE zu bauen, den Neovim Fork "LunarVim
 Da Neovim relativ neu und die Community sehr aktiv ist, werden beinahe monatlich neue Versionen des Programms und täglich neue Versionen der Plugins hochgeladen, daher ist es fast unmöglich eine stabile IDE zusammenzusetzen. 
 
 
+### LunarVim
+
+- Einfachere Installation
+- 
+
 ---
 
 ## Docker
@@ -315,9 +320,13 @@ Um die Shell neuzustarten, gibt man nun `exec zsh` ein und es sollte die Erstkon
 
 ![](Screenshot_28.png)
 
-Wenn alles korrekt eingestellt ist, sollte die Shell jetzt etwa so ausschauen:
+Wenn alles korrekt eingestellt ist, könnte die Shell jetzt etwa so ausschauen:
 
 ![](Screenshot_29.png)
+
+### Autostart SSH Agent
+
+
 
 ---
 
