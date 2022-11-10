@@ -39,4 +39,11 @@ Alles Englisch (Kommentare dürfen deutsch sein)
 ## Weiterführende Links:
 
 - [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
+- [String Tokenizer](https://www.javatpoint.com/string-tokenizer-in-java)
 - 
+
+## Zweite Aufgabe
+
+3 Klassen: 1 Main, 1 Calculator, 1 Reader
+Keine Static Methoden
+Clean Code: sprechende Namen für Methoden & Variablen
