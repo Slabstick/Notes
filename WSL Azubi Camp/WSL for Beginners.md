@@ -40,6 +40,7 @@
 - [Oh-My-ZSH](#Oh-My-ZSH)
 - [NerdFonts Meslo](#NerdFonts-Meslo)
 - [Powerlevel10k](#Powerlevel10k)
+- [Autostart SSH Agent](#Autostart-SSH-Agent)
 
 ---
 
@@ -198,10 +199,9 @@ Wenn das funktioniert, dann sollte man auch Programme wie GIMP oder Audacity etc
 
 ### Development in Neovim
 
-Dieser Punkt ist sehr umfassend, sehr optional und sehr "Work in Progress". Er ist unterteilt in mehrere Unterpunkte: Der erste befasst sich mit der Installation von Node, was einerseits die Voraussetzung für JavaScript- und Webentwicklung darstellt, aber gleichzeitig auch Voraussetzung für den zweiten Punkt ist: Java Entwicklung in Neovim. 
-Um eine zuverlässige und moderne Umgebungsentwicklung für Java in Neovim aufzubauen, brauchen wir Werkzeuge, die wir nur mithilfe des Node Packacke Managers "npm" bekommen können. 
+Dieser Punkt ist sehr umfassend, sehr optional und sehr "Work in Progress". Er ist unterteilt in mehrere Unterpunkte: Voraussetzungen, NeoVim und der Alternative zur manuellen Konfiguration LunarVim. 
 
->Nocheinmal: Dieser Punkt ist optional und zeigt was nur in einer Konsole dank einer sehr eifrigen Community möglich ist. Der einzige Vorteil gegenüber klassischen IDE's ist maximal, dass man sich seine eigene IDE zusammenbauen und auf jegliche Ablenkungen verzichten kann, die man nicht benötigt.
+>Dieser Punkt ist optional und zeigt was nur in einer Konsole dank einer sehr eifrigen Community möglich ist. Der einzige Vorteil gegenüber klassischen IDE's ist maximal, dass man sich seine eigene IDE zusammenbauen und auf jegliche Ablenkungen verzichten kann, die man nicht benötigt und gleichzeitig lernt aus wie vielen Einzelteilen eine IDE heutzutage besteht.
 >Viele Programmierer bevorzugen das Entwickeln in Neovim, aber es ist bei weitem nicht jedermanns Sache.
 
 
@@ -332,6 +332,22 @@ Wenn alles korrekt eingestellt ist, könnte die Shell jetzt etwa so ausschauen:
 
 ### Autostart SSH Agent
 
+Wenn man mit SSH Keys arbeiten möchte (z.B. für GitHub) muss man in WSL leider jedesmal den SSH Agent starten und die SSH Keys einlesen. Um das zu vereinfachen empfehle ich dies in den Autostart zu skripten.
+
+Meine Lösung hier war es die Konfiguration von ZSH aufzurufen und folgende Befehle an den Anfang der Datei zu setzen:
+
+```
+
+# start ssh agent on startup and add keys
+eval $(ssh-agent) > /dev/null
+ssh-add ~/.ssh/path/to/keys > /dev/null 2>&1
+
+```
+
+Dies wird bei jedem Starten oder Neuladen der Shell den Agent starten, die ssh Keys aus dem entsprechenden Ordner einlesen und diese direkt verfügbar machen. Wichtig ist es den Ordner in dem die Keys liegen zu ändern.
+
+Außerdem versteckt diese Konfiguration die Ausgabe in die Konsole. Ohne die Anhänge `> dev/null` 
+sieht man jedesmal beim Neustart der Shell auch die Konsolenausgabe.
 
 
 ---
