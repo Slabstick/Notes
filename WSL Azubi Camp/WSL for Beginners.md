@@ -3,6 +3,7 @@
 ---
 ## Inhalt
 
+[Vorwort](#Vorwort)
 [Installation WSL2](#Installation-WSL2)
 - [Voraussetzungen](#Voraussetzungen)
 - [Powershell](#Powershell)
@@ -44,6 +45,10 @@
 - [Autostart SSH Agent](#Autostart-SSH-Agent)
 
 ---
+
+## Vorwort
+
+Kurz vorweg: Dieses Dokument ist im Verlauf mehrerer Wochen entstanden, in denen ich viel Zeit hatte. Manche Teile sind zu Beginn meiner WSL Reise geschrieben worden, manche gegen "Ende". Das sieht man vor Allem an den Screenshots in denen sich die Oberfläche des Terminals immer wieder ändert. Ich bitte das zu entschuldigen, ich hatte zum Ende hin nicht mehr die Muße jeden Screenshot nocheinmal zu ersetzen um dieses Dokument stilistisch uniform zu halten.
 
 ## Installation WSL2 
 
@@ -361,6 +366,8 @@ gacp() {
 Diese ist offensichtlich nicht für Repos gedacht, die code beinhalten, sondern für solche, die keine besonderen Commitmessages benötigen. Was diese kurze Skript nämlich macht ist automatisch alle Änderungen adden, committen und pushen mit nur einem Befehl. Die Commitnachricht, die hier angefügt wird, ist ein simpler Zeitstempel. Ich nutze diesen Befehl hauptsächlich für diese Notizen, da mich nicht interessiert, was genau geändert wurde.
 
 Auf meinem privaten PC habe ich diesen Befehl natürlich angepasst und statt Laptop "Desktop" hineingeschrieben.
+
+![](Screenshot_64.png)
 
 ### Autostart SSH Agent
 
