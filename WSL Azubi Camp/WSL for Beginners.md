@@ -40,6 +40,7 @@
 - [Oh-My-ZSH](#Oh-My-ZSH)
 - [NerdFonts Meslo](#NerdFonts-Meslo)
 - [Powerlevel10k](#Powerlevel10k)
+- [Konfiguration ZSH](#Konfiguration-ZSH)
 - [Autostart SSH Agent](#Autostart-SSH-Agent)
 
 ---
@@ -329,6 +330,37 @@ Um die Shell neuzustarten, gibt man nun `exec zsh` ein und es sollte die Erstkon
 Wenn alles korrekt eingestellt ist, könnte die Shell jetzt etwa so ausschauen:
 
 ![](Screenshot_29.png)
+
+
+### Konfiguration ZSH
+
+Die ZSH Shell lässt sich sehr einfach konfigurieren. Dafür ruft man mit einem beliebigen Textbearbeitungsprogramm die Datei `~/.zhsrc` auf (z.B. `nano ~/.zshrc` oder `nvim ~/.zhsrc`) und fügt dort eigene Zeilen hinzu. Welche zur Verfügung stehen, findet man direkt dort in den Kommentaren. 
+
+Hier ein paar Zeilen, die ich eingefügt habe:
+
+```
+alias zshconfig="lvim ~/.zshrc"
+alias c="clear"
+alias vim="lvim"
+alias v="lvim"
+alias ez="exec zhs"
+```
+
+Dies ist eine Ansammlung von Alias', die mir das Leben vereinfachen. 
+
+Außerdem habe ich weitere Alias', die mich mit nur einem Buchstaben in den Windows Dokumenten Ordner bringen, damit ich nicht jedesmal `cd mnt/c/user/username/Documents/Foo/Bar/` eingeben muss.
+
+Eine weitere Vereinfachung, um Repos schnell mit Git und Github zu verarbeiten lautet wie folgt:
+
+```
+gacp() {
+  git add -A && git commit -m "Laptop Backup $(date)" && git push
+}
+```
+
+Diese ist offensichtlich nicht für Repos gedacht, die code beinhalten, sondern für solche, die keine besonderen Commitmessages benötigen. Was diese kurze Skript nämlich macht ist automatisch alle Änderungen adden, committen und pushen mit nur einem Befehl. Die Commitnachricht, die hier angefügt wird, ist ein simpler Zeitstempel. Ich nutze diesen Befehl hauptsächlich für diese Notizen, da mich nicht interessiert, was genau geändert wurde.
+
+Auf meinem privaten PC habe ich diesen Befehl natürlich angepasst und statt Laptop "Desktop" hineingeschrieben.
 
 ### Autostart SSH Agent
 
