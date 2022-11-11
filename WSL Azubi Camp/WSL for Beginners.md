@@ -17,6 +17,7 @@
 - [Remote Development in VSCode](#Remote-Development-in-VSCode)
 - [Remote Development in IntelliJ Idea](#Remote-Development-in-IntelliJ-Idea)
 - [Apache Server](#Apache-Server)
+- [Docker](#Docker)
 - [Programme mit graphischer Oberfläche (x11)](#Programme-mit-graphischer-Oberfläche-x11)
 - [Development in Neovim](#Development-in-Neovim)
 	- [Voraussetzungen für Neovim](#Voraussetzungen-für-Neovim)
@@ -32,6 +33,7 @@
 			- [Chris' Konfigurationsdatei](#Chris-Konfigurationsdatei)
 			- [Debugger](#Debugger)
 			- [ftplugin/java.lua](#ftpluginjavalua)
+	- [LunarVim](#LunarVim)
 
 [ZSH-Shell & powerlevel10k](#ZSH-Shell--powerlevel10k)
 - [ZSH Shell](#ZSH-Shell)
@@ -172,6 +174,14 @@ Ein paar weitere nützliche Apache2 Befehle:
 | Status | `sudo service apache2 status` |
 
 
+### Docker
+
+Eine weitere Möglichkeit WSL zur Entwicklung zu nutzen ist es, Docker im WSL Modus zu nutzen. Das hat den Vorteil, dass man Docker Container direkt im Serverbetrieb testen kann, ohne diese erst auf einen Server zu installieren müssen. Hat man WSL2 installiert, sollte uns Docker die Option geben, den WSL2 Modus zu aktivieren. Hier empfiehlt es sich den Quellcode auch im Linux Dateisystem zu speichern. 
+
+Mehr Informationen dazu in den Docker Docs: [Docker WSL](https://docs.docker.com/desktop/windows/wsl/)
+
+> Eine Sache, die auf Windows 10 (zumindest auf den QS Laptops) leider nicht möglich ist, ist es den Docker Container im Netzwerk freizugeben. Windows versteckt die Linux IP hinter der Firewall und um diese offenzulegen, ist zu viel Manipulation an der Firewall nötig. Einfacher ist es auf Windows 11, da man hier die Möglichkeit hat per Hyper-V eine Brücke zwischen beiden IP's aufzubauen. 
+
 ### Programme mit graphischer Oberfläche (x11 & Wayland)
 
 Auf Windows 11 lassen sich mit WSL graphische Programme starten und wie Desktop Apps starten. Um das auch auf Windows 10 zu können, muss man leider zusätzlich einen X11 Server installieren. 
@@ -250,23 +260,19 @@ Mit Node sollte nun auch npm installiert sein. Überprüfen können wir das per 
 
 Eigentlich stand hier ein ellenlanger Absatz darüber wie man Neovim so konfiguriert, dass man es als eigenständige IDE nutzen kann, da ich aber nicht herausfinden kann, wie man den Debugger funktionierend installieren kann, habe ich diesen verschoben und setze hier nur einen Verweis dorthin: [Neovim (Work in Progress)](Neovim%20(Work%20in%20Progress).md)
 
-Außerdem empfehle ich statt eine eigene IDE zu bauen, den Neovim Fork "LunarVim" zu installieren. Dieses findet man hier und man hat wesentlich schneller eine funktionierende Version (auch hier leider ohne funkionierenden Debugger): https://www.lunarvim.org/
-
 Da Neovim relativ neu und die Community sehr aktiv ist, werden beinahe monatlich neue Versionen des Programms und täglich neue Versionen der Plugins hochgeladen, daher ist es fast unmöglich eine stabile IDE zusammenzusetzen. 
 
 
 ### LunarVim
 
-- Einfachere Installation
-- 
+Eine aktuell simplere Lösung Neovim als IDE nutzen zu können ist es, LunarVim zu installieren. Das hat den Vorteil, dass man nach Installation aller Voraussetzungen nur noch einen Skript abrufen muss, das uns ein Neovim Paket installiert, welches vorkonfiguriert ist:
+
+[LunarVim Homepage](https://www.lunarvim.org/)
+
+Dort findet man eine detaillierte Installationsanweisung und eine Dokumentation, wie man Lvim einstellen kann. Sobald mir klar geworden ist, wie ich den Java Debugger (und Testumgebung) konfigurieren kann, werde ich das hier nachreichen.
+
 
 ---
-
-## Docker
-
-- Docker for Windows
-- WSL Mode auswählen
-
 
 ## ZSH-Shell & powerlevel10k
 
