@@ -29,12 +29,7 @@
 	- [Node](#Node)
 		- [nvm](#nvm)
 		- [Node & npm installieren](#Node--npm-installieren)
-	- [Neovim](#Neovim-work-in-progress)
-		- [Neovim installieren](#Neovim-installieren)
-		- [Konfiguration & Erweiterungen](#Konfiguration--Erweiterungen)
-			- [Chris' Konfigurationsdatei](#Chris-Konfigurationsdatei)
-			- [Debugger](#Debugger)
-			- [ftplugin/java.lua](#ftpluginjavalua)
+	- [Neovim](#Neovim)
 	- [LunarVim](#LunarVim)
 
 [ZSH-Shell & powerlevel10k](#ZSH-Shell--powerlevel10k)
@@ -184,6 +179,8 @@ Ein paar weitere nützliche Apache2 Befehle:
 
 ### Docker
 
+> Wie ich im Nachhinein erfahren habe, dürfen wir auf den Quinscape Laptops nicht Docker Desktop installieren. Ich lasse diesen kurzen Abschnitt aber trotzdem stehen, um evtl. mögliche Neugierde dahingehend zu wecken.
+
 Eine weitere Möglichkeit WSL zur Entwicklung zu nutzen ist es, Docker im WSL Modus zu nutzen. Das hat den Vorteil, dass man Docker Container direkt im Serverbetrieb testen kann, ohne diese erst auf einen Server zu installieren müssen. Hat man WSL2 installiert, sollte uns Docker die Option geben, den WSL2 Modus zu aktivieren. Hier empfiehlt es sich den Quellcode auch im Linux Dateisystem zu speichern. 
 
 Mehr Informationen dazu in den Docker Docs: [Docker WSL](https://docs.docker.com/desktop/windows/wsl/)
@@ -263,7 +260,7 @@ Mit Node sollte nun auch npm installiert sein. Überprüfen können wir das per 
 ![](Screenshot_38.png)
 
 
-### Neovim (Work in Progress!)
+### Neovim
 
 Eigentlich stand hier ein ellenlanger Absatz darüber wie man Neovim so konfiguriert, dass man es als eigenständige IDE nutzen kann, da ich aber nicht herausfinden kann, wie man den Debugger funktionierend installieren kann, habe ich diesen verschoben und setze hier nur einen Verweis dorthin: [Neovim (Work in Progress)](Neovim%20(Work%20in%20Progress).md)
 
