@@ -46,6 +46,7 @@
 
 Kurz vorweg: Dieses Dokument ist im Verlauf mehrerer Wochen entstanden, in denen ich viel Zeit hatte. Manche Teile sind zu Beginn meiner WSL Reise geschrieben worden, manche gegen "Ende". Das sieht man vor Allem an den Screenshots in denen sich die Oberfläche des Terminals immer wieder ändert. Ich bitte das zu entschuldigen, ich hatte zum Ende hin nicht mehr die Muße jeden Screenshot nocheinmal zu ersetzen um dieses Dokument stilistisch uniform zu halten.
 
+
 ## Installation WSL2 
 
 ### Voraussetzungen
