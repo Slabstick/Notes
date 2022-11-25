@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "f2b2afcadc595f48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux Schulung.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0d75cb77d5c38000",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mermaid Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e76787c33b94643b",
             "type": "leaf",
             "state": {
@@ -44,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "file": "Mermaid Cheatsheet.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md",
+                "file": "Mermaid Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md"
+                "file": "Mermaid Cheatsheet.md"
               }
             }
           },
@@ -169,17 +193,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8c1437a14c06dca6",
+  "active": "0d75cb77d5c38000",
   "lastOpenFiles": [
-    "Taschenrechner.md",
-    "WSL Azubi Camp/WSL for Beginners.md",
+    "Linux Schulung.md",
+    "Mermaid Cheatsheet.md",
     "DNA Sequencing.md",
+    "WSL Azubi Camp/WSL for Beginners.md",
+    "Taschenrechner.md",
     "Git Befehle.md",
     "WSL Azubi Camp/Neovim (Work in Progress).md",
     "WSL Azubi Camp/Fragen.md",
     "WSL Azubi Camp/Screenshot_19-1.png.md",
-    "WSL Azubi Camp/Installation WSL2.md",
-    "README.md",
-    "ToDo.md"
+    "WSL Azubi Camp/Installation WSL2.md"
   ]
 }
