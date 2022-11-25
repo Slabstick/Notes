@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mermaid Cheatsheet.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mermaid Cheatsheet.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mermaid Cheatsheet.md",
+                "file": "WSL Azubi Camp/WSL for Beginners.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mermaid Cheatsheet.md"
+                "file": "WSL Azubi Camp/WSL for Beginners.md"
               }
             }
           },
@@ -195,10 +195,10 @@
   },
   "active": "0d75cb77d5c38000",
   "lastOpenFiles": [
-    "Linux Schulung.md",
     "Mermaid Cheatsheet.md",
-    "DNA Sequencing.md",
+    "Linux Schulung.md",
     "WSL Azubi Camp/WSL for Beginners.md",
+    "DNA Sequencing.md",
     "Taschenrechner.md",
     "Git Befehle.md",
     "WSL Azubi Camp/Neovim (Work in Progress).md",
