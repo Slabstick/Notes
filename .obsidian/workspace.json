@@ -68,6 +68,18 @@
             }
           },
           {
+            "id": "04e373a897335774",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Integration 15.12.2022.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e76787c33b94643b",
             "type": "leaf",
             "state": {
@@ -80,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Binärzahlen.md",
+                "file": "Data Integration 15.12.2022.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Binärzahlen.md",
+                "file": "Data Integration 15.12.2022.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Binärzahlen.md"
+                "file": "Data Integration 15.12.2022.md"
               }
             }
           },
@@ -205,8 +217,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "aed681a526ba17e0",
+  "active": "04e373a897335774",
   "lastOpenFiles": [
+    "Binärzahlen.md",
     "Mermaid Cheatsheet.md",
     "WSL Azubi Camp/WSL for Beginners.md",
     "Linux Schulung.md",
@@ -215,7 +228,6 @@
     "Git Befehle.md",
     "WSL Azubi Camp/Neovim (Work in Progress).md",
     "WSL Azubi Camp/Fragen.md",
-    "WSL Azubi Camp/Screenshot_19-1.png.md",
-    "WSL Azubi Camp/Installation WSL2.md"
+    "WSL Azubi Camp/Screenshot_19-1.png.md"
   ]
 }
