@@ -47,3 +47,8 @@ Alles Englisch (Kommentare dürfen deutsch sein)
 3 Klassen: 1 Main, 1 Calculator, 1 Reader
 Keine Static Methoden
 Clean Code: sprechende Namen für Methoden & Variablen
+
+### Reverse Polish Notation & Stack
+
+Link zum Video: https://quinscape365-my.sharepoint.com/personal/andre_feldmann_quinscape_de/_layouts/15/stream.aspx?id=%2Fpersonal%2Fandre%5Ffeldmann%5Fquinscape%5Fde%2FDocuments%2FAufnahmen%2FStacks%20und%20UPN%2D20221208%5F110602%2DBesprechungsaufzeichnung%2Emp4&ga=1
+
