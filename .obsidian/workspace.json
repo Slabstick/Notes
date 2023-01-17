@@ -8,90 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "548ef951a2f39ed8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DNA Sequencing.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c1437a14c06dca6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f2b2afcadc595f48",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux Schulung.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0d75cb77d5c38000",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mermaid Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aed681a526ba17e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Binärzahlen.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "04e373a897335774",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data Integration 15.12.2022.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6b019b4c68993ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "D&A Enterprise Application Integration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "00e3077688f7d738",
             "type": "leaf",
             "state": {
@@ -102,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e76787c33b94643b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DNA Sequencing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -254,15 +157,15 @@
   },
   "active": "00e3077688f7d738",
   "lastOpenFiles": [
-    "README.md",
-    "ToDo.md",
     "Azubi Camp 21.10.22.md",
-    "Gleitkommazahlen.md",
     "WSL Azubi Camp/WSL for Beginners.md",
-    "Taschenrechner.md",
-    "D&A Enterprise Application Integration.md",
-    "Binärzahlen.md",
+    "Linux Schulung.md",
     "Mermaid Cheatsheet.md",
-    "Linux Schulung.md"
+    "Binärzahlen.md",
+    "Data Integration 15.12.2022.md",
+    "D&A Enterprise Application Integration.md",
+    "ToDo.md",
+    "Taschenrechner.md",
+    "README.md"
   ]
 }
