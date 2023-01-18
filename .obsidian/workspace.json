@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "014504f9f9d71768",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Static, Final, Object vs. Classes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Taschenrechner.md",
+                "file": "Static, Final, Object vs. Classes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Taschenrechner.md",
+                "file": "Static, Final, Object vs. Classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Taschenrechner.md"
+                "file": "Static, Final, Object vs. Classes.md"
               }
             }
           },
@@ -155,8 +168,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "00e3077688f7d738",
+  "active": "014504f9f9d71768",
   "lastOpenFiles": [
+    "Taschenrechner.md",
     "Azubi Camp 21.10.22.md",
     "WSL Azubi Camp/WSL for Beginners.md",
     "Linux Schulung.md",
@@ -165,7 +179,6 @@
     "Data Integration 15.12.2022.md",
     "D&A Enterprise Application Integration.md",
     "ToDo.md",
-    "Taschenrechner.md",
     "README.md"
   ]
 }
