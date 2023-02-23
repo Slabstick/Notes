@@ -11,3 +11,17 @@ https://intern.quinscape.de/confluence/pages/viewpage.action?pageId=115867977
 
 https://intern.quinscape.de/bitbucket/projects/CA/repos/attendanceboard/browse
 
+## Beobachtungen
+
+- less statt css
+- typescript
+- Gradle Build -> Backend (Spring)
+	- install: `./gradlew build`
+	- start: `./gradlew startFrontend`
+- npm -> Frontend (Angular)
+	- install: `./src/main/webapp npm install`
+	- start: `./gradlew startBackend`
+
+- Funktioniert nicht mit Java 17. Keine Probleme mit Java 11.
+	- Error: `java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7`
+

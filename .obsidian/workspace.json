@@ -114,9 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fd956b669d792e7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Aufgabenstellung Anwesenheitsboard.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -252,13 +264,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36ac059dd48a0ff0",
+  "active": "fd956b669d792e7c",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Checklist Neues Projekt.md",
     "Aufgabenstellung Anwesenheitsboard.md",
+    "Untitled.md",
     "Mermaid Cheatsheet.md",
     "Data Integration 15.12.2022.md",
-    "Checklist Neues Projekt.md",
     "Git Befehle.md",
     "D&A Analytics 10.02.2023.md",
     "Daily 01.02.23.md",
