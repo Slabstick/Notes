@@ -4,131 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e9c300905bc0f05d",
+        "id": "fc76ecb66a4b46f3",
         "type": "tabs",
         "children": [
           {
-            "id": "00e3077688f7d738",
+            "id": "47b240db202e1fe2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Taschenrechner.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "014504f9f9d71768",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Static, Final, Object vs. Classes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8afc6638733e139c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WSL Azubi Camp/WSL for Beginners.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3bd6e31f78caa452",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b47af935f4bf9dca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Checklist Neues Projekt.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f164f20a00658709",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily 01.02.23.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "717d53b9ad04ff0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Checklist Neues Projekt.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "60f182d01430a99a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mermaid Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "36ac059dd48a0ff0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aufgabenstellung Anwesenheitsboard.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fd956b669d792e7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aufgabenstellung Anwesenheitsboard.md",
+                "file": "Aufgaben/TicTacToe.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#queue",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Aufgabenstellung Anwesenheitsboard.md",
+                "file": "Aufgaben/TicTacToe.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Aufgabenstellung Anwesenheitsboard.md",
+                "file": "Aufgaben/TicTacToe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Aufgabenstellung Anwesenheitsboard.md"
+                "file": "Aufgaben/TicTacToe.md"
               }
             }
           },
@@ -247,11 +138,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,17 +156,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd956b669d792e7c",
+  "active": "47b240db202e1fe2",
   "lastOpenFiles": [
+    "DNA Sequencing.md",
+    "Aufgaben/TicTacToe.md",
+    "Aufgaben/Taschenrechner.md",
+    "Dailies/Static, Final, Object vs. Classes.md",
+    "WSL Azubi Camp/WSL for Beginners.md",
     "Checklist Neues Projekt.md",
-    "Aufgabenstellung Anwesenheitsboard.md",
-    "Untitled.md",
+    "Dailies/Enums Equals - 01.02.23.md",
     "Mermaid Cheatsheet.md",
-    "Data Integration 15.12.2022.md",
+    "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",
+    "Aufgaben/Chat GPT.md",
+    "Dailies/Datenstrukturen (List, Set, Hashmap) - 08.03.23.md",
+    "Dailies/Binärzahlen.md",
+    "Dailies/Gleitkommazahlen.md",
     "Git Befehle.md",
-    "D&A Analytics 10.02.2023.md",
-    "Daily 01.02.23.md",
+    "ToDo.md",
     "README.md",
+    "Aufgaben",
+    "D&A",
+    "Dailies",
+    "D&A/Data Integration 15.12.2022.md",
+    "D&A/D&A Analytics 10.02.2023.md",
     "WSL Azubi Camp/Hallo.md"
   ]
 }
