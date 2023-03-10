@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aufgaben/TicTacToe.md",
+                "file": "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Aufgaben/TicTacToe.md",
+                "file": "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Aufgaben/TicTacToe.md",
+                "file": "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Aufgaben/TicTacToe.md"
+                "file": "Aufgaben/Aufgabenstellung Anwesenheitsboard.md"
               }
             }
           },
@@ -138,12 +138,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,12 +157,12 @@
   },
   "active": "47b240db202e1fe2",
   "lastOpenFiles": [
-    "DNA Sequencing.md",
+    "WSL Azubi Camp/WSL for Beginners.md",
     "Aufgaben/TicTacToe.md",
+    "Git Checklist Neues Projekt.md",
+    "DNA Sequencing.md",
     "Aufgaben/Taschenrechner.md",
     "Dailies/Static, Final, Object vs. Classes.md",
-    "WSL Azubi Camp/WSL for Beginners.md",
-    "Checklist Neues Projekt.md",
     "Dailies/Enums Equals - 01.02.23.md",
     "Mermaid Cheatsheet.md",
     "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",

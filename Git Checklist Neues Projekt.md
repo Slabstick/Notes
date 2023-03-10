@@ -17,3 +17,13 @@
 9. `git push --set-upstream origin firstCode`
 10. Jetzt erst anfangen zu coden
 
+## Merge to Main
+
+1. `git checkout main`
+2. `git merge firstCode`
+3. `git push origin main`
+
+## Fehlerbehebung
+
+### Github remote URL falsch eingegeben:
+- `git remote set-url origin git@github.com:UserName/Repo.git`

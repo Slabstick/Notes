@@ -25,7 +25,7 @@ https://intern.quinscape.de/bitbucket/projects/CA/repos/attendanceboard/browse
 - Funktioniert nicht mit Java 17. Keine Probleme mit Java 11.
 	- Error: `java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7`
 
-Besprechung 08.03.2023
+### Besprechung 08.03.2023
 - Email Verteiler für Anwesenheitsboard erstellen
 - Eigenes Team in Teams erstellen
 - Tickets in Jira -> Rückmeldung geben, wenn es geklärt ist
@@ -34,3 +34,10 @@ Besprechung 08.03.2023
 - Prio1: Monitoring ermöglichen: Endpunkte zum Auslesen des Gesundheitsstatus' implementieren
 - Prio2: Skripte zum Neustarten/Fehler beheben
 - Zweites Board läuft unbenutzt in der IT, wenn es zum Fehler kommt, kann man das besser analysieren
+
+### Onboarding 10.03.23
+Link zum Attendanceboard (intranet): https://intern.quinscape.de/attendanceBoard/main#A
+Login: attendanceboard
+PW: attendanceboard20
+
+Verbindung per: `ssh jklimczok@awboard-server-vm.qs.intra`

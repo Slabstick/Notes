@@ -1,1 +1,32 @@
+#HTTP #TCP/IP #Postman #Websockets #ServerSockets
+
 # Webkommunikation
+
+- Client Server Architektur
+- Server
+	- Client bekommt eine Kopie der Seite, wenn Client Anfrage schickt
+- Kommunikation über TCP/IP
+	- Protokoll, das den Standard vorgibt über den kommuniziert wird
+- HTTP
+	- Definiert wie Daten in der Kommunikation aussehen
+- Websockets
+	- Einmaliges Öffnen der Verbindung
+	- Läuft auch über TCP
+	- Danach bleibt sie bestehen, bis sie getrennt wird
+	- Z.B. genutzt für Chats
+	- Kein Polling (aktives Nachfragen nach Antworten)
+
+## Aufgabe 1
+- Create a ServerSocket
+	- ServerSocket at a dedicated port
+	- Open a connection
+	- Retrieve any message from a client (Postman)
+	- Respond with "Hello World"
+		- Needs to be in the HTTP Format, otherwise Postman will reject it
+- All processes should be logged
+	- Logger should print to the console in different colors, based on severity
+		- info, warn, error, error with exception, fatal, fatal with exception
+		- All methods should support the String.format(...) notation
+
+## Postman
+- Kann Requests schicken und sich die Responses angucken
