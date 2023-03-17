@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",
+                "file": "Aufgaben/2 - TicTacToe.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",
+                "file": "Aufgaben/2 - TicTacToe.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",
+                "file": "Aufgaben/2 - TicTacToe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Aufgaben/Aufgabenstellung Anwesenheitsboard.md"
+                "file": "Aufgaben/2 - TicTacToe.md"
               }
             }
           },
@@ -157,15 +157,15 @@
   },
   "active": "47b240db202e1fe2",
   "lastOpenFiles": [
-    "WSL Azubi Camp/WSL for Beginners.md",
-    "Aufgaben/TicTacToe.md",
     "Git Checklist Neues Projekt.md",
+    "Aufgaben/2 - TicTacToe.md",
+    "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
+    "Aufgaben/1 - Taschenrechner.md",
+    "WSL Azubi Camp/WSL for Beginners.md",
     "DNA Sequencing.md",
-    "Aufgaben/Taschenrechner.md",
     "Dailies/Static, Final, Object vs. Classes.md",
     "Dailies/Enums Equals - 01.02.23.md",
     "Mermaid Cheatsheet.md",
-    "Aufgaben/Aufgabenstellung Anwesenheitsboard.md",
     "Aufgaben/Chat GPT.md",
     "Dailies/Datenstrukturen (List, Set, Hashmap) - 08.03.23.md",
     "Dailies/Binärzahlen.md",

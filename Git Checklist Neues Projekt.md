@@ -27,3 +27,5 @@
 
 ### Github remote URL falsch eingegeben:
 - `git remote set-url origin git@github.com:UserName/Repo.git`
+### Delete Branch
+- `git branch -d local_branch_name`

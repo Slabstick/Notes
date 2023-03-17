@@ -30,3 +30,13 @@
 
 ## Postman
 - Kann Requests schicken und sich die Responses angucken
+
+## Aufgabe 2
+
+#### 1.1 Extract information from request (Header)  
++ Parse Request Header  
++ Extract all Headerfields  
+#### 1.2 Extract information from request (params + body)  
++ parse request parameter  
++ parse request body
+
