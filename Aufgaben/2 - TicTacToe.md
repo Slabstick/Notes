@@ -39,4 +39,7 @@
 #### 1.2 Extract information from request (params + body)  
 + parse request parameter  
 + parse request body
++ Send the request body back as response
+
+## Aufgabe 3
 
