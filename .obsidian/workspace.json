@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30.03.23 - Hospitieren bei David.md",
+                "file": "Aufgaben/2 - TicTacToe.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "30.03.23 - Hospitieren bei David.md",
+                "file": "Aufgaben/2 - TicTacToe.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "30.03.23 - Hospitieren bei David.md",
+                "file": "Aufgaben/2 - TicTacToe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "30.03.23 - Hospitieren bei David.md"
+                "file": "Aufgaben/2 - TicTacToe.md"
               }
             }
           },
@@ -170,12 +170,14 @@
   },
   "active": "64de373a57d96b49",
   "lastOpenFiles": [
-    "Aufgaben/2 - TicTacToe.md",
-    "30.03.23 - Hospitieren bei David.md",
-    "Git Checklist Neues Projekt.md",
-    "Dailies/Enums Equals - 01.02.23 & 22.03.23.md",
-    "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
     "Aufgaben/1 - Taschenrechner.md",
+    "ToDo.md",
+    "Aufgaben/2 - TicTacToe.md",
+    "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
+    "Git Checklist Neues Projekt.md",
+    "desktop.ini",
+    "30.03.23 - Hospitieren bei David.md",
+    "Dailies/Enums Equals - 01.02.23 & 22.03.23.md",
     "WSL Azubi Camp/WSL for Beginners.md",
     "DNA Sequencing.md",
     "Dailies/Static, Final, Object vs. Classes.md",
@@ -185,7 +187,6 @@
     "Dailies/Binärzahlen.md",
     "Dailies/Gleitkommazahlen.md",
     "Git Befehle.md",
-    "ToDo.md",
     "README.md",
     "Aufgaben",
     "D&A",

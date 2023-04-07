@@ -41,3 +41,9 @@ Login: attendanceboard
 PW: attendanceboard20
 
 Verbindung per: `ssh jklimczok@awboard-server-vm.qs.intra`
+
+
+05.04.23
+
+Passwort Dokumentation überarbeiten
+AB Update durch IT im JIRA dokumentieren

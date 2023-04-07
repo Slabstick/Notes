@@ -40,6 +40,14 @@
 + parse request parameter  
 + parse request body
 + Send the request body back as response
+### 1.3 Only process request if auth header is attached  
++ Check for auth header  
++ extract username and passwort from header
++ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
++ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+### 1.4 Encrypt (& decrypt) passwords
+- https://www.baeldung.com/sha-256-hashing-java
+
 
 ## Aufgabe 3
 
