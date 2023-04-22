@@ -1,0 +1,28 @@
+- Extract Transform Load: Talend als ETL Tool um Daten zu extrahieren
+- Microsoft Power BI als Analysetool
+- KPI: Key Performance Indicator (Revenue z.B.)
+- 4 Arten von Analyse:
+	- Deskriptiv
+		- Beschreibend
+		- KPIs und Diagramme
+	- Diagnostisch
+		- Ursachen, Auswirkungen von Zuständen klären
+	- Prädiktiv
+		- Vorhersagend
+	- Präskriptiv
+		- Handlungsempfehlungen liefern und Entscheidungsfindung automatisieren
+- Aufeinanderaufbauend
+- Datentypen/Skalenniveaus
+	- Kategorial
+		- Nominal: gleich/ungleich (Studiengang, Geschlecht, Familienstand)
+		- Ordinal: Schulnoten, Steuerklassen
+	- Numerisch
+		- Intervall: Kann nur bestimmte Werte annehmen, kein natürlicher Nullpunkt (Temperatur ºC, Zeit)
+		- Verhältnis: Natürlicher Nullpunkt (Körpergröße, Gewicht)
+- Datenvisualisierungstools
+	- Tableau (Salesforce)
+	- Microsoft BI
+	- Pyramid Analytics
+	- TIBCO Software
+	- SAP
+- 
