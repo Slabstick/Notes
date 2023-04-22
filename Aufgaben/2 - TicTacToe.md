@@ -33,15 +33,15 @@
 
 ## Aufgabe 2
 
-#### 1.1 Extract information from request (Header)  
-+ Parse Request Header  
-+ Extract all Headerfields  
-#### 1.2 Extract information from request (params + body)  
-+ parse request parameter  
+#### 1.1 Extract information from request (Header)
++ Parse Request Header
++ Extract all Headerfields
+#### 1.2 Extract information from request (params + body)
++ parse request parameter
 + parse request body
 + Send the request body back as response
-### 1.3 Only process request if auth header is attached  
-+ Check for auth header  
+### 1.3 Only process request if auth header is attached
++ Check for auth header
 + extract username and passwort from header
 + https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
 + https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
