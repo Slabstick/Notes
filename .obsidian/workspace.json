@@ -25,14 +25,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aufgaben/2 - TicTacToe.md",
+                "file": "Git Checklist Neues Projekt.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8e2a8dc6415365ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dailies/Mockito - 26.04.2023.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -168,13 +179,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "64de373a57d96b49",
+  "active": "47b240db202e1fe2",
   "lastOpenFiles": [
+    "Dailies/Mockito - 26.04.2023.md",
+    "Angular.md",
+    "Git Checklist Neues Projekt.md",
+    "Aufgaben/2 - TicTacToe.md",
     "Aufgaben/1 - Taschenrechner.md",
     "ToDo.md",
-    "Aufgaben/2 - TicTacToe.md",
     "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
-    "Git Checklist Neues Projekt.md",
     "desktop.ini",
     "30.03.23 - Hospitieren bei David.md",
     "Dailies/Enums Equals - 01.02.23 & 22.03.23.md",
