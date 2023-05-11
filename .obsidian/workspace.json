@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Dailies/Mockito - 26.04.2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc543789cd60f65a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dailies/Debugging - 03.05.23.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3a99818c7e081b8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Aufgaben/2 - TicTacToe.md",
                 "mode": "source",
                 "source": false
@@ -43,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,6 +111,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "ee025fdd34f3ee1b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -179,15 +212,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47b240db202e1fe2",
+  "active": "3a99818c7e081b8c",
   "lastOpenFiles": [
+    "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
+    "Dailies/Lambdas und Methodenreferenzen - 10.05.23.md",
+    "Dailies/Debugging - 03.05.23.md",
+    "ToDo.md",
+    "Dailies/Debugging.pdf",
     "Dailies/Mockito - 26.04.2023.md",
+    "Aufgaben/2 - TicTacToe.md",
     "Angular.md",
     "Git Checklist Neues Projekt.md",
-    "Aufgaben/2 - TicTacToe.md",
     "Aufgaben/1 - Taschenrechner.md",
-    "ToDo.md",
-    "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
     "desktop.ini",
     "30.03.23 - Hospitieren bei David.md",
     "Dailies/Enums Equals - 01.02.23 & 22.03.23.md",

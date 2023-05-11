@@ -47,3 +47,8 @@ Verbindung per: `ssh jklimczok@awboard-server-vm.qs.intra`
 
 Passwort Dokumentation überarbeiten
 AB Update durch IT im JIRA dokumentieren
+
+04.05.23
+
+Autologin: MUSS auf  /main redirecten. index.html redirected zur Loginseite.
+Wenn Login im Localstorage gespeichert wird, wird kein Cookie mit der SessionID gesetzt??
