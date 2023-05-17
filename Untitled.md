@@ -1,0 +1,1 @@
+Begriffshierarchie "Request, Header, body, Parameter, URI, Path" etc.

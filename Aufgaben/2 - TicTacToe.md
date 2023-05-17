@@ -48,6 +48,6 @@
 ### 1.4 Encrypt (& decrypt) passwords
 - https://www.baeldung.com/sha-256-hashing-java
 
-
-## Aufgabe 3
-
+## Aufgabe 3  
+### 1.1 Multithreading Socket  
++ Enhance previous impl. to support multiple threads up to a certain maximum

@@ -44,6 +44,28 @@
             }
           },
           {
+            "id": "5557d215696952b6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
+          },
+          {
+            "id": "581e52aef38b0d15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "64de373a57d96b49",
             "type": "leaf",
             "state": {
@@ -68,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -142,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Aufgaben/2 - TicTacToe.md",
+                "file": "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Aufgaben/2 - TicTacToe.md",
+                "file": "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Aufgaben/2 - TicTacToe.md"
+                "file": "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md"
               }
             }
           },
@@ -212,17 +234,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a99818c7e081b8c",
+  "active": "581e52aef38b0d15",
   "lastOpenFiles": [
+    "Aufgaben/2 - TicTacToe.md",
+    "Git Checklist Neues Projekt.md",
+    "Untitled.md",
     "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
-    "Dailies/Lambdas und Methodenreferenzen - 10.05.23.md",
+    "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md",
     "Dailies/Debugging - 03.05.23.md",
     "ToDo.md",
     "Dailies/Debugging.pdf",
     "Dailies/Mockito - 26.04.2023.md",
-    "Aufgaben/2 - TicTacToe.md",
     "Angular.md",
-    "Git Checklist Neues Projekt.md",
     "Aufgaben/1 - Taschenrechner.md",
     "desktop.ini",
     "30.03.23 - Hospitieren bei David.md",
