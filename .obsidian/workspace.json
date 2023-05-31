@@ -8,89 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "47b240db202e1fe2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dailies/Mockito - 26.04.2023.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cc543789cd60f65a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dailies/Debugging - 03.05.23.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3a99818c7e081b8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aufgaben/2 - TicTacToe.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5557d215696952b6",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.8"
-              }
-            }
-          },
-          {
-            "id": "581e52aef38b0d15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git Checklist Neues Projekt.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "64de373a57d96b49",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Git Checklist Neues Projekt.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8e2a8dc6415365ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dailies/Mockito - 26.04.2023.md",
-                "mode": "source",
-                "source": false
+                "file": "Aufgaben/User Handling.pdf"
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -164,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git Checklist Neues Projekt.md",
+                "file": "Aufgaben/User Handling.pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git Checklist Neues Projekt.md",
+                "file": "Aufgaben/User Handling.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git Checklist Neues Projekt.md"
+                "file": "Aufgaben/User Handling.pdf"
               }
             }
           },
@@ -234,22 +161,27 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "581e52aef38b0d15",
+  "active": "64de373a57d96b49",
   "lastOpenFiles": [
-    "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md",
-    "Aufgaben/2 - TicTacToe.md",
     "Git Checklist Neues Projekt.md",
-    "Untitled.md",
-    "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
-    "Dailies/Debugging - 03.05.23.md",
-    "ToDo.md",
-    "Dailies/Debugging.pdf",
     "Dailies/Mockito - 26.04.2023.md",
+    "Dailies/Debugging - 03.05.23.md",
+    "Aufgaben/2 - TicTacToe.md",
+    "Aufgaben/User Handling.pdf",
+    "Aufgaben/2.1 Datenbank.md",
+    "Aufgaben/~$Server Socket - User Handling.pptx",
+    "Aufgaben/Server Socket - User Handling.pptx",
+    "Dailies/Debugging.pdf",
+    "Dailies/Enums Equals - 01.02.23 & 22.03.23.md",
+    "Untitled.md",
+    "Techtalk 24.05.23 - Typescript.md",
+    "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md",
+    "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
+    "ToDo.md",
     "Angular.md",
     "Aufgaben/1 - Taschenrechner.md",
     "desktop.ini",
     "30.03.23 - Hospitieren bei David.md",
-    "Dailies/Enums Equals - 01.02.23 & 22.03.23.md",
     "WSL Azubi Camp/WSL for Beginners.md",
     "DNA Sequencing.md",
     "Dailies/Static, Final, Object vs. Classes.md",
@@ -263,8 +195,6 @@
     "Aufgaben",
     "D&A",
     "Dailies",
-    "D&A/Data Integration 15.12.2022.md",
-    "D&A/D&A Analytics 10.02.2023.md",
-    "WSL Azubi Camp/Hallo.md"
+    "D&A/Data Integration 15.12.2022.md"
   ]
 }
