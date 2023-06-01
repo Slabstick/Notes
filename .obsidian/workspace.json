@@ -11,9 +11,11 @@
             "id": "64de373a57d96b49",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Aufgaben/User Handling.pdf"
+                "file": "Git Checklist Neues Projekt.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -91,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Aufgaben/User Handling.pdf",
+                "file": "Git Checklist Neues Projekt.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Aufgaben/User Handling.pdf",
+                "file": "Git Checklist Neues Projekt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Aufgaben/User Handling.pdf"
+                "file": "Git Checklist Neues Projekt.md"
               }
             }
           },
@@ -163,11 +165,13 @@
   },
   "active": "64de373a57d96b49",
   "lastOpenFiles": [
+    "Aufgaben/User Handling.pdf",
     "Git Checklist Neues Projekt.md",
+    "Mermaid Cheatsheet.md",
+    "Git Befehle.md",
     "Dailies/Mockito - 26.04.2023.md",
     "Dailies/Debugging - 03.05.23.md",
     "Aufgaben/2 - TicTacToe.md",
-    "Aufgaben/User Handling.pdf",
     "Aufgaben/2.1 Datenbank.md",
     "Aufgaben/~$Server Socket - User Handling.pptx",
     "Aufgaben/Server Socket - User Handling.pptx",
@@ -185,12 +189,10 @@
     "WSL Azubi Camp/WSL for Beginners.md",
     "DNA Sequencing.md",
     "Dailies/Static, Final, Object vs. Classes.md",
-    "Mermaid Cheatsheet.md",
     "Aufgaben/Chat GPT.md",
     "Dailies/Datenstrukturen (List, Set, Hashmap) - 08.03.23.md",
     "Dailies/Binärzahlen.md",
     "Dailies/Gleitkommazahlen.md",
-    "Git Befehle.md",
     "README.md",
     "Aufgaben",
     "D&A",
