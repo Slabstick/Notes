@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git Checklist Neues Projekt.md",
+                "file": "Dailies/Generics - 07.06.23.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git Checklist Neues Projekt.md",
+                "file": "Dailies/Generics - 07.06.23.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git Checklist Neues Projekt.md",
+                "file": "Dailies/Generics - 07.06.23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git Checklist Neues Projekt.md"
+                "file": "Dailies/Generics - 07.06.23.md"
               }
             }
           },
@@ -176,23 +176,27 @@
   },
   "active": "38cb217a352b97cd",
   "lastOpenFiles": [
+    "Dailies/Enums Equals - 01.02.23 & 22.03.23.md",
+    "Dailies/Debugging.pdf",
+    "Dailies/Debugging - 03.05.23.md",
+    "Dailies/Datenstrukturen (List, Set, Hashmap) - 08.03.23.md",
+    "Dailies/Binärzahlen.md",
+    "Dailies/Mockito - 26.04.2023.md",
+    "Dailies/Static, Final, Object vs. Classes.md",
+    "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md",
+    "Dailies/Gleitkommazahlen.md",
+    "Dailies/Generics - 07.06.23.md",
+    "Git Checklist Neues Projekt.md",
     "Git Befehle.md",
     "Aufgaben/User Handling.pdf",
     "Aufgaben/2 - TicTacToe.md",
-    "Dailies/Generics - 07.06.23.md",
-    "Dailies/Debugging.pdf",
     "Aufgaben/3 - Aufgabenstellung Anwesenheitsboard.md",
-    "Git Checklist Neues Projekt.md",
     "Mermaid Cheatsheet.md",
-    "Dailies/Mockito - 26.04.2023.md",
-    "Dailies/Debugging - 03.05.23.md",
     "Aufgaben/2.1 Datenbank.md",
     "Aufgaben/~$Server Socket - User Handling.pptx",
     "Aufgaben/Server Socket - User Handling.pptx",
-    "Dailies/Enums Equals - 01.02.23 & 22.03.23.md",
     "Untitled.md",
     "Techtalk 24.05.23 - Typescript.md",
-    "Dailies/Lambdas und Methodenreferenzen - 10.05.23 & 17.05.23.md",
     "ToDo.md",
     "Angular.md",
     "Aufgaben/1 - Taschenrechner.md",
@@ -200,11 +204,7 @@
     "30.03.23 - Hospitieren bei David.md",
     "WSL Azubi Camp/WSL for Beginners.md",
     "DNA Sequencing.md",
-    "Dailies/Static, Final, Object vs. Classes.md",
     "Aufgaben/Chat GPT.md",
-    "Dailies/Datenstrukturen (List, Set, Hashmap) - 08.03.23.md",
-    "Dailies/Binärzahlen.md",
-    "Dailies/Gleitkommazahlen.md",
     "README.md",
     "Aufgaben",
     "D&A",
