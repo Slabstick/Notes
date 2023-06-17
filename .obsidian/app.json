@@ -1,9 +1,0 @@
-{
-  "showFrontmatter": true,
-  "tabSize": 2,
-  "promptDelete": false,
-  "newFileLocation": "current",
-  "attachmentFolderPath": "./",
-  "useMarkdownLinks": true,
-  "showUnsupportedFiles": true
-}
