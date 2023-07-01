@@ -12,6 +12,7 @@
 	3. `git commit -m "first commit"`
 	4. `git branch -M main`
 6. `git remote add origin git@github.com:UserName/Repo.git`
+	1. `git remote add origin https://jklimczok@intern.qinscape.de/bitbucket/scm/~jklimczok/Repo.git`
 7. `git push -u origin main`
 8. `git checkout -b firstCode`
 9. `git push --set-upstream origin firstCode`
@@ -25,7 +26,15 @@
 
 ## Fehlerbehebung
 
-### Github remote URL falsch eingegeben:
+### Github/BitBucket remote URL falsch eingegeben:
 - `git remote set-url origin git@github.com:UserName/Repo.git`
+oder
+- `git remote set-url origin https://jklimczok@intern.quinscape.de/bitbucket/scm/~jklimczok/Repo.git`
+- `git push -u origin --all`
+
 ### Delete Branch
 - `git branch -d local_branch_name`
+
+### User aktualisieren
+- `git config user.name "Jakob Klimczok"`
+- `git config user.email "Jakob.Klimczok@quinscape.de"`

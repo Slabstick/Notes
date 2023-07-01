@@ -52,3 +52,17 @@
 ## Aufgabe 3  
 ### 1.1 Multithreading Socket  
 + Enhance previous impl. to support multiple threads up to a certain maximum
+
+## Aufgabe 4
+
+Siehe 2.1
+
+## Aufgabe 5
+
+Udemy Kurs:
+
+https://quinscape.udemy.com/course/the-complete-web-development-bootcamp
+
+Section 4 skippen, bis 19 abarbeiten.
+
+JQuery & Bootstrap

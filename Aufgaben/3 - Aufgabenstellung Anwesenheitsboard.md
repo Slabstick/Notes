@@ -52,3 +52,6 @@ AB Update durch IT im JIRA dokumentieren
 
 Autologin: MUSS auf  /main redirecten. index.html redirected zur Loginseite.
 Wenn Login im Localstorage gespeichert wird, wird kein Cookie mit der SessionID gesetzt??
+
+26.06.23
+Autoneustart der Clients/(Server?) jeden Sonntag implementieren
