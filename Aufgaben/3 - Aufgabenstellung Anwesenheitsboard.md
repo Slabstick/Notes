@@ -19,11 +19,15 @@ https://intern.quinscape.de/bitbucket/projects/CA/repos/attendanceboard/browse
 	- install: `./gradlew build`
 	- start: `./gradlew startFrontend`
 - npm -> Frontend (Angular)
+	- nicht kompatibel mit neuen npm versionen. Muss mit NVM auf Version 14.21.3 laufen:
+	- `nvm use 14.21.3`
 	- install: `./src/main/webapp npm install`
 	- start: `./gradlew startBackend`
 
 - Funktioniert nicht mit Java 17. Keine Probleme mit Java 11.
 	- Error: `java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7`
+
+
 
 ### Besprechung 08.03.2023
 - Email Verteiler für Anwesenheitsboard erstellen
