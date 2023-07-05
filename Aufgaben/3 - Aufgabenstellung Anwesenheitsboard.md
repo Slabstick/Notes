@@ -59,3 +59,6 @@ Wenn Login im Localstorage gespeichert wird, wird kein Cookie mit der SessionID 
 
 26.06.23
 Autoneustart der Clients/(Server?) jeden Sonntag implementieren
+
+5.7.23
+Verortung der MA nicht nach Anmeldedaten, sondern an welchem Client man sich anmeldet.
