@@ -8,9 +8,10 @@
 	1. Advanced Settings -> Content root auf lokalen Ordner setzen
 5. gitIgnore commit
 	1. .idea Ordner -> .gitignore (Wenn schon angelegt. Sonst später)
-	2. `git add .`
-	3. `git commit -m "first commit"`
-	4. `git branch -M main`
+	2. .gitignore auf www.gitignore.io erstellen
+	3. `git add .`
+	4. `git commit -m "first commit"`
+	5. `git branch -M main`
 6. `git remote add origin git@github.com:UserName/Repo.git`
 	1. `git remote add origin https://jklimczok@intern.qinscape.de/bitbucket/scm/~jklimczok/Repo.git`
 7. `git push -u origin main`
