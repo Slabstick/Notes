@@ -62,3 +62,35 @@ Autoneustart der Clients/(Server?) jeden Sonntag implementieren
 
 5.7.23
 Verortung der MA nicht nach Anmeldedaten, sondern an welchem Client man sich anmeldet.
+
+6.07.23 - Bilder hochladen
+
+Bilder lassen sich nicht mehr hochladen!
+
+![[MicrosoftTeams-image (2).png]]
+
+Mit CSS auf Hintergrund legen:
+
+``` HTML
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+#grad1 {  
+  height: 200px;  
+  background-color: green; /* For browsers that do not support gradients */  
+  background-image: linear-gradient(to right,#0220B1, transparent);  
+}  
+</style>  
+</head>  
+<body>
+
+<h1>Linear Gradient - Top to Bottom</h1>  
+<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+
+<div id="grad1"></div>
+
+</body>  
+</html>
+```
+
