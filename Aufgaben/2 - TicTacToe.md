@@ -63,6 +63,6 @@ Udemy Kurs:
 
 https://quinscape.udemy.com/course/the-complete-web-development-bootcamp
 
-Section 4 skippen, bis 19 abarbeiten.
+Section 4 skippen, bis 20 abarbeiten.
 
 JQuery & Bootstrap

@@ -1,6 +1,6 @@
 #Git #GitHub #IntelliJ
 
-1. Repo erstellen in GitHub
+1. Repo erstellen in GitHub/BitBucket
 2. Lokalen Arbeitsordner anlegen
 3. init commit
 	1. `git init`
@@ -12,8 +12,9 @@
 	3. `git add .`
 	4. `git commit -m "first commit"`
 	5. `git branch -M main`
-6. `git remote add origin git@github.com:UserName/Repo.git`
-	1. `git remote add origin https://jklimczok@intern.qinscape.de/bitbucket/scm/~jklimczok/Repo.git`
+6. Mit Remote verknüpfen:
+	- Github: `git remote add origin git@github.com:UserName/Repo.git`
+	- Bitbucket: `git remote add origin https://jklimczok@intern.quinscape.de/bitbucket/scm/~jklimczok/Repo.git`
 7. `git push -u origin main`
 8. `git checkout -b firstCode`
 9. `git push --set-upstream origin firstCode`
