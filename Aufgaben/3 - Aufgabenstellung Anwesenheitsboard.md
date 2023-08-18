@@ -94,3 +94,9 @@ Mit CSS auf Hintergrund legen:
 </html>
 ```
 
+
+16.08.2023
+- Wir haben Zugriff auf die Steckdose, also Neustarten sollte über VNC gehen.
+- Maynard final testen und IT Bescheid geben
+- SNOOPY zeitnah (nach kurzer Testphase auf MAYNARD) auf Linux umrüsten
+- 
