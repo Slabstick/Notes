@@ -99,4 +99,68 @@ Mit CSS auf Hintergrund legen:
 - Wir haben Zugriff auf die Steckdose, also Neustarten sollte über VNC gehen.
 - Maynard final testen und IT Bescheid geben
 - SNOOPY zeitnah (nach kurzer Testphase auf MAYNARD) auf Linux umrüsten
-- 
+
+
+## 22.08.2023
+### Autorestart
+- Autorestart jeden Sonntag um 3 Uhr Nachts (3am):
+- 2 Scripts in /etc/systemd/system/:
+
+autorestart.service:
+```ini
+[Unit]
+Description=Reboot the system every Sunday at 3 AM
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/shutdown -r now "Rebooting the system at 3 AM"
+
+```
+
+autorestart.timer
+```ini
+[Unit]
+Description=Reboot the system every Sunday at 3 AM
+
+[Timer]
+OnCalendar=Sun *-*-* 03:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
+```
+
+- gestartet und enabled:
+
+```bash
+sudo systemctl enable autorestart.timer
+sudo systemctl start autorestart.timer
+```
+
+- Kann gecheckt werden per:
+
+```bash
+sudo systemctl status autorestart.timer
+```
+
+### VNC Server Troubleshoot/Wartung
+
+- in /home/snoopy liegt eine Datei namens .Xauthority, welche owner snoopy und gruppe snoopy haben MUSS und rw Nutzerrechte haben MUSS
+
+```bash
+ps aux | grep Xorg
+```
+
+- Zeigt alle bestehenden und offenen Xorg Sitzungen an. 
+- tty2 Sitzung auf snoopy: muss vorhanden sein. Wenn nicht muss GMD restartet werden
+
+```bash
+sudo systemctl restart gdm.service
+```
+
+- in `azubi/.vnc/`  liegen logs der einzelnen Monitore (`snoopy:n.log` wobei n für den Monitor steht)
+- in `azubi/xlvnc.log` sind die Server Logs
+
+### First Responder Botmessage
+
