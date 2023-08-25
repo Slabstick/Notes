@@ -144,6 +144,7 @@ sudo systemctl start autorestart.timer
 sudo systemctl status autorestart.timer
 ```
 
+
 ### VNC Server Troubleshoot/Wartung
 
 - in /home/snoopy liegt eine Datei namens .Xauthority, welche owner snoopy und gruppe snoopy haben MUSS und rw Nutzerrechte haben MUSS
@@ -164,3 +165,10 @@ sudo systemctl restart gdm.service
 
 ### First Responder Botmessage
 
+
+
+## 23.08.2023
+### Autorestart
+- Keine Scripte sondern CRON Job
+- Ticket schreiben an IT -> Heute Abend deployen mit Keystore in der .jar
+- 
