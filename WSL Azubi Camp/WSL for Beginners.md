@@ -178,6 +178,7 @@ Ein paar weitere nützliche Apache2 Befehle:
 | Status | `sudo service apache2 status` |
 
 
+
 ### Docker
 
 > Wie ich im Nachhinein erfahren habe, dürfen wir auf den Quinscape Laptops nicht Docker Desktop installieren. Ich lasse diesen kurzen Abschnitt aber trotzdem stehen, um evtl. mögliche Neugierde dahingehend zu wecken.
