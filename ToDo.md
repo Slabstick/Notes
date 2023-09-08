@@ -10,3 +10,6 @@ Für Vorkurse anmelden
 - Spring Boot, Hibernate, Postgres
 - React, Axios
 
+## Privat:
+
+- Notion HP kopieren
