@@ -66,3 +66,9 @@ https://quinscape.udemy.com/course/the-complete-web-development-bootcamp
 Section 4 skippen, bis 20 abarbeiten.
 
 JQuery & Bootstrap
+
+## Aufgabe 6
+
+- TicTacToe in JavaScript/HTML/CSS bauen.
+- Mit Logik, aber ohne KI
+
