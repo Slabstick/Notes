@@ -13,3 +13,13 @@
 11) employed person, **employee**
 12) let go, **to be made redundant**
 
+a9
+b1
+c2
+d3
+e7
+f5
+g4
+h6
+i8
+j10
