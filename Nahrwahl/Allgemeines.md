@@ -1,3 +1,24 @@
+## Techstack
+
+- Datenbank: MongoDB
+- API: Quarkus -> Spring Boot mit Hibernate
+- Frontend: NextJS -> React
+- Restful
+- Spring Security nicht machen!
+- Axios oder Fetch
+- Jest Frontendtest
+- JUnit Backend + Restassured + Spring Testingframework zum testen
+- H2 DB zum Testen
+- Springboot initializer zum Aufsetzen des Springboot Projekts
+
+
+- JIRA Board
+
+
+## Probleme
+- IDE: IntelliJ oder VSCode oder beides?
+- 
+
 ## Projektstruktur
 
 ```
@@ -88,3 +109,18 @@ Stores the daily food intake for each user, including the portion sizes for each
 3. **Indexing**: You might also want to consider creating indexes on frequently queried fields to speed up data retrieval.
     
 4. **Additional Collections**: Depending on further requirements, you might add more collections for features like exercise tracking, user preferences, or saved meals.
+
+
+
+
+
+
+
+
+
+
+
+```
+$2a$10$3GzXTkr.FUShA4E8b1uWJ.HYHJFQlqsYyxcj9xrG81.i7te5Y2RNu
+
+```
