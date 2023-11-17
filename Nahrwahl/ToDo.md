@@ -56,3 +56,4 @@
 	- [ ] Add `/login` functionality
 	- [ ] Add `/logout` functionality
 - [ ] Add `/update/{username}` functionality for admin only
+
