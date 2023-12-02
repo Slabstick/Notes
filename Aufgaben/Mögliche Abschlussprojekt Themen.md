@@ -11,3 +11,6 @@ Anwesenheitsboard
 - Anonyme Daten zu Statistikzwecken erheben
 - Gibt es schon unter Endpunkt: statistics
 
+Quinscape Homepage
+- Möglichkeit einbauen, Seiten auf Social Media (Twitter, Facebook, LinkedIn, Whatsapp) zu teilen.
+	- Stellenausschreibungen schnell mit Freunden teilen.
