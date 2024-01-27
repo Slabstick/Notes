@@ -55,6 +55,8 @@ Class01 : int chimp
 Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
+
+
 ``` mermaid
 gitGraph
        commit

@@ -1,15 +1,12 @@
 
 ### Ausbildung:
 
-Für Vorkurse anmelden
-
-
-
+- [x] Prüfungsanmeldung unterschreiben
+- [x] Bitbucket Projekte aus privatem ins AUS Bitbucket ziehen.
 ## Zukunft
 
-- Spring Boot, Hibernate, Postgres
-- React, Axios
 
+## Anwesenheitsboard
+
+- [x] Yammer Post an die Firma schreiben und nach Bugs/gewünschten Features fragen
 ## Privat:
-
-- Notion HP kopieren
