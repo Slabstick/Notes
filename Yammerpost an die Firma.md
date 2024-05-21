@@ -7,7 +7,7 @@ Die Vorschläge dürft ihr gerne hier unter diesen Post, oder per Mail an Anwese
 
 P.S.: Der Bug, dass man sich immer wieder neu registrieren muss ist uns schon bekannt und wir arbeiten daran. Das Problem ist, dass es seit ein paar Jahren neue Transponder gibt, die mehr als nur einen Code ausgeben. Bis das gefixt ist und ihr einer der PechvögelInnen mit so einem Transponder seid, könnt ihr das umgehen indem ihr euch entweder manuell anmeldet, oder es ein paar Mal mit dem Transponder versucht. Ihr müsst euch also nicht jedes Mal neu registrieren!
 
-## CGPT Korrektur:
+## Korrektur:
 
 Hey ihr Lieben,
 

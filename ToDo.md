@@ -32,6 +32,16 @@
 	- [ ] Frontend initialisieren
 	- [ ] Backend first code
 	- [ ] Frontend first code
+
+## NahrWahl
+
+- [ ] Projekt initialisieren
+	- [ ] Backend Spring Boot Initializer
+	- [ ] Frontend mit npm, siehe oben
+	- [ ] Datenbankschemata erarbeiten
+	- [ ] SQLLite3 initialisieren
+	- [ ] 
+
 ## Zukunft
 
 

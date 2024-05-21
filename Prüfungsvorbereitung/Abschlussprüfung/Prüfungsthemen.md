@@ -1,4 +1,3 @@
-
 # Prüfungsthemen für Teil 2 der gestreckten Abschlussprüfung (GAP) für Fachinformatiker:innen Anwendungsentwicklung
 
 ## Inhaltsverzeichnis (Themencluster)

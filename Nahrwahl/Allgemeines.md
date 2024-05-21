@@ -1,10 +1,9 @@
 ## Techstack
 
-- Datenbank: MongoDB
-- API: Quarkus -> Spring Boot mit Hibernate
-- Frontend: NextJS -> React
+- Datenbank: SQLite3
+- API: Spring Boot mit Hibernate
+- Frontend: Vite React
 - Restful
-- Spring Security nicht machen!
 - Axios oder Fetch
 - Jest Frontendtest
 - JUnit Backend + Restassured + Spring Testingframework zum testen
@@ -17,6 +16,7 @@
 
 ## Probleme
 - IDE: IntelliJ oder VSCode oder beides?
+- pom.xml fehlte id tag
 - 
 
 ## Projektstruktur

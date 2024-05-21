@@ -50,10 +50,6 @@
 
 ---
 
-# User
-- [ ] Add `/update` service method
-- [ ] Add `/update` controller endpoint
-	- [ ] Add `/login` functionality
-	- [ ] Add `/logout` functionality
-- [ ] Add `/update/{username}` functionality for admin only
+
+- [ ] Reload components when navigating to them: NutritionLogPage after adding FoodItemEntries to log, and FoodItemPage after editig FoodItem
 
