@@ -39,6 +39,8 @@ Die Benutzeroberfläche ist darauf ausgelegt, den Ablauf so einfach wie mögli
 
 ### Unterschiede zu Projektantrag
 
+Im Großen und Ganzen wurde das Projekt dem Antrag entsprechend durchgeführt. Einzige Abweichung findet sich darin, dass es keine dedizierte Startseite gibt, sondern Nutzer sofort den Log öffnen, den zie zuletzt bearbeitet haben.
+
 ## Technologien
 
 ### Java
@@ -46,10 +48,10 @@ Die Benutzeroberfläche ist darauf ausgelegt, den Ablauf so einfach wie mögli
 Für das Spring Boot Backend wurde die Programmiersprache Java in der Version 21 verwendet, da diese die vom Unternehmen meist genutzte Programmiersprache ist.
 Java selbst ist eine objektorientierte Programmiersprache, welche sowohl Elemente einer Compiler- als auch einer Interpretersprache hat, da deren Quellcode vor der Ausführung in Bytecode kompiliert wird, welcher dank der Java Virtual Machine auf beliebigen Endgeräten ausführbar ist.
 Das macht sie plattformunabhängiger als Compilersprachen wie z.B. C++.
+
 ### JavaScript/TypeScript
 
 Für die Frontend-Entwicklung wurde die Programmiersprache TypeScript verwendet, die auf JavaScript basiert. TypeScript ist eine von Microsoft entwickelte, statisch typisierte Superset-Sprache von JavaScript, die zusätzliche Typ-Sicherheit und modernere Sprachmerkmale bietet. Durch die Verwendung von TypeScript können Entwickler Fehler frühzeitig im Entwicklungsprozess erkennen und beheben, was zu stabilerem und wartbarerem Code führt. Der TypeScript-Code wird in JavaScript transpiliert, welches von allen modernen Webbrowsern unterstützt wird. JavaScript ist eine dynamisch typisierte, interpretierte Sprache, die hauptsächlich zur Entwicklung interaktiver Webanwendungen verwendet wird. Beide Sprachen sind plattformunabhängig und können auf verschiedenen Geräten und Umgebungen ausgeführt werden.
-
 
 ### Spring Boot
 
@@ -107,31 +109,309 @@ Folgende Software wurde zur Verfügung gestellt:
 
 Ein Büro wurde nicht genutzt, da zu 100% remote gearbeitet wurde.
 
-## Ablaufplan
+## Projektphasen
+
+Zur Durchführung des Projekts wurde folgender Zeitplan erstellt:
+
+| Phase                     | Aufgabe                           | Zeit (Std.) |
+| ------------------------- | --------------------------------- | ----------- |
+| **Analysephase**          |                                   | **6**       |
+|                           | Ist-Analyse                       | 1           |
+|                           | Soll-Konzept                      | 5           |
+| **Planungsphase**         |                                   | **4**       |
+|                           | Terminplanung                     | 1           |
+|                           | Sachmittelplanung                 | 1           |
+|                           | Kostenplanung                     | 1           |
+|                           | Personalplanung                   | 1           |
+| **Entwurfsphase**         |                                   | **20**      |
+|                           | Design des Backends               | 8           |
+|                           | Design des Frontends              | 8           |
+|                           | Entwurf der Datenbankstrukturen   | 2           |
+|                           | Entwurf der API Endpunkte         | 2           |
+| **Implementierungsphase** |                                   | **30**      |
+|                           | Implementierung des Backends      | 16          |
+|                           | Implementierung der API Endpunkte | 2           |
+|                           | Anbindung an Datenbank            | 2           |
+|                           | Implementierung der Webseite      | 10          |
+| **Testphase**             |                                   | **8**       |
+|                           | Erstellen von Tests               | 8           |
+| **Schlussphase**          |                                   | **12**      |
+|                           | Projektdokumentation              | 8           |
+|                           | Anwenderdokumentation             | 2           |
+|                           | Bereitstellung                    | 2           |
+
 
 ## Terminplanung
+
+Die Durchführung des Projektes verläuft parallel zum Tagesgeschäft der QuinScape GmbH vom 18.03.2024 bis zum 27.05.2024 (Kalenderwochen 12 - 22). Die folgende Tabelle veranschaulicht die Terminplanung:
+
+| Phase                 | Zeit/h | KW 14 | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  |
+| --------------------- | ------ | ----- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Analysephase          | 6      | 6     |     |     |     |     |     |     |     |     |
+| Planungsphase         | 4      | 4     |     |     |     |     |     |     |     |     |
+| Entwurfsphase         | 20     |       | 10  | 10  |     |     |     |     |     |     |
+| Implementierungsphase | 30     |       |     |     | 15  | 10  | 5   |     |     |     |
+| Testphase             | 8      |       |     |     |     |     |     | 8   |     |     |
+| Schlussphase          | 12     |       |     |     |     |     |     | 8   | 2   | 2   |
+| Gesamt                | 80     |       |     |     |     |     |     |     |     |     |
+
 
 ## Kostenplanung
 
 ### Projektkosten
 
+Die Kosten für das Projekt setzen sich aus Ressourcen- und Personalkosten zusammen.
+Daten der zu veranschlagenden Kosten für Auzubildende, EntwicklerInnen sowie die Nutzung von Ressourcen wurden von der Verwaltung der QuinScape GmbH zur Verfügung gestellt. So betragen die Kosten für Auszubildende 9,50€/h und 60€/h für EntwicklerInnen. Die Kosten zur Bereitstellung der Ressourcen belaufen sich bei Auszubildenden pauschal auf einen Betrag von 15€/h und müssen zusätzlich auf den oben genannten Betrag addiert werden. Die pauschalen Ressourcenkosten, welche für EntwicklerInnen anfallen, sind im genannten Betrag jedoch bereits inbegriffen. Die Gesamtkosten bzw. Kostenaufstellung des Projektes sind in der folgenden Tabelle zu sehen:
+
+| Vorgang            | Zeit in h | Kosten pro Stunde in € | Kosten in € |
+| ------------------ | --------- | ---------------------- | ----------- |
+| Entwicklungskosten | 80        | 9,50 + 15 = 24,50      | 1960        |
+| Black-Box-Test     | 2         | 60                     | 120         |
+| Abnahmetest        | 6         | 60                     | 360         |
+| Übergabe           | 2         | 60                     | 120         |
+| Gesamt             |           |                        | 2560        |
+
+
 # Durchführung und Auftragsbearbeitung
 
-## Analysephase 
+Zur Durchführung des Projekts wurde ein modernes und agiles Projektmanagementmodell ge- nutzt. Auch wenn das Projekt nur einen Entwickler hat, wurde sich an dem SCRUM Vorge- hensmodell orientiert. Durch das iterative Durchlaufen der Projektphasen und die stetige Absprache mit dem Product Owner Herrn Hillmann, war eine agile und flexible Anpassung der Anforderungen des Projekts jederzeit möglich. Außerdem konnten unbekannte, neu aufgetretene Probleme mit Schnittstellen außerhalb des Einflussbereiches gelöst werden, ohne den Ablauf des Vorgehensmodells zu verändern.
+![[scrum-framework-9.29.23.png]]
+## Analysephase
 
 ### IST-Analyse
+Derzeit gibt es eine Vielzahl von Anwendungen auf dem Markt, die Benutzern dabei helfen, ihre Nahrungsaufnahme zu verfolgen und Makronährstoffe zu berechnen. Viele dieser Apps bieten Funktionen wie die Möglichkeit, Lebensmittel durch Barcodes zu scannen, umfangreiche Nahrungsmitteldatenbanken, und die Integration mit Fitness-Trackern. Allerdings gibt es noch immer Lücken und Schwächen in den bestehenden Lösungen. Nutzer berichten häufig über unzureichende Lebensmittel-Datenbanken, umständliche Benutzeroberflächen und fehlende Anpassungsmöglichkeiten für individuelle Ernährungspläne. Auch bei der Unterstützung konkreter Fitnessziele wie Gewichtsreduktion oder Muskelaufbau sehen viele Anwender Verbesserungspotential. Daher besteht ein klarer Bedarf an einer intuitiven, benutzerfreundlichen App, die präzise Nahrungsmittelinformationen bietet und sich nahtlos in den Alltag der Nutzer integrieren lässt, um ihre Fitnessziele effektiver zu erreichen.
 
 ### SOLL-Analyse
 
+#### Anforderungen
+
+##### 1. Benutzerfreundlichkeit
+
+- Die App muss für Smartphone-Bildschirme optimiert sein, um eine nutzerfreundliche Bedienung zu gewährleisten.
+
+- Beim Start der App soll dem Nutzer automatisch das Log des Tages angezeigt werden, das er sich als letztes angeschaut hat.
+
+##### 2. Hauptfunktionen
+
+- Die App soll zwei Hauptfunktionen bieten: die Logs und die Nahrungsmitteldatenbank.
+
+- Von überall in der App soll der Nutzer sofort Zugriff auf diese beiden Hauptfunktionen sowie einen Knopf haben, mit dem er automatisch ein Nahrungsmittel in die Datenbank speichern kann.
+
+##### 3. Nahrungsmitteldatenbank
+
+- Nutzer sollen in der Datenbank Nahrungsmittel hinzufügen, bearbeiten oder löschen können.
+
+- Aus der Datenbank soll ein Nahrungsmittel direkt zu einem Log hinzugefügt werden können.
+
+##### 4. Logs
+
+- Im Log soll der Benutzer hinzugefügte Nahrungsmittel bearbeiten oder löschen können.
+
+- Der Benutzer soll im Log zu einem anderen Datum wechseln können, um vergangene Einträge anzusehen oder zu ändern.
+
+- In jedem Log soll eine Berechnung der Kalorienanzahl und Makronährstoffe in Summe dargestellt werden.
+
 ### Zieldefinition
+
+Die zu entwickelnde App soll folgende Ziele erreichen: 
+
+1. **Benutzerfreundlichkeit und Intuition** 
+- Die App soll eine benutzerfreundliche und intuitive Möglichkeit bieten, die tägliche Nahrungsaufnahme zu verfolgen und Makronährstoffe zu berechnen. 
+
+2. **Optimierung für Smartphones** 
+- Im Vergleich zu existierenden Lösungen soll die App durch ihre Optimierung für Smartphone-Bildschirme überzeugen. 
+
+3. **Einfache Fortführung der Aufzeichnungen** 
+- Beim Start präsentiert die App das zuletzt betrachtete Tageslog, um den Nutzern eine einfache Fortführung ihrer Aufzeichnungen zu ermöglichen. 
+
+4. **Zugriff auf Hauptfunktionen** 
+- Zwei Hauptfunktionen stehen im Vordergrund: die Nahrungsmitteldatenbank und die Logs. 
+- Beide Funktionen sollen von jeder Ansicht aus sofort erreichbar sein. 
+
+5. **Zentrale Schaltfläche für schnelle Aktionen** 
+- Eine zentrale Schaltfläche ermöglicht das schnelle Hinzufügen neuer Nahrungsmittel zur Datenbank, die dann wiederum direkt zu den Logs hinzugefügt, bearbeitet oder gelöscht werden können. 
+
+6. **Flexible Verwaltung der Log-Einträge** 
+- Innerhalb der Logs können Nutzer ihre Einträge flexibel verwalten und zwischen unterschiedlichen Datumseinträgen wechseln. 
+
+Diese Kernfunktionen sollen eine effektive Unterstützung bei der Verfolgung der täglichen Nahrungsaufnahme und der Zielsetzung für Makronährstoffe bieten.
 
 ## Planungsphase
 
+Diese wurde bereits in Kapitel 2 ausführlich dargestellt und kann dort eingesehen werden.
+
 ## Entwurfsphase
+
+### Entwurfsmuster MVC - Model View Controller
+
+#### Verständnis des MVC Entwurfsmusters
+
+Das MVC (Model-View-Controller) Entwurfsmuster ist ein bewährtes Softwaredesign-Paradigma, das weit verbreitet in der Softwareentwicklung eingesetzt wird, um Anwendungen strukturiert und wartbar zu gestalten. Es teilt eine Anwendung in drei wesentliche Komponenten auf:
+
+1. **Model (Modell)**:
+    
+    - Das Modell repräsentiert die Daten und die Geschäftslogik der Anwendung. Es ist verantwortlich für das Speichern, Verarbeiten und Verwalten von Daten. Das Modell stellt sicher, dass die Daten konsistent und validiert sind, und kann zu Datenbanken oder anderen Speichersystemen gehören.
+    - Beispiel: In einer Nahrungsmittel-Tracking-App könnte das Modell Informationen über Nahrungsmittel, Nährwerte und Tageslogs enthalten.
+2. **View (Ansicht)**:
+    
+    - Die Ansicht ist für die Darstellung der Daten an den Benutzer zuständig. Sie zeigt die Informationen aus dem Modell in einer für den Benutzer verständlichen und ansprechenden Form an. Die Ansicht enthält keine Geschäftslogik, sondern stellt nur das Darstellungslogik bereit.
+    - Beispiel: Die Ansicht in unserer App wäre die Benutzeroberfläche, die dem Nutzer ermöglicht, Nahrungsmittel zu sehen, hinzuzufügen oder zu bearbeiten.
+3. **Controller (Steuerung)**:
+    
+    - Der Controller fungiert als Vermittler zwischen Modell und Ansicht. Er verarbeitet Benutzerinteraktionen, Aktualisierungen und Eingaben, aktualisiert das Modell entsprechend und leitet diese Änderungen an die Ansicht weiter. Der Controller enthält die Anwendungslogik und ist für die Bearbeitung von Eingaben verantwortlich.
+    - Beispiel: Wenn ein Nutzer ein neues Nahrungsmittel hinzufügt, empfängt der Controller diese Aktion, erstellt das entsprechende Datenmodell und aktualisiert die Ansicht, um das neue Nahrungsmittel anzuzeigen.
+
+#### Vorteile des MVC-Entwurfsmusters
+
+Das MVC-Entwurfsmuster bietet mehrere Vorteile, die die Softwareentwicklung erleichtern und die Qualität des Codes verbessern:
+
+- **Trennung der Anliegen**: Durch die Trennung des Codes in Modell, Ansicht und Controller werden die Verantwortlichkeiten klar definiert und der Code bleibt übersichtlich und wartbar. Dies erleichtert es Entwicklern, an verschiedenen Teilen der Anwendung zu arbeiten, ohne sich gegenseitig zu behindern.
+    
+- **Wiederverwendbarkeit**: Komponenten des Modells und der Ansicht können unabhängig vom Rest der Anwendung wiederverwendet werden. Dies spart Entwicklungszeit und reduziert Redundanzen.
+    
+- **Einfachere Wartung und Erweiterbarkeit**: Da die Geschäftslogik (Modell), die Darstellung (Ansicht) und die Eingabelogik (Controller) getrennt sind, ist es einfacher, Änderungen vorzunehmen und Erweiterungen zur Anwendung hinzuzufügen, ohne dass die gesamte Anwendung umgeschrieben werden muss.
+    
+
+#### Anwendung in unserer App
+
+In der Entwicklung unserer Nahrungsmittel-Tracking-App wird das MVC-Entwurfsmuster durchgängig angewendet:
+
+- Das **Modell** kümmert sich um die Verwaltung und Speicherung der Nahrungsmitteldaten und Logs. Dieses finden wir in der SQLite3 Datenbank wieder und ist einer von zwei Bausteinen des Backends.
+- Die **Ansicht** sorgt dafür, dass die Benutzeroberfläche ansprechend und benutzerfreundlich ist. Diese wird in Form des Frontends implementiert werden.
+- Der **Controller** übernimmt die Eingaben des Nutzers, führt die entsprechende Logik aus und aktualisiert sowohl das Modell als auch die Ansicht, um dem Nutzer eine konsistente und reaktionsschnelle Benutzererfahrung zu bieten. Dieser ist der zweite Teil des Backends und wird im Java/Spring Boot Code manifestiert.
+
+Durch die Implementierung des MVC-Entwurfsmusters wird sichergestellt, dass unsere App strukturiert, leicht wartbar und erweiterbar bleibt.
 
 ### Backend
 
+Die Entwicklung des Backends der App basiert auf Technologien und folgt bewährten Methoden, welche bei QuinScape auch im Tagesgeschäft zum Einsatz kommen. Im Zentrum dieser Entwicklung steht Spring Boot, ein leistungsstarkes Framework, das die Erstellung von robusten und produktionsreifen Java-Anwendungen erleichtert. Mit Spring Boot lassen sich die wesentlichen Komponenten des Backends schnell und effizient implementieren.
+
+Die Kommunikation zwischen dem Frontend und dem Backend erfolgt über eine RESTful API. Diese API nutzt die HTTP-Methoden (GET, POST, PUT, DELETE) zur Durchführung von CRUD-Operationen (Create, Read, Update, Delete). Diese Methode stellt sicher, dass Daten auf eine konsistente und zuverlässige Weise abgerufen und manipuliert werden können.
+
+Für die Datenspeicherung wird SQLite3 als eingebettete Datenbank verwendet. SQLite3 ist eine leichtgewichtige Datenbank, die sich hervorragend für mobile Anwendungen eignet und eine einfache Integration und Verwaltung der gespeicherten Daten bietet.
+
+Das Backend wird mit Java 21 entwickelt, einer modernen Version der Java-Programmiersprache, die zahlreiche neue Features und Verbesserungen bietet. Maven wird als Build- und Management-Tool verwendet. Dieses erleichtert die Verwaltung der Projektabhängigkeiten und automatisiert viele Aspekte des Entwicklungsprozesses, was zu einer effizienteren und konsistenteren Entwicklung führt. Sämtliche für das Projekt erforderlichen Abhängigkeiten werden in einer XML-Datei (`pom.xml`) definiert. Diese Datei beschreibt alle notwendigen Bibliotheken und Frameworks, die für die reibungslose Funktion des Backends erforderlich sind.
+
+#### Vier Schichten Struktur
+
+Um das MVC Entwurfsmuster noch feiner zu strukturieren, wird der Controller, also der Java-Teil, als solcher noch einmal in vier Layer unterteilt. Dem Datenmodell am nächsten liegt die Repository-Schicht, welche den direkten Zugriff auf die Datenbank und die Verwaltung der Daten ermöglicht. Diese Schicht enthält die Codes für CRUD-Operationen (Create, Read, Update, Delete) und stellt sicher, dass die Datenbankabfragen effizient und korrekt ausgeführt werden.
+
+Über der Repository-Schicht befindet sich die Service-Schicht. Diese Schicht dient als Mittler zwischen der Repository-Schicht und der Controller-Schicht und enthält die Geschäftslogik der Anwendung. Sie stellt sicher, dass die Daten auf eine sinnvolle und konsistente Art und Weise verarbeitet werden. Die Service-Schicht ruft Methoden aus der Repository-Schicht auf und führt die erforderlichen Operationen wie Validierungen oder Datenmanipulationen durch.
+
+Die Controller-Schicht selbst nimmt die HTTP-Anfragen von der Benutzeroberfläche entgegen und gibt die entsprechenden Antworten zurück. Sie ist für die Verarbeitung der Benutzerinteraktionen verantwortlich und leitet die Anfragen an die Service-Schicht weiter. Die Controller-Schicht stellt somit sicher, dass die richtigen Datenmodelle und -methoden verwendet werden, um die Anfragen zu erfüllen.
+
+Schließlich gibt es noch die Model-Schicht, welche die Domänenobjekte oder Entitätsklassen der Anwendung definiert. Diese Schicht repräsentiert die Geschäftsobjekte, die von der Anwendung verwendet werden, und bildet die zugrundeliegende Struktur der Daten ab. Die Model-Schicht stellt sicher, dass die Daten klar strukturiert und in einem konsistenten Format vorliegen.
+
+#### Model-Schicht
+
+Um eine Übersicht darüber zu gewinnen, welche Entitäten benötigt werden, bietet sich ein Entity Relation Modell der Datenbank an. Aus diesem kann man ableiten, dass drei Tabellen benötigt werden. Zwei für die im Entwurf erarbeiteten Hauptfunktionen des Programms (Log und Nahrungsmittel, hier nutrition_log und food_item) und eine, die die Nahrungsmittel als abgeleitete Entität den jeweiligen Logs zuordnet. Da Nahrungsmittel mehrfach pro Log hinzugefügt werden können, muss diese Entität (food_item_entry) ihren eigenen Primärschlüssel halten und darf diesen nicht aus den anderen beiden kombinieren.
+
+So ergibt sich folgendes Datenbankmodell:
+
+![[SCR-20240522-oktd-2.png]]
+
+Nach kurzer Beobachtung sollte dem geschulten Auge auffallen, dass food_item und nutrition_log die gleichen Attributsbezeichnungen verwenden, also lassen sich diese für Java in eine eigene Klasse extrahieren. Für die Model-Schicht in Java ergibt sich also folgendes Struktur:
+
+![[SCR-20240522-oqbl-2.png]]
+
+Damit wäre das Datenmodell auch schon fertig modelliert und so lassen sich aus diesem in Verbindung mit den Zielsetzungen die weiteren Lagen des Spring Boot Backends definieren.
+
+#### Repository-Schicht
+
+Die Repository-Schicht spielt eine zentrale Rolle in der Datenzugriffsschicht einer Anwendung. In unserem Projekt wird diese Schicht mithilfe von **Spring Data JPA** implementiert.
+
+**Spring Data JPA** ist ein Teil von Spring Data, einem Projekt innerhalb des Spring Frameworks, das darauf abzielt, die Implementierung von Datenzugriffsschichten für verschiedene persistente Speicher zu vereinfachen. Spring Data JPA bietet eine abstrakte und einfach zu nutzende Schnittstelle für die Interaktion mit relationalen Datenbanken, indem es die Java Persistence API (JPA) nutzt.
+
+**Spring Data JPA** reduziert den Boilerplate-Code für die Datenzugriffsschicht erheblich und ermöglicht es den Entwicklern, sich mehr auf die Geschäftslogik zu konzentrieren. Es bietet eine Reihe von Vorteilen, darunter:
+
+- **Automatische Generierung von CRUD-Methoden**: Spring Data JPA generiert automatisch grundlegende CRUD-Methoden (Create, Read, Update, Delete) für Ihre Entitäten, sodass Sie sich nicht um die Implementierung dieser Methoden kümmern müssen.
+- **Abfrage-Derivation**: Sie können benutzerdefinierte Abfragen einfach durch das Definieren von Methoden entsprechend benannter Muster in Ihren Repository-Interfaces erstellen.
+- **Paging und Sortierung**: Spring Data JPA unterstützt Paging und Sortierungen auf einfache und intuitive Weise.
+
+##### Erstellung von Repositories in Java
+
+Die Implementierung eines Repositories in Spring Data JPA beginnt mit der Definition eines Interfaces, das von einem der von Spring bereitgestellten Repository-Interfaces wie `JpaRepository`, `CrudRepository` oder `PagingAndSortingRepository` erbt. 
+
+##### Vereinfachung von CRUD-Operationen mit SQL
+
+Dank Spring Data JPA werden die CRUD-Operationen stark vereinfacht. Hier sind einige grundlegende Methoden, die out-of-the-box verfügbar sind:
+
+- **save()**: Speichert eine Entität in der Datenbank.
+- **findById()**: Findet eine Entität anhand ihres Primärschlüssels.
+- **findAll()**: Findet alle Entitäten in der Datenbank.
+- **deleteById()**: Löscht eine Entität anhand ihres Primärschlüssels.
+
+
+In der MVC-Architektur befindet sich die Repository-Schicht direkt über der zugrunde liegenden Datenbank und stellt die Verbindung zur Service-Schicht dar. Sie ist dafür verantwortlich, die Datenzugriffslogik zu kapseln und bietet eine saubere Schnittstelle für die Service-Schicht, um auf die Daten zuzugreifen.
+
+##### Repository Methoden
+
+Die meisten Methoden der Repository-Schicht sind bereits durch Spring Data JPA vorgegeben und müssen nur in besonderen Fällen explizit definiert werden. Für unseren Anwendungsfall ergibt sich folgendes Bild:
+
+![[Repo-Layer.png]]
+
+Wie im Diagramm ersichtlich, müssen lediglich das `FoodItemRepository` zwei und das `NutritionLogRepository` eine spezifische Methode definieren. Alle anderen CRUD-Operationen sind so häufig und standardisiert, dass sie von Spring Data JPA automatisch bereitgestellt werden und nicht gesondert definiert werden müssen.
+
+###### Methode findByDate
+Da jeder Log-Eintrag lediglich einmal pro Datum existieren kann, kann die Suche nach spezifischen Logs vereinfacht werden, indem statt der Suche nach der ID eine Methode erstellt wird, die einen Log-Eintrag anhand des Datums findet. Dies kann bestimmte Funktionen im Frontend erheblich vereinfachen.
+
+###### Methode findByNameIgnoreCase
+Diese Methode ist eine Erweiterung der implizit bereitgestellten `findByName`-Methode. Da Nahrungsmittel mit demselben Namen in der Datenbank nur einmal existieren sollen, wird diese Methode benötigt, um keine Unterscheidung zwischen Groß- und Kleinschreibung zu machen. Andernfalls wäre z.B. "Apfel" ein anderes Objekt als "apfel". Eine weitere Methode, `findByNameIgnoreCaseContaining`, gibt eine Liste von Objekten zurück, deren Namen das gesuchte Wort beinhalten, unabhängig von der Groß- oder Kleinschreibung.
+
+#### Service-Schicht
+
+Die Service-Schicht spielt eine zentrale Rolle in der MVC-Architektur, indem sie als Bindeglied zwischen der Controller-Schicht und der Repository-Schicht fungiert. Sie nimmt Anfragen der Controller-Schicht entgegen, verarbeitet diese anhand der implementierten Geschäftslogik und greift auf die Repository-Schicht zu, um die erforderlichen Daten zu speichern oder abzurufen.
+
+Die Verwendung einer dedizierten Service-Schicht bietet mehrere Vorteile. Erstens ermöglicht sie die Kapselung der Geschäftslogik an einem zentralen Ort, was die Wartung und das Testen erheblich erleichtert. Zweitens fördert sie die Trennung der Verantwortlichkeiten: Durch die Trennung der Geschäftslogik von der Präsentations- und Datenzugriffsschicht sorgt sie für einen klaren und übersichtlichen Code. Darüber hinaus erhöht sie die Wiederverwendbarkeit, da Services von verschiedenen Controllern wiederverwendet werden können. Schließlich bieten Services eine einheitliche Schnittstelle für die Geschäftslogik, was die Flexibilität und Erweiterbarkeit der Anwendung verbessert.
+
+Die Implementierung der Service-Schicht beginnt in Spring Boot mit der Definition von Service-Klassen, die in der Regel mit der Annotation `@Service` versehen werden. Diese Klassen enthalten Methoden, die die Geschäftslogik und die Verarbeitung von Daten implementieren. Ein normaler Service orchestriert die Interaktion mit der Repository-Schicht und stellt sicher, dass alle Geschäftsanforderungen erfüllt werden.
+
+Für unsere Applikation ergeben sich daher folgende Klassen:
+
+![[Service-Layer.png]]
+
+Besonders auf zwei Arten von Methoden soll hier näher eingegangen werden: Zum einen die "upsert"-Methoden, zum anderen die `calculateNutrients`-Methode. Alle anderen sollten selbsterklärend benannt sein und keiner weiteren Erläuterung bedürfen.
+
+###### Methoden upsertFoodItem & upsertNutritionLog
+
+Eine **Upsert-Methode** im Backend kombiniert die Funktionen von **Update** und **Insert** in einer einzigen Operation. Das Wort "upsert" ist ein Kofferwort aus den englischen Begriffen "update" und "insert". Eine Upsert-Methode überprüft, ob ein Datensatz in der Datenbank existiert. Wenn der Datensatz existiert, wird er aktualisiert (update). Wenn der Datensatz nicht existiert, wird ein neuer Datensatz erstellt und eingefügt (insert). Diese Methoden sind besonders nützlich, um unnötige separate Überprüfungen und Datenbankoperationen zu vermeiden.
+
+Daraus ergibt sich, dass wir unsere API-Endpunkte übersichtlicher halten können, da wir für das Anlegen und das Aktualisieren eines Objekts nur einen Endpunkt benötigen und das Frontend nicht wissen muss, ob bereits ein Objekt existiert oder erst angelegt werden muss. Wollen wir beispielsweise ein Nahrungsmittel zu einem Log hinzufügen, das noch gar nicht existiert, rufen wir trotzdem den gleichen Endpunkt auf, und das Backend legt dieses Log für uns an.
+
+###### Methode calculateNutrients
+
+Auch hier soll dem Frontend Arbeit abgenommen und Geschäftslogik in der Service-Schicht automatisiert werden. Diese Methode ist eine Helfermethode, die jedes Mal beim Abrufen eines Logs ausgeführt wird. So wird sichergestellt, dass die Summe aller Kalorien und Makronährstoffe auf dem neuesten Stand ist, sobald ein Log über den jeweiligen GET-Endpunkt abgerufen wird.
+
+#### Controller-Schicht
+
+Die Controller-Schicht spielt eine zentrale Rolle in der MVC-Architektur und dient als Vermittler zwischen der Benutzeroberfläche und der Geschäftslogik (Service-Schicht). Ihre Hauptaufgabe besteht darin, HTTP-Anfragen vom Frontend entgegenzunehmen, diese zu verarbeiten und entsprechende Antworten zurückzugeben. In dieser Schicht werden die Endpunkte der API definiert, die von außen zugänglich sind. Diese Endpunkte ermöglichen es Benutzern und externen Anwendungen, mit dem Backend-System zu interagieren.
+
+Ein wesentlicher Aspekt der Controller-Schicht ist die Eingangsvalidierung. Bevor eine Anfrage zur Service-Schicht weitergeleitet wird, überprüft der Controller die eingehenden Daten auf Richtigkeit und Vollständigkeit. Dies dient zum einen dazu, Fehler frühzeitig zu erkennen und die Datenintegrität zu gewährleisten, und zum anderen, die Service- und Repositories-Schicht vor unnötiger Verarbeitung fehlerhafter Daten zu schützen.
+
+Nachdem die Validierung abgeschlossen ist, leitet der Controller die Anfrage an die entsprechenden Service-Methoden weiter. Hier wird die Geschäftslogik angewendet und gegebenenfalls Daten aus der Repository-Schicht abgerufen oder gespeichert. Die Antwort der Service-Schicht wird dann vom Controller entgegengenommen und in ein Format umgewandelt, das für das Frontend verständlich und brauchbar ist – in unserem Fall im JSON Format, da unser Frontend in TypeScript/JavaScript geschrieben ist und daher nativ das JSON (JavaScript Object Notation) Format unterstützt.
+
+Darüber hinaus ist der Controller auch dafür verantwortlich, geeignete HTTP-Statuscodes zurückzugeben, die den Ausgang der Anfrage widerspiegeln. Bei erfolgreicher Verarbeitung wird häufig der Statuscode 200 (OK) oder 201 (Created) verwendet, während bei Fehlern entsprechende Codes wie 400 (Bad Request) oder 404 (Not Found) gesendet werden.
+
+In einer gut strukturierten Applikation ist die Controller-Schicht so gestaltet, dass sie nur minimale Logik enthält und hauptsächlich als Schnittstelle dient. Die eigentliche Geschäftslogik bleibt der Service-Schicht vorbehalten, um eine klare Trennung der Verantwortlichkeiten zu gewährleisten. Dies fördert die Wartbarkeit und Testbarkeit der Anwendung und erlaubt eine einfache Erweiterung der Endpunkte bei zukünftigen Anforderungen.
+
+Beachten wir diese Anforderungen an die Controller-Schicht ergibt sich daher folgende Struktur:
+
+![[Controller-Layer.png]]
+
+Da sich alle Methoden aus den vorangegangenen Methoden der Service-Schicht ableiten, muss hier auf keine Methode im Speziellen eingegangen werden.
+
 ### Frontend
+
+Auch die Entwicklung des Frontends basiert auf einem modernen Technologie-Stack, der so im Tagesgeschäft der QuinScape GmbH zum Einsatz kommt. Im Zentrum steht die Verwendung von TypeScript, das als statisch typisierte Erweiterung von JavaScript eine bessere Fehlersuche und eine robustere Codebasis ermöglicht. TypeScript bietet zahlreiche Vorteile, darunter verbesserte Code-Qualität und Wartbarkeit, was insbesondere bei größeren Projekten von großer Bedeutung ist.
+
+Als Framework für die Erstellung der Benutzeroberfläche kommt React zum Einsatz. React ist ein populäres JavaScript-Framework, das die Entwicklung interaktiver und dynamischer Benutzeroberflächen ermöglicht. Mit der Komponentenhierarchie von React können wiederverwendbare UI-Komponenten erstellt werden, was die Entwicklung effizienter und strukturierter gestaltet.
+
+Zur Gestaltung und zum Layout der App wird TailwindCSS verwendet. TailwindCSS ist ein utility-first CSS-Framework, das eine hohe Flexibilität und Kontrolle über das Styling der Komponenten bietet. Es erlaubt den Entwicklern, direkt auf Klassenebene zu arbeiten, was zu einer schnelleren und konsistenteren Gestaltung führt.
+
+Zusätzlich wird das shadcn/ui-Bibliothek integriert, um eine Vielzahl von benutzerdefinierten UI-Komponenten bereitzustellen. Diese Bibliothek ergänzt TailwindCSS und bietet vorgefertigte, stilisierte Komponenten, die einfach integriert und angepasst werden können. Dies beschleunigt die Entwicklung und stellt sicher, dass das Design der App modern und ansprechend ist.
+
+Die Verwaltung der Abhängigkeiten und der Build-Prozesse des Frontends wird mit npm (Node Package Manager) durchgeführt. npm ist ein weit verbreitetes Tool in der JavaScript-Community, das die Verwaltung von Bibliotheken und Tools vereinfacht und eine konsistente Entwicklungsumgebung sicherstellt.
+
 
 ## Implementierungsphase
 
