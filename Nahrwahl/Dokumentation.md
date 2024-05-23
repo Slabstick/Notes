@@ -412,6 +412,42 @@ Zusätzlich wird das shadcn/ui-Bibliothek integriert, um eine Vielzahl von benut
 
 Die Verwaltung der Abhängigkeiten und der Build-Prozesse des Frontends wird mit npm (Node Package Manager) durchgeführt. npm ist ein weit verbreitetes Tool in der JavaScript-Community, das die Verwaltung von Bibliotheken und Tools vereinfacht und eine konsistente Entwicklungsumgebung sicherstellt.
 
+#### Struktur
+
+Bei der Strukturierung des Frontend codes wurde nach kurzer Überlegung die Entscheidung gefällt dies nach Features zu organisieren. In einer solchen Struktur werden alle Dateien, die zu einem bestimmten Funktionsbereich gehören, gemeinsam in einem Ordner abgelegt. Dies umfasst Komponenten, Styles, Tests und sonstige Ressourcen, die für das jeweilige Feature relevant sind. Durch diese Organisation wird sichergestellt, dass Entwickler alle notwendigen Dateien an einem Ort finden und Änderungen effizient vornehmen können. Darüber hinaus fördert diese Struktur die Modularität des Codes, erleichtert das Auffinden von Abhängigkeiten und trägt dazu bei, dass sich neue Teammitglieder schneller zurechtfinden. Insgesamt bietet diese Herangehensweise eine robuste Grundlage für die skalierbare Entwicklung und Pflege des Frontends.
+
+Diese Struktur lässt sich somit einfach aus der SOLL Analyse deduzieren, da wir dort bereits die zwei Hauptfunktionalitäten der Applikation definiert hatten.
+
+#### Nahrungsmitteldatenbank
+
+Der Entwurf zur Darstellung der Nahrungsmitteldatenbank ist auch hier schnell vollzogen, da das Datenbankmodell alle wichtigen Modularitäten bereits fest legt.
+Es muss nicht weit von einer tabellarischen Darstellung der einzelnen Nahrungsmittel abgewichen werden, da diese Darstellung auch für NutzerInnen der intuitivste ist. Allein die Aktionen mit denen die einzelnen Nahrungsmittel editiert, gelöscht oder zu Logs hinzugefügt werden können, müssen zur Tabelle hinzugefügt werden. Daher ergibt sich der folgende Entwurf:
+
+![[SCR-20240523-kzon-2.png]]
+
+Hier sieht man im oberen Bereich die Funktionalität der Nahrungsmitteldatenbank mit 4 Beispieleinträgen. In jeder Zeile kann man den Namen, die Kcal Anzahl und die 3 Makronährstoffe des jeweiligen Nahrungsmittels herauslesen. Auf der rechten Seite der Tabelle hat jede Zeile jeweils drei Knöpfe. Einen Plusknopf, mit dem man das Nahrungsmittel zu einem Log hinzugefügt werden kann, einen Editieren Knopf mit dem man den Datenbankeintrag bearbeiten kann und einen Löschenknopf, der das Nahrungsmittel aus der Datenbank löscht.
+#### Logs
+
+Aus dem Entwurf der Nahrungsmitteldatenbank lässt sich auch für die Logs ein Design extrapolieren. Einzig der Plus Knopf in den Zeilen kann wegfallen und die Möglichkeit ein Log eines bestimmten Datums auszuwählen muss hinzugefügt werden. Hieraus ergibt sich folgender Entwurf:
+
+![[Log.png]]
+
+
+Hier sieht man an der obersten Stelle den Knopf mit dem man einen Datumspicker öffnen kann um zwischen den einzelnen Logs hin und her zu navigieren. Darunter befindet sich eine Auflistung der einzelnen Nahrungsmittel, die man bereits in dieses Log gespeichert hat mit einem Zeitstempel zur besseren Organisierung, dem Namen des Nahrungsmittels und der Menge. Rechts davon befinden sich hier nur zwei Knöpfe. Einer mit dem man das jeweilige Nahrungsmittel bearbeiten und ein weiterer mit dem man es wieder löschen kann.
+
+Die Navigationsleiste an der Unterseite ist in beiden Komponenten die gleiche, woraus sich schließen lässt, dass diese übergeordnet angelegt werden kann und nicht Teil beider Komponenten ist.
+
+#### Formulare
+
+Zwei Komponenten, die den jeweiligen Hauptfunktionen der Applikation untergeordnet sind fehlen hier noch. Zum Einen benötigen wir ein Formular, mit dem sich ein neues Nahrungsmittel in der Datenbank anlegen lässt und mit Hilfe dessen wir bestehende Nahrungsmittel bearbeiten können. Dieses Formular wird dem Feature der Nahrungsmitteldatenbank unterstellt. Andererseits benötigen wir ein weiteres Formular mit dem sich Nahrungsmittel in ein Log hinzufügen oder dort bereits hinterlegte Nahrungsmittel bearbeitet werden können. Dieses wird folglich dem Feature des Logs untergeordnet.
+
+Die zwei Formulare lassen sich folgendermaßen konzeptualisieren:
+
+![[Create.png]]
+
+![[Add.png]]
+
+
 
 ## Implementierungsphase
 
