@@ -150,9 +150,9 @@ Die Durchführung des Projektes verläuft parallel zum Tagesgeschäft der QuinSc
 | Analysephase          | 6      | 6     |     |     |     |     |     |     |     |     |
 | Planungsphase         | 4      | 4     |     |     |     |     |     |     |     |     |
 | Entwurfsphase         | 20     |       | 10  | 10  |     |     |     |     |     |     |
-| Implementierungsphase | 30     |       |     |     | 15  | 10  | 5   |     |     |     |
-| Testphase             | 8      |       |     |     |     |     |     | 8   |     |     |
-| Schlussphase          | 12     |       |     |     |     |     |     | 8   | 2   | 2   |
+| Implementierungsphase | 30     |       |     |     | 13  | 7   | 5   | 5   |     |     |
+| Testphase             | 8      |       |     |     | 1   | 2   | 2   | 3   |     |     |
+| Schlussphase          | 12     |       |     |     |     |     |     | 4   | 4   | 4   |
 | Gesamt                | 80     |       |     |     |     |     |     |     |     |     |
 
 
@@ -496,7 +496,7 @@ Einer der Vorteile an SQLite3 ist es, dass die Datenbank als Datei direkt ins Ba
 
 Um die Fehlersuche beim Programmieren und beim Ausführen des Codes zu vereinfachen wurde ein Logger zu Nutze gezogen, der praktischerweise Teil der Lombok Bibliothek ist. Dieser kann in jede Klasse implementiert werden, in dem man dieser die Annotation @Slf4j vorstellt. Damit kann man mit dem Objekt "log" diverse Schweregrade von Alarmen utilisieren, wie z.B. log.info oder log.error (siehe vorherige Abbildung). Tritt ein Fehler in einer der vielen Methoden des Backends auf, sieht man so sofort wo dieser auftrat.
 
-#### Frontend
+### Frontend
 
 Die Implementierung des Frontends lief zum größten Teil wie im Entwurf geplant ab. Lediglich den beiden Formularen zur Erstellung und Bearbeitung von Nahrungsmitteln und Logeinträgen wurde ein Abbrechen Knopf hinzugefügt, damit NutzerInnen den Vorgang wieder abbrechen können. Weitere Punkte, die die User Experience verbessern fielen zwar auf, konnten aber mangels Zeit nicht implementiert werden. Beispielsweise kann man im Datumspicker des Formulars zum Hinzufügen von Logeinträgen noch keinen Zeitstempel auswählen. Dies macht das Feld des Zeitpunkts obsolet und muss nachgeliefert werden. Außerdem müssen den Löschknöpfen noch die Abfrage zur Bestätigung des Löschvorgangs hinzugefügt werden um versehentliches Löschen von Datenbankeinträgen zu verhindern.
 
@@ -504,14 +504,51 @@ Ein weiterer Punkt ist die fehlende Option zur Auswahl eines Themes. Aktuell ist
 
 Zudem ist die Applikation zwar für Smartphone Bildschirme ausgelegt, es werden aber nicht unbedingt moderne Wege zur Datenerfassung auf Smartphones genutzt. Besonders die Formulare müssen dahingehend noch verbessert werden, so dass man z.B. nicht mehr Zahlen mit der Tastatur, sondern mit Swipe Gesten eingeben kann. Auch die Utilisierung von Knöpfen in den Tabellen ist nicht Zeitgemäß. Hier wäre es intuitiver NutzerInnen die Tabellenzeilen anklicken zu lassen und ihnen dann erst die Zeilenoptionen anzuzeigen.
 
-##### React-Router
+Eine kleine Abweichung vom Entwurf, um die User Experience zu verbessern findet sich im Design der Navigationsleiste. Einerseits wurde der Knopf mit dem man Nahrungsmittel zur Datenbank hinzufügen kann vergrößert und rund gemacht, wodurch die Optik der Leiste etwas aufgebrochen wird. Außerdem wird der Knopf des Features auf dem man sich aktuell befindet blau eingefärbt. Das hilft sich intuitiv schneller zurecht zu finden.
+
+#### React-Router
 
 Zur Vereinfachung der Navigation zwischen den Komponenten wurde auf React-Router gesetzt. Dies ist eine Bibliothek, die React erweitert. So können in der Hauptkomponente sogenannte Routes konfiguriert werden, die dann von überall aus in der Applikation angesteuert werden können. Ein weiterer Vorteil ist, dass sogar Parameter und Objekte als React Props weitergeleitet werden können. Im Falle dieser Applikation bedeutet das z.B., dass wir eine Route "nutrition-log/:date?" konfigurieren können, die dann die Möglichkeit hat, direkt das Datum des gewünschten Logs in der Navigationsleiste aufzurufen. Ruft die App zum Beispiel die URL "nutrition-log/2024-05-27" auf, landet man automatisch im Log des 27.05.2024. Das vereinfacht die Weitergabe von Daten innerhalb der App immens, da React Props und State nicht mehr Händisch durch die einzelnen Komponenten getragen werden müssen.
 
 Ein weiterer Vorteil von Router ist, dass wir das Location Interface direkt als Parameter in React Hooks wie useEffect() nutzen können. Dadurch kann zum Beispiel eine useEffect() Funktion geschrieben werden, die die übergeordnete Komponente immer dann neu rendert, sobald mit React Router eine neue Url aufgerufen wird (auch wenn es sich um die selbe Url handelt, die gerade aufgerufen ist). Ein Nachteil von React ist nämlich, dass das Neuladen von Komponenten nicht immer so simpel ist, wie man denkt. Löscht man beispielsweise einen Eintrag aus der Datenbank, möchte man aus UX Perspektive, dass dies auch sofort als Feedback zurückgegeben wird. Dies kann mit Router sehr simpel realisiert werden, indem man bei jedem Löschvorgang die Komponente neulädt.
 
+#### Nahrungsmitteldatenbank
+
+![[Foods.png]]
+
+Die Texte auf den Knöpfen wurden hier zu Icons abgeändert, um das Design so prägnant und einfach verständlich wie möglich zu halten. Sonst wurde das Design des Entwurfs fast zu 100% übernommen.
+
+#### Logs
+
+![[Log App.png]]
+
+Hier findet man etwas mehr Abänderung zum Frontend Entwurf. Neben den Icons, die auch hier mit Logos getauscht wurden, findet man hier noch einen zusätzlichen Bereich, in dem man die Summen der Kalorien und Makronährstoffe ablesen kann. So hat man in jedem Log sofort die gewünschten Daten zur Hand. Dieser Bereich ist natürlich das Herzstück der App und darf nicht fehlen, sonst ergibt das Nachhalten der Nahrungsmittel keinerlei Sinn. NutzerInnen, die Gewicht verlieren möchten, sind immerhin auf die Summe der Kalorien angewiesen.
+
+Dieser Punkt wurde im Entwurf des Backends eigentlich bedacht, da die Hilfsmethode zur Berechnung der Summen von Anfang an eingeplant war, ein entsprechender Bereich wurde beim Frontend Entwurf dann lediglich vergessen. Auch hier gibt es in Zukunft und in Sachen UX Nachholbedarf. Zahlen als solche sind weniger intuitiv und sollten mit Fortschrittsbalken versehen werden an denen man sofort erkennen kann wie nah man sich an den täglichen Grenzen oder Zielen befindet.
+
+#### Formulare
+
+![[Add Food.png]]
+
+Auf diesem Bild kann man leider nicht das ganze Formular erkennen, da dieses länger als der Bildschirm ist, aber unter dem Kohlenhydrat Feld befinden sich noch die zwei genannten Submit- und Cancel-Knöpfe. Diese kann man auf dem nächsten Bild sehen:
+
+![[Add Entry.png]]
+
+Bei diesem Formular gibt es eine kleine Abweichung zum Entwurf. Statt Entry steht in der Überschrift der Name des Nahrungsmittels, das man zum Log hinzufügen möchte. Das hilft den NutzerInnen zu sehen, dass sie auch das richtige Nahrungsmittel ausgewählt haben. Realisiert wurde das mithilfe von React wo man den State des aktuellen Nahrungsmittels auslesen und direkt als HTML zurückgeben kann.
+
+Gerade die Implementierung der Formulare hat im Bereich des Frontends die meiste Zeit in Anspruch genommen. Hier wurde nach der Dokumentation der Komponentenbibliothek shadcn/ui gearbeitet, wodurch noch weitere Bibliotheken herangezogen werden mussten. Formulare sind im Internet zwar eine der gebräuchlichsten Funktionalitäten, aber gerade in Kombination mit React sind sie eine der größten Hürden. Dies hat einerseits den Hintergrund, dass die gebräuchlichsten Attacken auf die Sicherheit einer Seite über Formulare laufen und andererseits werden Formulare in React "kontrolliert" realisiert. Das bedeutet, dass jede Änderung des Inhalts eines Formularfelds ein Event aufruft, im Gegensatz zum gebräuchlichen Weg, dass ein Event erst aufgerufen wird, wenn NutzerInnen auf den Senden Knopf drücken. 
+
+Die Formular Bibliothek ZOD versucht dies einerseits zu vereinfachen und bietet zudem die Funktionalität an, Formularfelder direkt bei der Eingabe auf korrekte Daten zu überprüfen. Hier wurde das so realisiert, dass Zahlenfelder wirklich nur Zahlen akzeptieren, diese Zahlen positiv sein müssen, das Kalorienfeld mindestens 1 sein muss und das Unit Feld lediglich zwei verschiedene Zustände hat (gramm oder milliliter). Das hat aber auch zur Folge, dass man zusätzliche Datentypen, Interfaces und Schemata erzeugen muss, damit diese Typensicherheit im Hintergrund ohne Probleme ablaufen kann.
+
 ## Testphase
 
+Wie der Projektplanung entnehmbar ist, lief der Großteil der Testphase bereits während der Implementierungsphase ab. Gerade im Falle des Backends würde es kaum Sinn ergeben, erst alle Endpunkte anzulegen und diese dann erst gebündelt zu testen. Auch wenn das Backend nach Schichten strukturiert ist, wurde es dennoch nach Features implementiert, sodass nach jedem abgeschlossenen Feature dieses direkt getestet werden konnte. Für das Backend wurde hierfür das Tool Postman herangezogen.
+
+**Postman** ist ein weit verbreitetes und leistungsfähiges Tool, das Entwicklern dabei hilft, APIs zu testen. Es ermöglicht das Senden von HTTP-Anfragen und das Visualisieren der Antworten in einer benutzerfreundlichen Oberfläche. Mit Postman können Entwickler schnell und effizient verschiedene Szenarien durchspielen, indem sie GET-, POST-, PUT- und DELETE-Anfragen testen. Es bietet zudem die Möglichkeit, Anfragen zu speichern und als Sammlungen zu organisieren, was besonders nützlich für die Wiederverwendung und Dokumentation ist. Darüber hinaus unterstützt Postman das Testen von Endpunkten mit verschiedenen Parametern und Headern, sowie die automatische Generierung und Auswertung von Testscripten, um die Vollständigkeit und Richtigkeit der API sicherzustellen. Der Einsatz von Postman in der Testphase sorgt somit für eine systematische und gründliche Überprüfung der Funktionalität des Backends und trägt maßgeblich zur Qualitätssicherung bei.
+
+So wurde hier nach jeder Implementierung eines API Endpunktes dieser mit Test-Requests in Postman angesteuert. So konnte sofort erkannt werden, wenn ein Endpunkt nicht wie gewünscht funktioniert.
+
+Sobald ein Fehler gefunden wurde, wurde außerdem in die Logs des Backends geschaut und mit dem Debugger von IntelliJ Idea nach Gründen dafür geschaut. Besonders beim Implementieren der upsert Methoden wurde dieser intensiv zu Rate gezogen.
 
 
 ## Black-Box-Test
@@ -521,6 +558,10 @@ Ein weiterer Vorteil von Router ist, dass wir das Location Interface direkt als 
 ## Übergabe
 
 # Fazit
+
+## SOLL/IST Vergleich
+
+Alle im SOLL Kapitel geplanten Ziele wurden erreicht. Hierbei kam es zu keinen Abweichungen in der Zeitplanung. Zunächst sah es bei der Implementierung so aus, als würde noch viel Zeit übrig bleiben, um an weiteren UI/UX Verbesserungen zu arbeiten, die auf jeden Fall noch in Zukunft nötig sein werden. Durch manche dann doch komplizierten Funktionalitäten im Front- und Backend wurde jedoch mehr Zeit für das Debuggen verbraucht als angenommen. Gerade die Implementierung der upsert Servicemethoden im Backend und das Realisieren der Komponentenbibliothek in Verbindung mit Formularen und Tabellen im Frontend hat die erst eingesparte Zeit wieder verfliegen lassen.
 
 ## Erkenntnisse
 
