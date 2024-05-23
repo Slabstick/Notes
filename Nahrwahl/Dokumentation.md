@@ -310,7 +310,7 @@ So ergibt sich folgendes Datenbankmodell:
 
 ![[SCR-20240522-oktd-2.png]]
 
-Nach kurzer Beobachtung sollte dem geschulten Auge auffallen, dass food_item und nutrition_log die gleichen Attributsbezeichnungen verwenden, also lassen sich diese für Java in eine eigene Klasse extrahieren. Für die Model-Schicht in Java ergibt sich also folgendes Struktur:
+Nach kurzer Beobachtung fällt auf, dass food_item und nutrition_log die gleichen Attributsbezeichnungen verwenden, also lassen sich diese für Java in eine eigene Klasse extrahieren. Für die Model-Schicht in Java ergibt sich also folgendes Struktur:
 
 ![[SCR-20240522-oqbl-2.png]]
 
@@ -414,11 +414,12 @@ Die Verwaltung der Abhängigkeiten und der Build-Prozesse des Frontends wird mit
 
 #### Struktur
 
-Bei der Strukturierung des Frontend codes wurde nach kurzer Überlegung die Entscheidung gefällt dies nach Features zu organisieren. In einer solchen Struktur werden alle Dateien, die zu einem bestimmten Funktionsbereich gehören, gemeinsam in einem Ordner abgelegt. Dies umfasst Komponenten, Styles, Tests und sonstige Ressourcen, die für das jeweilige Feature relevant sind. Durch diese Organisation wird sichergestellt, dass Entwickler alle notwendigen Dateien an einem Ort finden und Änderungen effizient vornehmen können. Darüber hinaus fördert diese Struktur die Modularität des Codes, erleichtert das Auffinden von Abhängigkeiten und trägt dazu bei, dass sich neue Teammitglieder schneller zurechtfinden. Insgesamt bietet diese Herangehensweise eine robuste Grundlage für die skalierbare Entwicklung und Pflege des Frontends.
+Bei der Strukturierung des Frontendcodes wurde nach kurzer Überlegung die Entscheidung gefällt dies nach Features zu organisieren. In einer solchen Struktur werden alle Dateien, die zu einem bestimmten Funktionsbereich gehören, gemeinsam in einem Ordner abgelegt. Dies umfasst Komponenten, Styles, Tests und sonstige Ressourcen, die für das jeweilige Feature relevant sind. Durch diese Organisation wird sichergestellt, dass Entwickler alle notwendigen Dateien an einem Ort finden und Änderungen effizient vornehmen können. Darüber hinaus fördert diese Struktur die Modularität des Codes, erleichtert das Auffinden von Abhängigkeiten und trägt dazu bei, dass sich neue Teammitglieder schneller zurechtfinden. Insgesamt bietet diese Herangehensweise eine robuste Grundlage für die skalierbare Entwicklung und Pflege des Frontends.
 
 Diese Struktur lässt sich somit einfach aus der SOLL Analyse deduzieren, da wir dort bereits die zwei Hauptfunktionalitäten der Applikation definiert hatten.
 
-#### Nahrungsmitteldatenbank
+#### User Interface
+##### Nahrungsmitteldatenbank
 
 Der Entwurf zur Darstellung der Nahrungsmitteldatenbank ist auch hier schnell vollzogen, da das Datenbankmodell alle wichtigen Modularitäten bereits fest legt.
 Es muss nicht weit von einer tabellarischen Darstellung der einzelnen Nahrungsmittel abgewichen werden, da diese Darstellung auch für NutzerInnen der intuitivste ist. Allein die Aktionen mit denen die einzelnen Nahrungsmittel editiert, gelöscht oder zu Logs hinzugefügt werden können, müssen zur Tabelle hinzugefügt werden. Daher ergibt sich der folgende Entwurf:
@@ -426,7 +427,7 @@ Es muss nicht weit von einer tabellarischen Darstellung der einzelnen Nahrungsmi
 ![[SCR-20240523-kzon-2.png]]
 
 Hier sieht man im oberen Bereich die Funktionalität der Nahrungsmitteldatenbank mit 4 Beispieleinträgen. In jeder Zeile kann man den Namen, die Kcal Anzahl und die 3 Makronährstoffe des jeweiligen Nahrungsmittels herauslesen. Auf der rechten Seite der Tabelle hat jede Zeile jeweils drei Knöpfe. Einen Plusknopf, mit dem man das Nahrungsmittel zu einem Log hinzugefügt werden kann, einen Editieren Knopf mit dem man den Datenbankeintrag bearbeiten kann und einen Löschenknopf, der das Nahrungsmittel aus der Datenbank löscht.
-#### Logs
+##### Logs
 
 Aus dem Entwurf der Nahrungsmitteldatenbank lässt sich auch für die Logs ein Design extrapolieren. Einzig der Plus Knopf in den Zeilen kann wegfallen und die Möglichkeit ein Log eines bestimmten Datums auszuwählen muss hinzugefügt werden. Hieraus ergibt sich folgender Entwurf:
 
@@ -437,21 +438,81 @@ Hier sieht man an der obersten Stelle den Knopf mit dem man einen Datumspicker �
 
 Die Navigationsleiste an der Unterseite ist in beiden Komponenten die gleiche, woraus sich schließen lässt, dass diese übergeordnet angelegt werden kann und nicht Teil beider Komponenten ist.
 
-#### Formulare
+##### Formulare
 
 Zwei Komponenten, die den jeweiligen Hauptfunktionen der Applikation untergeordnet sind fehlen hier noch. Zum Einen benötigen wir ein Formular, mit dem sich ein neues Nahrungsmittel in der Datenbank anlegen lässt und mit Hilfe dessen wir bestehende Nahrungsmittel bearbeiten können. Dieses Formular wird dem Feature der Nahrungsmitteldatenbank unterstellt. Andererseits benötigen wir ein weiteres Formular mit dem sich Nahrungsmittel in ein Log hinzufügen oder dort bereits hinterlegte Nahrungsmittel bearbeitet werden können. Dieses wird folglich dem Feature des Logs untergeordnet.
 
 Die zwei Formulare lassen sich folgendermaßen konzeptualisieren:
 
-![[Create.png]]
-
-![[Add.png]]
+![[Create&Add.png]]
 
 
+#### Komponenten
+
+Einer der Vorteile bei der Entwicklung des Frontends ist, dass man schon den Großteil des Konzeptes vervollständigt hat, sobald man das User Interface konzeptualisiert hat. Lediglich Helfermethoden fehlen noch, um das Frontend mit der API zu verbinden. Hierfür nehmen wir die im Backend erarbeiteten Endpunkte und implementieren die jeweiligen Axios-Funktionen.
+
+Axios ist eine in der JavaScript-Welt weit verbreitete Bibliothek, die dazu dient, HTTP-Anfragen zu erstellen. Sie bietet eine einfach zu bedienende API, um HTTP-Requests und -Responses zu verwalten. Im Vergleich zu nativen Fetch-Funktionen oder älteren XMLHttpRequest-Objekten ist Axios vielseitiger und bietet viele nützliche Features direkt out-of-the-box. Dazu gehören automatisches JSON-Daten-Parsing, einfaches Handling von Anfragen und Antworten mit Promises, sowie die Möglichkeit, Abfangmaßnahmen und Abbruch-Optionen zu definieren. Durch die Verwendung von Axios machen wir den Prozess der Kommunikation mit unserem Backend nicht nur intuitiver, sondern auch robuster und leichter wartbar.
+
+Für unsere Applikation bedeutet das, dass jedes Feature jeweils nur drei Axios Funktionen benötig. Eine zum "Upserten", eine zum Abrufen und eine zum Löschen. Mit diesen insgesamt nur sechs Aktionen, die auf die API zugreifen, können wir bereits eine funktionierende Applikation mit allen herausgearbeiteten Anforderungen erstellen.
 
 ## Implementierungsphase
 
+Während der Implementierung stellte sich heraus, dass einige Ergänzungen und Änderungen an dem Entwurf vorgenommen werden mussten. Diese werden in den folgenden Kapiteln näher erläutert.
+
+### Backend
+
+##### Model
+
+Die Implementierung der Model Schicht verlief ohne Komplikationen, da hier mit der Lombok Java Bibliothek gearbeitet wurde und somit viel Boilerplate Code abgenommen wurde. Notwendige Teile einer Java Klasse wie Getter- und Setter-Methoden und Konstruktoren müssen so nicht mehr selbst geschrieben werden, sondern werden zum Start des Backends generiert. 
+Lediglich in der Verbindung zwischen den Datenbanktabellen kam es zwischenzeitlich zu Problemen bei der Generierung der JSON Darstellung von Objekten und beim Abruf von Logs mit mehr als einem Eintrag. Im ersten Entwurf war nämlich geplant den Java Code so zu verfassen, dass die FoodItemEntry Klasse Zugriff auf jeweils die NutritionLog Klasse und auf die FoodItem Klasse bekommt und nur durch Annotationen die Id's hinterlegt sind. Dies führte zu unendlicher Rekursion, da jeder Entry Zugriff auf den NutritionLog bekam und beim Abruf dessen wiederum Zugriff auf die darin liegenden Entries genommen wurde. 
+
+Hier hätte man mit sogenannten DTO's (Data Transfer Objects) arbeiten können, aber da die Zeit bereits knapp wurde, konnte das Problem auch umgangen werden, indem der Verweis zur NutritionLog Klasse herausgenommen wurde und stattdessen gegen ein Fremdschlüssel Feld ausgetauscht wurde.
+
+Dies ließ sich allerdings nur so leicht umgehen, weil das Datenmodell einigermaßen simpel gehalten ist. Wird die Applikation in Zukunft wachsen und das Datenbankmodell um Ergänzungen bereichert, dann wird man an DTO's nicht vorbeikommen, da diese bei komplexen Backends unumgänglich sind.
+
+##### Repository
+
+Beim Repository lief alles wie im Entwurf geplant und nichts musste abgeändert werden.
+
+##### Service
+
+Die größte Änderung am Backendentwurf findet sich im Erstellen eines neuen Logs. Wie bereits erwähnt, soll dem Frontend egal sein, ob ein Log bereits existiert, wenn ein Eintrag hinzugefügt wird. Da dies nicht so simpel war, wie zuvor angenommen, wurde in die Implementierung dieser Funktionalität viel Zeit investiert, da hier auf viele verschiedene Dinge geachtet werden musste. Die Upsert Service Methode musste demnach sehr oft umgeschrieben werden und entsprach nach Ablauf der verplanten Zeit noch nicht den sonst sehr akribisch verfolgten Clean Code Prinzipien. Hier muss nach Abgabe des Projekts noch nachgebessert werden, soll die Applikation weiter wachsen und wartbar bleiben.
+
+##### Controller
+
+Auch beim Controller konnte der Entwurf fast deckungsgleich verfolgt werden. Lediglich fiel bei der Implementierung des Frontends auf, dass die Funktionalität Einträge aus Logs zu löschen und verändern vergessen wurde. Dies hatte zur Folge, dass ein weiterer Endpunkt angelegt werden musste, um Einträge zu löschen. 
+
+##### Konfiguration
+
+Ein weiterer Punkt, der bei der Implementierung und Testung des Backends vergessen wurde und erst auffiel, als die ersten Endpunkte mit dem Frontend angesteuert wurde, war dass eine CORS Konfiguration fehlte. Damit das Frontend aus dem Browser heraus Zugriff auf die API über den konfigurierten Port zugreifen kann, muss dieser Port erst freigegeben werden. Dies war glücklicherweise einfach dank Spring Boot. Hier musste lediglich eine Konfigurationsklasse angelegt werden, mit der Annotation @Configuration versehen werden und die Methode addCorsMapping der Klasse WebMvcConfigurer überschrieben werden. Hier konnten alle vier benötigten HTML Methoden auf den Port des Frontends freigegeben werden.
+
+##### Datenbankinitialisierung
+
+Einer der Vorteile an SQLite3 ist es, dass die Datenbank als Datei direkt ins Backend implementiert werden kann. Damit wir diesen Vorteil aber auch ausnutzen können, bietet es sich an die Erstellung und Validierung des Datenbankmodells direkt mit dem Backend selbst durchzuführen. Hierfür wurde eine Klasse namens "DatabaseInitializer" angelegt, welche bei jedem Start des Backends aufgerufen wird und prüft ob alle Tabellen der Datenbank zur Verfügung stehen und diese im Zweifelsfall anlegen kann. Dafür wurden drei Methoden erstellt, die jeweils eine der Tabellen prüfen und anlegen können, wenn diese noch nicht existieren. Dies ist interessanterweise der einzige Ort im gesamten Backend, wo SQL Code manuell verfasst wurde. Hier ist ein Beispiel für eine solche Methode:
+
+![[DBInitMethodExample.png]]
+
+##### Logging
+
+Um die Fehlersuche beim Programmieren und beim Ausführen des Codes zu vereinfachen wurde ein Logger zu Nutze gezogen, der praktischerweise Teil der Lombok Bibliothek ist. Dieser kann in jede Klasse implementiert werden, in dem man dieser die Annotation @Slf4j vorstellt. Damit kann man mit dem Objekt "log" diverse Schweregrade von Alarmen utilisieren, wie z.B. log.info oder log.error (siehe vorherige Abbildung). Tritt ein Fehler in einer der vielen Methoden des Backends auf, sieht man so sofort wo dieser auftrat.
+
+#### Frontend
+
+Die Implementierung des Frontends lief zum größten Teil wie im Entwurf geplant ab. Lediglich den beiden Formularen zur Erstellung und Bearbeitung von Nahrungsmitteln und Logeinträgen wurde ein Abbrechen Knopf hinzugefügt, damit NutzerInnen den Vorgang wieder abbrechen können. Weitere Punkte, die die User Experience verbessern fielen zwar auf, konnten aber mangels Zeit nicht implementiert werden. Beispielsweise kann man im Datumspicker des Formulars zum Hinzufügen von Logeinträgen noch keinen Zeitstempel auswählen. Dies macht das Feld des Zeitpunkts obsolet und muss nachgeliefert werden. Außerdem müssen den Löschknöpfen noch die Abfrage zur Bestätigung des Löschvorgangs hinzugefügt werden um versehentliches Löschen von Datenbankeinträgen zu verhindern.
+
+Ein weiterer Punkt ist die fehlende Option zur Auswahl eines Themes. Aktuell ist die Applikation zu 100% im Dunkelmodus, was zwar dem Geschmack des Entwicklers selbst trifft, aber nicht alle NutzerInnen bevorzugen diese Farbgebung.
+
+Zudem ist die Applikation zwar für Smartphone Bildschirme ausgelegt, es werden aber nicht unbedingt moderne Wege zur Datenerfassung auf Smartphones genutzt. Besonders die Formulare müssen dahingehend noch verbessert werden, so dass man z.B. nicht mehr Zahlen mit der Tastatur, sondern mit Swipe Gesten eingeben kann. Auch die Utilisierung von Knöpfen in den Tabellen ist nicht Zeitgemäß. Hier wäre es intuitiver NutzerInnen die Tabellenzeilen anklicken zu lassen und ihnen dann erst die Zeilenoptionen anzuzeigen.
+
+##### React-Router
+
+Zur Vereinfachung der Navigation zwischen den Komponenten wurde auf React-Router gesetzt. Dies ist eine Bibliothek, die React erweitert. So können in der Hauptkomponente sogenannte Routes konfiguriert werden, die dann von überall aus in der Applikation angesteuert werden können. Ein weiterer Vorteil ist, dass sogar Parameter und Objekte als React Props weitergeleitet werden können. Im Falle dieser Applikation bedeutet das z.B., dass wir eine Route "nutrition-log/:date?" konfigurieren können, die dann die Möglichkeit hat, direkt das Datum des gewünschten Logs in der Navigationsleiste aufzurufen. Ruft die App zum Beispiel die URL "nutrition-log/2024-05-27" auf, landet man automatisch im Log des 27.05.2024. Das vereinfacht die Weitergabe von Daten innerhalb der App immens, da React Props und State nicht mehr Händisch durch die einzelnen Komponenten getragen werden müssen.
+
+Ein weiterer Vorteil von Router ist, dass wir das Location Interface direkt als Parameter in React Hooks wie useEffect() nutzen können. Dadurch kann zum Beispiel eine useEffect() Funktion geschrieben werden, die die übergeordnete Komponente immer dann neu rendert, sobald mit React Router eine neue Url aufgerufen wird (auch wenn es sich um die selbe Url handelt, die gerade aufgerufen ist). Ein Nachteil von React ist nämlich, dass das Neuladen von Komponenten nicht immer so simpel ist, wie man denkt. Löscht man beispielsweise einen Eintrag aus der Datenbank, möchte man aus UX Perspektive, dass dies auch sofort als Feedback zurückgegeben wird. Dies kann mit Router sehr simpel realisiert werden, indem man bei jedem Löschvorgang die Komponente neulädt.
+
 ## Testphase
+
+
 
 ## Black-Box-Test
 
