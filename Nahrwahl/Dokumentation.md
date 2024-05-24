@@ -1,14 +1,8 @@
 
-# Inhaltsverzeichnis
-Abbildungsverzeichnis
-Tabellenverzeichnis
-Listings
-Abkürzungsverzeichnis
-
 # Einleitung
 ## Projektumfeld
 
-Die QuinScape GmbH ist ein deutscher IT-Dienstleister, welcher bereits seit über 20 Jahren als Spezialist in den Themenbereichen Data & Analytics und Software Engineering aktiv ist. Mit Hilfe der Vielzahl an Partnern und den mittlerweile über 200 MitarbeiterInnen, die in dem Hauptsitz Dortmund, sowie dem Nebenstandort Hannover tätig sind, realisiert das Unternehmen individuelle Lösungen für die anspruchsvollen Bedürfnisse seiner KundInnen. Seit 2021 agiert die QuinScape GmbH außerdem als Gründungsunternehmen der Dataciders GmbH (ehemals QuinScape Group), die mittlerweile sechs weitere Unternehmen der IT-Branche beinhaltet. Die Dataciders GmbH beschäftigt insgesamt über 500 Personen aus mehr als 15 Nationen.
+Die QuinScape GmbH ist ein deutscher IT-Dienstleister, welcher bereits seit über 20 Jahren als Spezialist in den Themenbereichen Data & Analytics und Software Engineering aktiv ist. Mit Hilfe der Vielzahl an Partnern und den mittlerweile über 200 MitarbeiterInnen, die in dem Hauptsitz Dortmund, sowie dem Nebenstandort Hannover tätig sind, realisiert das Unternehmen individuelle Lösungen für die anspruchsvollen Bedürfnisse seiner KundInnen. Seit 2021 agiert die QuinScape GmbH außerdem als Gründungsunternehmen der Dataciders GmbH (ehemals QuinScape Group), die mittlerweile acht weitere Unternehmen der IT-Branche beinhaltet. Die Dataciders GmbH beschäftigt insgesamt über 500 Personen aus mehr als 15 Nationen.
 
 
 ## Ausgangssituation
@@ -17,29 +11,33 @@ Viele Menschen haben Schwierigkeiten, ihre Ernährungsgewohnheiten zu überwac
 
 ## Projektbeschreibung
 
-Bei dem vorgestellten Projekt handelt es sich um ein eigenständiges Projekt, welches intern in der Software Engineering Abteilung der QuinScape GmbH entwickelt wird. Die Anforderungen an das Projekt werden von meinem Ausbilder Florian Hillmann gestellt, welcher als Kunde auftritt.
+Bei dem vorgestellten Projekt handelt es sich um ein eigenständiges Projekt, welches intern in der Software Engineering Abteilung der QuinScape GmbH entwickelt wird. Die Anforderungen an das Projekt werden von Herrn Florian Hillmann gestellt, welcher als Kunde auftritt.
 
-In diesem Projekt soll eine webbasierte Anwendung entwickelt werden, die Nutzern ermöglicht, ihre tägliche Nahrungsaufnahme zu verfolgen und detaillierte Informationen über die Nährwerte ihrer Mahlzeiten zu erhalten. Ziel ist es, das Bewusstsein und das Verständnis der Nutzer für ihre Ernährung zu verbessern und sie bei der Erreichung ihrer gesundheitlichen und fitnessbezogenen Ziele zu unterstützen.
+In diesem Projekt soll eine webbasierte Anwendung entwickelt werden, die NutzerInnen ermöglicht, ihre tägliche Nahrungsaufnahme zu verfolgen und detaillierte Informationen über die Nährwerte ihrer Mahlzeiten zu erhalten. Ziel ist es, das Bewusstsein und das Verständnis der NutzerInnen für ihre Ernährung zu verbessern und sie bei der Erreichung ihrer gesundheitlichen und fitnessbezogenen Ziele zu unterstützen.
 
 ## Projektziel
 
-Das Hauptziel dieses Projektes ist die Entwicklung einer intuitiven und benutzerfreundlichen Anwendung, die es Nutzern nicht nur ermöglicht, ihre tägliche Kalorienaufnahme einfach zu protokollieren und zu überwachen, sondern auch einen Einblick in ihre Makronährstoffverteilung (Proteine, Kohlenhydrate, Fette) gibt. Diese Funktionalität ist essentiell, um nicht nur Gewichtsverlustziele zu unterstützen, sondern auch spezifische Fitness- und Gesundheitsziele, wie den Muskelaufbau oder die Verbesserung der allgemeinen Körperzusammensetzung, zu erreichen.
+Das Hauptziel dieses Projektes ist die Entwicklung einer intuitiven und benutzerfreundlichen Anwendung, die es NutzerInnen nicht nur ermöglicht, ihre tägliche Kalorienaufnahme einfach zu protokollieren und zu überwachen, sondern auch einen Einblick in ihre Makronährstoffverteilung (Proteine, Kohlenhydrate, Fette) gibt. Diese Funktionalität ist essentiell, um nicht nur Gewichtsverlustziele zu unterstützen, sondern auch spezifische Fitness- und Gesundheitsziele, wie den Muskelaufbau oder die Verbesserung der allgemeinen Körperzusammensetzung, zu erreichen.
 
-Die Anwendung bietet eine Datenbank mit Nahrungsmitteln, die detaillierte Informationen zu Kalorien und Makronährstoffen enthält. Nutzer können durch diese Datenbank nach bereits gespeicherten Nahrungsmitteln suchen, um ihre täglichen Mahlzeiten zusammenzustellen, oder eigene Nahrungsmittel hinzufügen, falls diese nicht vorhanden sind. Jedes Nahrungsmittel kann mit der entsprechenden Menge zum persönlichen Ernährungstagebuch hinzugefügt werden, welches automatisch die Summe der konsumierten Kalorien und Makronährstoffe für den Tag berechnet.
+Die Anwendung bietet eine Datenbank mit Nahrungsmitteln, die detaillierte Informationen zu Kalorien und Makronährstoffen enthält. NutzerInnen können durch diese Datenbank nach bereits gespeicherten Nahrungsmitteln suchen, um ihre täglichen Mahlzeiten zusammenzustellen, oder eigene Nahrungsmittel hinzufügen, falls diese nicht vorhanden sind. Jedes Nahrungsmittel kann mit der entsprechenden Menge zum persönlichen Ernährungstagebuch hinzugefügt werden, welches automatisch die Summe der konsumierten Kalorien und Makronährstoffe für den Tag berechnet.
 
-Die Benutzeroberfläche ist darauf ausgelegt, den Ablauf so einfach wie möglich zu gestalten. Nutzer können direkt von der Startseite aus auf die Funktionen zum Hinzufügen von Mahlzeiten, Durchsuchen der Nahrungsmitteldatenbank und Anzeigen ihres Ernährungstagebuchs zugreifen. Das Tagebuch präsentiert eine klare und verständliche Zusammenfassung der täglichen Nahrungsaufnahme. Ob es darum geht, Gewicht zu verlieren, Muskelmasse aufzubauen oder einfach eine ausgewogenere Ernährung zu pflegen, die App bietet die Werkzeuge, die Nutzer benötigen, um informierte Entscheidungen über ihre Ernährung zu treffen und ihre Gesundheits- und Fitnessziele zu erreichen.
+Die Benutzeroberfläche ist darauf ausgelegt, den Ablauf so einfach wie möglich zu gestalten. NutzerInnen können direkt von der Startseite aus auf die Funktionen zum Hinzufügen von Mahlzeiten, Durchsuchen der Nahrungsmitteldatenbank und Anzeigen ihres Ernährungstagebuchs zugreifen. Das Tagebuch präsentiert eine klare und verständliche Zusammenfassung der täglichen Nahrungsaufnahme. Ob es darum geht, Gewicht zu verlieren, Muskelmasse aufzubauen oder einfach eine ausgewogenere Ernährung zu pflegen, die App bietet die Werkzeuge, die NutzerInnen benötigen, um informierte Entscheidungen über ihre Ernährung zu treffen und ihre Gesundheits- und Fitnessziele zu erreichen.
 
 ## Projektschnittstellen
 
 ### Personenschnittstellen
 
+Die Anforderungen des Projekts stammen von einem Mitarbeiter der QuinScape GmbH, Herrn Florian Hillmann, der hier als Kunde auftritt. Folglich ist Herr Hillmann auch derjenige, dem das Projektergebnis präsentiert wird und an welchen die Übergabe stattfinden wird. Das langfristige Ziel ist es die Applikation für Smartphones verfügbar zu machen, zunächst aber soll nur ein funktionierender Prototyp erstellt werden, der einem ausgewählten Kreis von NutzerInnen zur Verfügung gestellt wird.
+
 ### Technische Schnittstellen
+
+Die einzige technische Schnittstelle findet sich hier innerhalb der Applikation selbst zwischen dem Back- und Frontend in Form einer RESTful API. Weitere Schnittstellen werden erst in zukünftigen Versionen der Applikation nötig, wenn z.B. eine Nutzerdatenbank implementiert und auf öffentliche Datenbanken von Drittanbietern zugegriffen wird. Dies ist im Rahmen dieses Projekts vorerst aber nicht vorgesehen.
 
 ## Projektabgrenzung
 
 ### Unterschiede zu Projektantrag
 
-Im Großen und Ganzen wurde das Projekt dem Antrag entsprechend durchgeführt. Einzige Abweichung findet sich darin, dass es keine dedizierte Startseite gibt, sondern Nutzer sofort den Log öffnen, den zie zuletzt bearbeitet haben.
+Im Großen und Ganzen wurde das Projekt dem Antrag entsprechend durchgeführt. Einzige Abweichung findet sich darin, dass es keine dedizierte Startseite gibt, sondern NutzerInnen sofort den Log, den zie zuletzt bearbeitet haben oder den Log des aktuellen Datums öffnen. Dies ist mit einer verbesserten User Experience zu erklären, da eine dedizierte Startseite hier nicht mehr zeitgemäß wäre. Sollten in Zukunft noch weitere Funktionen hinzukommen, könnte man über die Implementierung eines so genannten Dashboards nachdenken.
 
 ## Technologien
 
@@ -179,7 +177,7 @@ Zur Durchführung des Projekts wurde ein modernes und agiles Projektmanagementm
 ## Analysephase
 
 ### IST-Analyse
-Derzeit gibt es eine Vielzahl von Anwendungen auf dem Markt, die Benutzern dabei helfen, ihre Nahrungsaufnahme zu verfolgen und Makronährstoffe zu berechnen. Viele dieser Apps bieten Funktionen wie die Möglichkeit, Lebensmittel durch Barcodes zu scannen, umfangreiche Nahrungsmitteldatenbanken, und die Integration mit Fitness-Trackern. Allerdings gibt es noch immer Lücken und Schwächen in den bestehenden Lösungen. Nutzer berichten häufig über unzureichende Lebensmittel-Datenbanken, umständliche Benutzeroberflächen und fehlende Anpassungsmöglichkeiten für individuelle Ernährungspläne. Auch bei der Unterstützung konkreter Fitnessziele wie Gewichtsreduktion oder Muskelaufbau sehen viele Anwender Verbesserungspotential. Daher besteht ein klarer Bedarf an einer intuitiven, benutzerfreundlichen App, die präzise Nahrungsmittelinformationen bietet und sich nahtlos in den Alltag der Nutzer integrieren lässt, um ihre Fitnessziele effektiver zu erreichen.
+Derzeit gibt es eine Vielzahl von Anwendungen auf dem Markt, die NutzerInnen dabei helfen, ihre Nahrungsaufnahme zu verfolgen und Makronährstoffe zu berechnen. Viele dieser Apps bieten Funktionen wie die Möglichkeit, Lebensmittel durch Barcodes zu scannen, umfangreiche Nahrungsmitteldatenbanken, und die Integration mit Fitness-Trackern. Allerdings gibt es noch immer Lücken und Schwächen in den bestehenden Lösungen. NutzerInnen berichten häufig über unzureichende Lebensmittel-Datenbanken, umständliche Benutzeroberflächen und fehlende Anpassungsmöglichkeiten für individuelle Ernährungspläne. Auch bei der Unterstützung konkreter Fitnessziele wie Gewichtsreduktion oder Muskelaufbau sehen viele AnwenderInnen Verbesserungspotential. Daher besteht ein klarer Bedarf an einer intuitiven, benutzerfreundlichen App, die präzise Nahrungsmittelinformationen bietet und sich nahtlos in den Alltag der NutzerInnen integrieren lässt, um ihre Fitnessziele effektiver zu erreichen.
 
 ### SOLL-Analyse
 
@@ -189,25 +187,25 @@ Derzeit gibt es eine Vielzahl von Anwendungen auf dem Markt, die Benutzern dabei
 
 - Die App muss für Smartphone-Bildschirme optimiert sein, um eine nutzerfreundliche Bedienung zu gewährleisten.
 
-- Beim Start der App soll dem Nutzer automatisch das Log des Tages angezeigt werden, das er sich als letztes angeschaut hat.
+- Beim Start der App soll  NutzerInnen automatisch das Log des Tages angezeigt werden, das sie sich als letztes angeschaut haben.
 
 ##### 2. Hauptfunktionen
 
-- Die App soll zwei Hauptfunktionen bieten: die Logs und die Nahrungsmitteldatenbank.
+- Die App soll zwei Hauptfunktionen bieten: Logs und die Nahrungsmitteldatenbank.
 
-- Von überall in der App soll der Nutzer sofort Zugriff auf diese beiden Hauptfunktionen sowie einen Knopf haben, mit dem er automatisch ein Nahrungsmittel in die Datenbank speichern kann.
+- Von überall in der App sollen NutzerInnen sofort Zugriff auf diese beiden Hauptfunktionen sowie einen Knopf haben, mit dem sie automatisch ein Nahrungsmittel in die Datenbank speichern können.
 
 ##### 3. Nahrungsmitteldatenbank
 
-- Nutzer sollen in der Datenbank Nahrungsmittel hinzufügen, bearbeiten oder löschen können.
+- NutzerInnen sollen in der Datenbank Nahrungsmittel hinzufügen, bearbeiten oder löschen können.
 
 - Aus der Datenbank soll ein Nahrungsmittel direkt zu einem Log hinzugefügt werden können.
 
 ##### 4. Logs
 
-- Im Log soll der Benutzer hinzugefügte Nahrungsmittel bearbeiten oder löschen können.
+- Im Log sollen NutzerInnen hinzugefügte Nahrungsmittel bearbeiten oder löschen können.
 
-- Der Benutzer soll im Log zu einem anderen Datum wechseln können, um vergangene Einträge anzusehen oder zu ändern.
+- NutzerInnen sollen im Log zu einem anderen Datum wechseln können, um vergangene Einträge anzusehen oder zu ändern.
 
 - In jedem Log soll eine Berechnung der Kalorienanzahl und Makronährstoffe in Summe dargestellt werden.
 
@@ -222,7 +220,7 @@ Die zu entwickelnde App soll folgende Ziele erreichen:
 - Im Vergleich zu existierenden Lösungen soll die App durch ihre Optimierung für Smartphone-Bildschirme überzeugen. 
 
 3. **Einfache Fortführung der Aufzeichnungen** 
-- Beim Start präsentiert die App das zuletzt betrachtete Tageslog, um den Nutzern eine einfache Fortführung ihrer Aufzeichnungen zu ermöglichen. 
+- Beim Start präsentiert die App das zuletzt betrachtete Tageslog, um den NutzerInnen eine einfache Fortführung ihrer Aufzeichnungen zu ermöglichen. 
 
 4. **Zugriff auf Hauptfunktionen** 
 - Zwei Hauptfunktionen stehen im Vordergrund: die Nahrungsmitteldatenbank und die Logs. 
@@ -232,7 +230,7 @@ Die zu entwickelnde App soll folgende Ziele erreichen:
 - Eine zentrale Schaltfläche ermöglicht das schnelle Hinzufügen neuer Nahrungsmittel zur Datenbank, die dann wiederum direkt zu den Logs hinzugefügt, bearbeitet oder gelöscht werden können. 
 
 6. **Flexible Verwaltung der Log-Einträge** 
-- Innerhalb der Logs können Nutzer ihre Einträge flexibel verwalten und zwischen unterschiedlichen Datumseinträgen wechseln. 
+- Innerhalb der Logs können NutzerInnen ihre Einträge flexibel verwalten und zwischen unterschiedlichen Datumseinträgen wechseln. 
 
 Diese Kernfunktionen sollen eine effektive Unterstützung bei der Verfolgung der täglichen Nahrungsaufnahme und der Zielsetzung für Makronährstoffe bieten.
 
@@ -550,22 +548,28 @@ So wurde hier nach jeder Implementierung eines API Endpunktes dieser mit Test-Re
 
 Sobald ein Fehler gefunden wurde, wurde außerdem in die Logs des Backends geschaut und mit dem Debugger von IntelliJ Idea nach Gründen dafür geschaut. Besonders beim Implementieren der upsert Methoden wurde dieser intensiv zu Rate gezogen.
 
-
-## Black-Box-Test
-
-## Schlussphase
-
 ## Übergabe
+
+Nach Abschluss des letzten Sprints wurde die Anwendung zur endgültigen Abnahme Herrn Hillman vorgelegt. Die Endabnahme lief, durch die SCRUM typischen vorherigen Iterationen der Sprint Reviews, problemlos.
+
 
 # Fazit
 
 ## SOLL/IST Vergleich
 
-Alle im SOLL Kapitel geplanten Ziele wurden erreicht. Hierbei kam es zu keinen Abweichungen in der Zeitplanung. Zunächst sah es bei der Implementierung so aus, als würde noch viel Zeit übrig bleiben, um an weiteren UI/UX Verbesserungen zu arbeiten, die auf jeden Fall noch in Zukunft nötig sein werden. Durch manche dann doch komplizierten Funktionalitäten im Front- und Backend wurde jedoch mehr Zeit für das Debuggen verbraucht als angenommen. Gerade die Implementierung der upsert Servicemethoden im Backend und das Realisieren der Komponentenbibliothek in Verbindung mit Formularen und Tabellen im Frontend hat die erst eingesparte Zeit wieder verfliegen lassen.
+Alle im SOLL Kapitel geplanten Ziele wurden erreicht. Hierbei kam es zu keinen Abweichungen in der Zeitplanung. Zunächst sah es bei der Implementierung so aus, als würde noch viel Zeit übrig bleiben, um an weiteren UI/UX Verbesserungen zu arbeiten, die auf jeden Fall noch in Zukunft nötig sein werden. Durch manche dann doch komplizierten Funktionalitäten im Front- und Backend wurde jedoch mehr Zeit für das Debuggen verbraucht als angenommen. Gerade die Implementierung der upsert Servicemethoden im Backend und das Realisieren der Komponentenbibliothek in Verbindung mit Formularen und Tabellen im Frontend hat die erst eingesparte Zeit wieder aufgebraucht.
 
 ## Erkenntnisse
 
+Bei der Durchführung des Projekts fiel vor Allem auf wie schwierig es ist, ein Projekt eigenständig zu planen und sich an diese Planung zu halten. Hierbei waren vor Allem die täglichen Sprint Meetings eine Große Hilfe die Arbeit des vergangenen Tages revue passieren zu lassen und die Arbeit der folgenden 8 Stunden organisiert zu strukturieren. Eine vollständige Applikation zu entwickeln, inklusive Backend und Frontend, war eine wichtige Erfahrung auf dem Weg zu einem vollwertigen Mitglied in zukünftigen Entwicklerteams. Besonders das Arbeiten mit Spring Boot, JPA und Lombok im Backend und das Anbinden des React Frontends mit Axios sowie das Verfassen von Frontend-Code mit TypeScript waren wichtige Erfahrungen, die den eigenen Horizont sehr geöffnet haben.
+
 ## Ausblick
+
+Wie aus der Dokumentation herauzulesen sein sollte, fehlen noch einige Funktionalitäten in der Applikation. Neben den angesprochenen UI/UX Verbesserungen im Frontend, wie z.B. moderne UI-Komponenten, die mehr an Smartphones und Touchscreens angepasst sind, ein fehlender Hellmodus usw., fehlt vor Allem die Funktionalität Nutzervorgaben einzugeben. So ist es beim Verlieren von Gewicht wichtig das eigene Gewicht nachzuhalten, Kaloriengrenzen zu setzen und Makronährstoffvorgaben zu berechnen. Hieraus lässt sich auch der Nutzen für eine Nutzerdatenbank herausarbeiten und damit auch die Erweiterung der Applikation um Authentifizierungs- und Autorisierungsfunktionalitäten. Realisieren ließe sich das im Backend mit Spring Security, das während der Entwurfsphase sogar kurz im Raum stand, aber aufgrund der knappen Zeitplanung gestrichen wurde.
+
+Sollte man diese App in Zukunft der breiten Öffentlichkeit zur Verfügung stellen wollen, möchten diese nicht alle gebräuchlichen Nahrungsmittel händisch hinzufügen wollen. Hier würde es sich anbieten die Nahrungsmitteldatenbank an öffentliche Datenbanken anzuschließen, die bereits mit den meisten Nahrungsmitteln gefüllt sind (Openfoodfacts oder die US Nahrungsmitteldatenbank, nur um zwei zu nennen).
+
+Es stehen also noch viele Erweiterungen im Raum, an denen in Zukunft sicherlich noch weiter gearbeitet werden kann.
 
 # Literaturverzeichnis
 
