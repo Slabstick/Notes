@@ -48,7 +48,7 @@ Klickt man auf den "Hinzufügen"-Button, gelangt man zum Formular für das Hinzu
 
 ### Nahrungsmittel zur Datenbank hinzufügen/bearbeiten
 
-![[Add:Edit Food Form.png]]
+![[Add Food.png]]
 
 Mit einem Klick auf das große Plus in der Navigationsleiste ruft man das Formular auf, mit dem man Nahrungsmittel zur Datenbank hinzufügen kann. Klickt man in der Datenbank auf den Bearbeiten-Button, wird ebenfalls dieses Formular aufgerufen, allerdings sind die Felder dann bereits mit den vorherigen Werten des gespeicherten Eintrags ausgefüllt.
 
